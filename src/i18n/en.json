@@ -7,7 +7,7 @@
     "tagline": "Voice to text, instantly.",
     "subtext": "LuminaWhisper delivers private, fast speech recognition on your Mac.",
     "download": "Download for Free",
-    "requirements": "macOS 14.0 or later · Apple Silicon"
+    "requirements": "macOS 13.0 or later · Apple Silicon"
   },
   "features": {
     "title": "Why LuminaWhisper?",
@@ -25,20 +25,20 @@
     },
     "llm": {
       "title": "LLM Post-Processing",
-      "desc": "A local LLM corrects typos and formats your text after recognition."
+      "desc": "Automatically removes filler words (\"um\", \"uh\") and applies custom formatting instructions — all locally."
     }
   },
   "howToUse": {
     "title": "How to Use",
-    "step1": { "label": "Step 1", "text": "Press Option+Space" },
-    "step2": { "label": "Step 2", "text": "Speak" },
-    "step3": { "label": "Step 3", "text": "Press Option+Space to stop" },
-    "step4": { "label": "Step 4", "text": "Text is automatically inserted" }
+    "step1": { "label": "Step 1", "text": "Place the cursor where you want to type" },
+    "step2": { "label": "Step 2", "text": "Press Option+Space to start recording" },
+    "step3": { "label": "Step 3", "text": "Speak" },
+    "step4": { "label": "Step 4", "text": "Press Option+Space to stop → text is inserted" }
   },
   "cta": {
     "title": "Get Started Now",
     "button": "Download .dmg",
-    "requirements": "macOS 14.0 or later · Apple Silicon · Free"
+    "requirements": "macOS 13.0 or later · Apple Silicon · Free"
   },
   "footer": {
     "copyright": "© 2026 LuminaWhisper",
@@ -74,7 +74,7 @@
       "micDesc1": "A dialog requesting microphone access will appear on first launch. Click OK.",
       "micDesc2": "To change the permission later, go to System Settings → Privacy & Security → Microphone and enable LuminaWhisper.",
       "requirementsLabel": "Requirements:",
-      "requirementsValue": "macOS 14.0 (Sonoma) or later · Apple Silicon (M1 or later)"
+      "requirementsValue": "macOS 13.0 (Ventura) or later · Apple Silicon (M1 or later)"
     },
     "setup": {
       "title": "Initial Setup",
@@ -82,9 +82,9 @@
       "menubarDesc": "After launching the app, the LuminaWhisper icon appears in the menu bar. Click it to open Settings.",
       "hotkeyTitle": "Checking the Hotkey",
       "hotkeyDescPre": "The default hotkey is",
-      "hotkeyDescPost": ". If it conflicts with another app, you can customize it in Settings.",
-      "launchTitle": "Launch at Login",
-      "launchDesc": "Enable Launch at Login in Settings to start LuminaWhisper automatically when your Mac starts."
+      "hotkeyDescPost": ". You can switch to Option+Space or Fn in the General tab of Settings.",
+      "modelTitle": "Model Download",
+      "modelDesc": "On first launch, the small model downloads automatically. You can switch to tiny, base, or medium in the General tab of Settings. Voice input is available even while a model is downloading."
     },
     "usage": {
       "title": "Basic Usage",
@@ -104,31 +104,31 @@
       "title": "Settings",
       "openDesc": "Click the menu bar icon → Settings... to open Settings.",
       "defaultLabel": "Default",
-      "hotkey": {
-        "name": "Hotkey",
-        "default": "Option+Space",
-        "desc": "The keyboard shortcut to start/stop voice input. Change it if it conflicts with another app."
+      "model": {
+        "name": "Model",
+        "default": "small",
+        "desc": "The Whisper model used for transcription. Accuracy improves from tiny → base → small → medium, but processing time increases. Uninstalled models can be downloaded here."
       },
       "language": {
         "name": "Recognition Language",
-        "default": "Japanese",
-        "desc": "The language used for speech recognition. Choose from Japanese, English, Chinese, and more."
+        "default": "Auto",
+        "desc": "The language used for speech recognition. Choose from auto (detect), Japanese (ja), or English (en)."
+      },
+      "hotkey": {
+        "name": "Hotkey",
+        "default": "Option+Space",
+        "desc": "The keyboard shortcut to start/stop voice input. Choose Option+Space or Fn."
       },
       "llm": {
         "name": "LLM Post-Processing",
         "default": "On",
-        "desc": "After recognition, a local LLM corrects typos and formats the text. Turn off to insert the raw recognition result."
-      },
-      "launch": {
-        "name": "Launch at Login",
-        "default": "Off",
-        "desc": "Automatically launch LuminaWhisper when you log in to your Mac."
+        "desc": "After recognition, a local LLM removes filler words and applies formatting. Custom and app-specific instructions can be configured in the LLM tab."
       }
     },
     "faq": {
       "title": "FAQ",
-      "q1": "Can I use it on macOS 13 (Ventura)?",
-      "a1": "No. LuminaWhisper requires macOS 14 (Sonoma) or later on an Apple Silicon Mac.",
+      "q1": "Can I use it on macOS 12 (Monterey) or earlier?",
+      "a1": "No. LuminaWhisper requires macOS 13 (Ventura) or later on an Apple Silicon Mac.",
       "q2": "Is Intel Mac supported?",
       "a2": "Currently, it is exclusive to Apple Silicon (M1 or later). There are no plans to support Intel Macs.",
       "q3": "Where is my audio data sent?",
@@ -136,7 +136,7 @@
       "q4": "The hotkey is not responding.",
       "a4": "Please check that LuminaWhisper is allowed under System Settings → Privacy & Security → Accessibility.",
       "q5": "How can I improve recognition accuracy?",
-      "a5": "Speaking clearly in a quiet environment close to the microphone improves accuracy. Enabling LLM Post-Processing is also effective."
+      "a5": "Speaking clearly in a quiet environment close to the microphone improves accuracy. Selecting a larger model (medium) in the General tab or enabling LLM Post-Processing is also effective."
     },
     "troubleshoot": {
       "title": "Troubleshooting",
@@ -149,7 +149,7 @@
       "issue2Step2": "Add LuminaWhisper to the allowed list (use the + button if not present)",
       "issue2Step3": "Restart your Mac",
       "issue3Title": "App Won't Launch",
-      "issue3Step1": "Verify you are running macOS 14 or later on Apple Silicon",
+      "issue3Step1": "Verify you are running macOS 13 or later on Apple Silicon",
       "issue3Step2": "Check that the app is allowed to run under System Settings → Privacy & Security",
       "issue3Step3": "Delete the app and reinstall",
       "issue4Title": "Text Not Being Inserted",

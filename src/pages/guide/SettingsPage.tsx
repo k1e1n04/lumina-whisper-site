@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
 
-const SETTING_KEYS = ['hotkey', 'language', 'llm', 'launch'] as const
+const SETTING_KEYS = ['model', 'language', 'hotkey', 'llm'] as const
 
 export default function SettingsPage() {
   const { t } = useTranslation()

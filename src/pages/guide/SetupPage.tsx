@@ -16,8 +16,8 @@ export default function SetupPage() {
         {t('guide.setup.hotkeyDescPost')}
       </p>
 
-      <h2 className="mt-8 mb-3 text-xl font-semibold text-text">{t('guide.setup.launchTitle')}</h2>
-      <p className="text-text-muted">{t('guide.setup.launchDesc')}</p>
+      <h2 className="mt-8 mb-3 text-xl font-semibold text-text">{t('guide.setup.modelTitle')}</h2>
+      <p className="text-text-muted">{t('guide.setup.modelDesc')}</p>
     </article>
   )
 }
