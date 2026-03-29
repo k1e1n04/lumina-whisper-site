@@ -38,13 +38,13 @@ export default function TroubleshootPage() {
   const { t } = useTranslation()
   return (
     <article data-testid="guide-troubleshoot" className="max-w-none prose">
-      <h1 className="mb-6 text-3xl font-bold text-primary">{t('guide.troubleshoot.title')}</h1>
+      <h1 className="mb-6 text-3xl font-bold text-accent">{t('guide.troubleshoot.title')}</h1>
 
       <div className="space-y-6">
         {ISSUES.map(({ title, steps }) => (
-          <div key={title} className="rounded-lg border border-gray-200 p-5">
-            <h2 className="mb-3 text-lg font-semibold text-gray-800">{title}</h2>
-            <ol className="list-inside list-decimal space-y-1.5 text-sm text-gray-600">
+          <div key={title} className="rounded-lg border border-border p-5">
+            <h2 className="mb-3 text-lg font-semibold text-text">{title}</h2>
+            <ol className="list-inside list-decimal space-y-1.5 text-sm text-text-muted">
               {steps.map((step) => (
                 <li key={step}>{step}</li>
               ))}
@@ -53,8 +53,8 @@ export default function TroubleshootPage() {
         ))}
       </div>
 
-      <div className="mt-8 rounded-lg border border-gray-200 bg-gray-50 p-4">
-        <p className="text-sm text-gray-600">
+      <div className="mt-8 rounded-lg border border-border bg-bg p-4">
+        <p className="text-sm text-text-muted">
           解決しない場合は{' '}
           <a
             href="https://github.com/ishiiken/lumina-whisper/issues"

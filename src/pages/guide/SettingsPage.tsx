@@ -27,17 +27,17 @@ export default function SettingsPage() {
   const { t } = useTranslation()
   return (
     <article data-testid="guide-settings" className="max-w-none prose">
-      <h1 className="mb-6 text-3xl font-bold text-primary">{t('guide.settings.title')}</h1>
-      <p className="mb-6 text-gray-600">メニューバーのアイコンをクリック → 「設定...」から設定画面を開けます。</p>
+      <h1 className="mb-6 text-3xl font-bold text-accent">{t('guide.settings.title')}</h1>
+      <p className="mb-6 text-text-muted">メニューバーのアイコンをクリック → 「設定...」から設定画面を開けます。</p>
 
       <div className="space-y-4">
         {SETTINGS.map(({ name, default: def, desc }) => (
-          <div key={name} className="rounded-lg border border-gray-200 p-4">
+          <div key={name} className="rounded-lg border border-border p-4">
             <div className="mb-1 flex items-baseline justify-between">
-              <h3 className="font-semibold text-gray-800">{name}</h3>
-              <span className="text-xs text-gray-400">デフォルト: {def}</span>
+              <h3 className="font-semibold text-text">{name}</h3>
+              <span className="text-xs text-text-dim">デフォルト: {def}</span>
             </div>
-            <p className="text-sm text-gray-600">{desc}</p>
+            <p className="text-sm text-text-muted">{desc}</p>
           </div>
         ))}
       </div>

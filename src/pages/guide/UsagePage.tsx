@@ -4,9 +4,9 @@ export default function UsagePage() {
   const { t } = useTranslation()
   return (
     <article data-testid="guide-usage" className="max-w-none prose">
-      <h1 className="mb-6 text-3xl font-bold text-primary">{t('guide.usage.title')}</h1>
+      <h1 className="mb-6 text-3xl font-bold text-accent">{t('guide.usage.title')}</h1>
 
-      <h2 className="mt-8 mb-3 text-xl font-semibold text-gray-800">音声入力の手順</h2>
+      <h2 className="mt-8 mb-3 text-xl font-semibold text-text">音声入力の手順</h2>
       <ol className="mb-6 list-none space-y-4">
         {[
           {
@@ -35,15 +35,15 @@ export default function UsagePage() {
               {step}
             </span>
             <div>
-              <p className="mb-1 font-semibold text-gray-800">{label}</p>
-              <p className="text-sm text-gray-600">{desc}</p>
+              <p className="mb-1 font-semibold text-text">{label}</p>
+              <p className="text-sm text-text-muted">{desc}</p>
             </div>
           </li>
         ))}
       </ol>
 
-      <div className="rounded-lg border border-yellow-200 bg-yellow-50 p-4">
-        <p className="text-sm text-yellow-800">
+      <div className="rounded-lg border border-border bg-surface p-4">
+        <p className="text-sm text-text-muted">
           <strong>ヒント:</strong> 静かな環境での使用が最も精度が高くなります。外部マイクの使用もお勧めです。
         </p>
       </div>

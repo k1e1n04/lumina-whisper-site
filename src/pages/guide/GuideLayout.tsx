@@ -33,14 +33,14 @@ export default function GuideLayout() {
   const { t } = useTranslation()
 
   return (
-    <div data-testid="guide-layout" className="flex min-h-screen flex-col bg-[#0c0b09]">
+    <div data-testid="guide-layout" className="flex min-h-screen flex-col bg-bg">
       <Navbar />
       <div className="mx-auto flex w-full max-w-6xl flex-1 gap-12 px-6 pt-16 py-10">
         <aside className="hidden w-48 shrink-0 md:block">
           <nav className="sticky top-24">
             {SIDEBAR_SECTIONS.map(({ groupKey, pages }) => (
               <div key={groupKey} className="mb-8">
-                <p className="mb-3 text-[9px] tracking-[0.35em] text-[#3a312a] uppercase">
+                <p className="mb-3 text-xs tracking-[0.1em] text-text-dim uppercase">
                   {t(`guide.sidebar.${groupKey}`)}
                 </p>
                 {pages.map((pageKey) => {
@@ -53,10 +53,10 @@ export default function GuideLayout() {
                       key={pageKey}
                       to={page.path}
                       className={({ isActive }) =>
-                        `block py-2 text-xs no-underline transition-colors ${
+                        `block py-2 text-sm no-underline transition-colors ${
                           isActive
-                            ? 'text-[#c8955f]'
-                            : 'text-[#6b5f52] hover:text-[#e8ddd0]'
+                            ? 'font-medium text-accent'
+                            : 'text-text-muted hover:text-text'
                         }`
                       }
                     >
@@ -88,11 +88,11 @@ function GuidePageNav() {
   const next = currentIndex < GUIDE_PAGES.length - 1 ? GUIDE_PAGES[currentIndex + 1] : null
 
   return (
-    <div className="mt-16 flex justify-between border-t border-[#272218] pt-6">
+    <div className="mt-16 flex justify-between border-t border-border pt-6">
       {prev ? (
         <button
           onClick={() => navigate(prev.path)}
-          className="text-[11px] tracking-[0.15em] text-[#6b5f52] transition-colors hover:text-[#c8955f]"
+          className="text-sm tracking-[0.05em] text-text-muted transition-colors hover:text-accent"
         >
           ← {t('guide.nav.prev')}: {t(`guide.sidebar.${prev.key}`)}
         </button>
@@ -102,7 +102,7 @@ function GuidePageNav() {
       {next ? (
         <button
           onClick={() => navigate(next.path)}
-          className="text-[11px] tracking-[0.15em] text-[#6b5f52] transition-colors hover:text-[#c8955f]"
+          className="text-sm tracking-[0.05em] text-text-muted transition-colors hover:text-accent"
         >
           {t('guide.nav.next')}: {t(`guide.sidebar.${next.key}`)} →
         </button>

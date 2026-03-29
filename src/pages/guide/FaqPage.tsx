@@ -27,16 +27,16 @@ export default function FaqPage() {
   const { t } = useTranslation()
   return (
     <article data-testid="guide-faq" className="max-w-none prose">
-      <h1 className="mb-6 text-3xl font-bold text-primary">{t('guide.faq.title')}</h1>
+      <h1 className="mb-6 text-3xl font-bold text-accent">{t('guide.faq.title')}</h1>
 
       <div className="space-y-4">
         {FAQS.map(({ q, a }) => (
-          <details key={q} className="group rounded-lg border border-gray-200">
-            <summary className="flex cursor-pointer list-none items-center justify-between px-4 py-3 font-semibold text-gray-800 hover:text-primary">
+          <details key={q} className="group rounded-lg border border-border">
+            <summary className="flex cursor-pointer list-none items-center justify-between px-4 py-3 font-semibold text-text hover:text-accent">
               {q}
-              <span className="text-gray-400 transition-transform group-open:rotate-180">▼</span>
+              <span className="text-text-dim transition-transform group-open:rotate-180">▼</span>
             </summary>
-            <p className="px-4 pb-4 text-sm text-gray-600">{a}</p>
+            <p className="px-4 pb-4 text-sm text-text-muted">{a}</p>
           </details>
         ))}
       </div>
