@@ -61,11 +61,101 @@
       "prev": "前へ",
       "next": "次へ"
     },
-    "install": { "title": "インストール" },
-    "setup": { "title": "初期設定" },
-    "usage": { "title": "基本的な使い方" },
-    "settings": { "title": "設定項目" },
-    "faq": { "title": "よくある質問" },
-    "troubleshoot": { "title": "トラブルシューティング" }
+    "install": {
+      "title": "インストール",
+      "section1": "1. ダウンロード",
+      "downloadDesc": "<link>GitHub Releases</link> から最新の <code>LuminaWhisper.dmg</code> をダウンロードします。",
+      "section2": "2. インストール",
+      "installStep1Pre": "ダウンロードした",
+      "installStep1Post": "ファイルを開きます。",
+      "installStep2": "LuminaWhisper アイコンを「アプリケーション」フォルダにドラッグします。",
+      "installStep3": "「アプリケーション」フォルダから LuminaWhisper を起動します。",
+      "section3": "3. マイク権限の許可",
+      "micDesc1": "初回起動時にマイクへのアクセス許可を求めるダイアログが表示されます。「OK」をクリックしてください。",
+      "micDesc2": "権限を後から変更する場合は、「システム設定」→「プライバシーとセキュリティ」→「マイク」から LuminaWhisper を有効にします。",
+      "requirementsLabel": "必要環境:",
+      "requirementsValue": "macOS 14.0 (Sonoma) 以降 · Apple Silicon (M1 以降)"
+    },
+    "setup": {
+      "title": "初期設定",
+      "menubarTitle": "メニューバーアイコン",
+      "menubarDesc": "アプリを起動するとメニューバーに LuminaWhisper のアイコンが表示されます。アイコンをクリックして設定画面を開けます。",
+      "hotkeyTitle": "ホットキーの確認",
+      "hotkeyDescPre": "デフォルトのホットキーは",
+      "hotkeyDescPost": "です。他のアプリと競合する場合は、設定画面からカスタマイズできます。",
+      "launchTitle": "ログイン時に自動起動",
+      "launchDesc": "設定画面の「ログイン時に起動」を有効にすると、Mac 起動時に自動的に LuminaWhisper が起動します。"
+    },
+    "usage": {
+      "title": "基本的な使い方",
+      "stepsTitle": "音声入力の手順",
+      "step1Label": "テキスト入力フィールドにフォーカスを当てる",
+      "step1Desc": "テキストを入力したい場所（テキストエディタ、メール本文など）をクリックします。",
+      "step2Label": "Option+Space を押す",
+      "step2Desc": "録音が開始されます。メニューバーのアイコンが点滅して録音中を示します。",
+      "step3Label": "話す",
+      "step3Desc": "はっきりした声で話してください。句読点は自動的に挿入されます。",
+      "step4Label": "再度 Option+Space を押す",
+      "step4Desc": "録音を停止します。認識されたテキストが自動的にカーソル位置に挿入されます。",
+      "tipLabel": "ヒント:",
+      "tipDesc": "静かな環境での使用が最も精度が高くなります。外部マイクの使用もお勧めです。"
+    },
+    "settings": {
+      "title": "設定項目",
+      "openDesc": "メニューバーのアイコンをクリック → 「設定...」から設定画面を開けます。",
+      "defaultLabel": "デフォルト",
+      "hotkey": {
+        "name": "ホットキー",
+        "default": "Option+Space",
+        "desc": "音声入力の開始・停止に使うキーボードショートカット。他のアプリと競合する場合は変更してください。"
+      },
+      "language": {
+        "name": "認識言語",
+        "default": "日本語",
+        "desc": "音声認識に使用する言語。日本語・英語・中国語などから選択できます。"
+      },
+      "llm": {
+        "name": "LLM 後処理",
+        "default": "オン",
+        "desc": "音声認識後にローカル LLM で誤字補正・整形を行う機能。オフにすると認識結果をそのまま挿入します。"
+      },
+      "launch": {
+        "name": "ログイン時に起動",
+        "default": "オフ",
+        "desc": "Mac ログイン時に LuminaWhisper を自動起動します。"
+      }
+    },
+    "faq": {
+      "title": "よくある質問",
+      "q1": "macOS 13 (Ventura) で使えますか？",
+      "a1": "いいえ。LuminaWhisper は macOS 14 (Sonoma) 以降の Apple Silicon Mac が必要です。",
+      "q2": "Intel Mac には対応していますか？",
+      "a2": "現在は Apple Silicon (M1 以降) 専用です。Intel Mac への対応は予定していません。",
+      "q3": "音声データはどこに送られますか？",
+      "a3": "音声データはデバイス外に送信されません。全ての処理は Mac 上でローカルに行われます。",
+      "q4": "ホットキーが反応しません",
+      "a4": "「システム設定」→「プライバシーとセキュリティ」→「アクセシビリティ」で LuminaWhisper を許可しているか確認してください。",
+      "q5": "認識精度を上げるには？",
+      "a5": "できるだけ静かな環境で、マイクに近い位置で話すと精度が向上します。LLM 後処理をオンにすることも効果的です。"
+    },
+    "troubleshoot": {
+      "title": "トラブルシューティング",
+      "issue1Title": "マイクが認識されない",
+      "issue1Step1": "「システム設定」→「プライバシーとセキュリティ」→「マイク」を開く",
+      "issue1Step2": "LuminaWhisper のトグルがオンになっているか確認する",
+      "issue1Step3": "LuminaWhisper を再起動する",
+      "issue2Title": "ホットキーが動作しない",
+      "issue2Step1": "「システム設定」→「プライバシーとセキュリティ」→「アクセシビリティ」を開く",
+      "issue2Step2": "LuminaWhisper を許可リストに追加する（なければ「+」ボタンで追加）",
+      "issue2Step3": "Mac を再起動する",
+      "issue3Title": "アプリが起動しない",
+      "issue3Step1": "macOS 14 以降・Apple Silicon であるか確認する",
+      "issue3Step2": "「システム設定」→「プライバシーとセキュリティ」でアプリの実行が許可されているか確認する",
+      "issue3Step3": "アプリを削除して再インストールする",
+      "issue4Title": "テキストが挿入されない",
+      "issue4Step1": "録音を停止する前にテキスト入力フィールドにフォーカスが当たっているか確認する",
+      "issue4Step2": "アクセシビリティ権限が付与されているか確認する",
+      "contactDesc": "解決しない場合は <link>GitHub Issues</link> でご報告ください。"
+    }
   }
 }

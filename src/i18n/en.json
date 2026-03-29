@@ -61,11 +61,101 @@
       "prev": "Previous",
       "next": "Next"
     },
-    "install": { "title": "Installation" },
-    "setup": { "title": "Initial Setup" },
-    "usage": { "title": "Basic Usage" },
-    "settings": { "title": "Settings" },
-    "faq": { "title": "FAQ" },
-    "troubleshoot": { "title": "Troubleshooting" }
+    "install": {
+      "title": "Installation",
+      "section1": "1. Download",
+      "downloadDesc": "Download the latest <code>LuminaWhisper.dmg</code> from <link>GitHub Releases</link>.",
+      "section2": "2. Installation",
+      "installStep1Pre": "Open the downloaded",
+      "installStep1Post": "file.",
+      "installStep2": "Drag the LuminaWhisper icon to the Applications folder.",
+      "installStep3": "Launch LuminaWhisper from the Applications folder.",
+      "section3": "3. Microphone Permission",
+      "micDesc1": "A dialog requesting microphone access will appear on first launch. Click OK.",
+      "micDesc2": "To change the permission later, go to System Settings → Privacy & Security → Microphone and enable LuminaWhisper.",
+      "requirementsLabel": "Requirements:",
+      "requirementsValue": "macOS 14.0 (Sonoma) or later · Apple Silicon (M1 or later)"
+    },
+    "setup": {
+      "title": "Initial Setup",
+      "menubarTitle": "Menu Bar Icon",
+      "menubarDesc": "After launching the app, the LuminaWhisper icon appears in the menu bar. Click it to open Settings.",
+      "hotkeyTitle": "Checking the Hotkey",
+      "hotkeyDescPre": "The default hotkey is",
+      "hotkeyDescPost": ". If it conflicts with another app, you can customize it in Settings.",
+      "launchTitle": "Launch at Login",
+      "launchDesc": "Enable Launch at Login in Settings to start LuminaWhisper automatically when your Mac starts."
+    },
+    "usage": {
+      "title": "Basic Usage",
+      "stepsTitle": "Voice Input Steps",
+      "step1Label": "Focus a text input field",
+      "step1Desc": "Click where you want to type (a text editor, email body, etc.).",
+      "step2Label": "Press Option+Space",
+      "step2Desc": "Recording starts. The menu bar icon blinks to indicate recording.",
+      "step3Label": "Speak",
+      "step3Desc": "Speak clearly. Punctuation is inserted automatically.",
+      "step4Label": "Press Option+Space again",
+      "step4Desc": "Recording stops. The recognized text is automatically inserted at the cursor position.",
+      "tipLabel": "Tip:",
+      "tipDesc": "Accuracy is highest in quiet environments. Using an external microphone is also recommended."
+    },
+    "settings": {
+      "title": "Settings",
+      "openDesc": "Click the menu bar icon → Settings... to open Settings.",
+      "defaultLabel": "Default",
+      "hotkey": {
+        "name": "Hotkey",
+        "default": "Option+Space",
+        "desc": "The keyboard shortcut to start/stop voice input. Change it if it conflicts with another app."
+      },
+      "language": {
+        "name": "Recognition Language",
+        "default": "Japanese",
+        "desc": "The language used for speech recognition. Choose from Japanese, English, Chinese, and more."
+      },
+      "llm": {
+        "name": "LLM Post-Processing",
+        "default": "On",
+        "desc": "After recognition, a local LLM corrects typos and formats the text. Turn off to insert the raw recognition result."
+      },
+      "launch": {
+        "name": "Launch at Login",
+        "default": "Off",
+        "desc": "Automatically launch LuminaWhisper when you log in to your Mac."
+      }
+    },
+    "faq": {
+      "title": "FAQ",
+      "q1": "Can I use it on macOS 13 (Ventura)?",
+      "a1": "No. LuminaWhisper requires macOS 14 (Sonoma) or later on an Apple Silicon Mac.",
+      "q2": "Is Intel Mac supported?",
+      "a2": "Currently, it is exclusive to Apple Silicon (M1 or later). There are no plans to support Intel Macs.",
+      "q3": "Where is my audio data sent?",
+      "a3": "Audio data is never sent outside the device. All processing is done locally on your Mac.",
+      "q4": "The hotkey is not responding.",
+      "a4": "Please check that LuminaWhisper is allowed under System Settings → Privacy & Security → Accessibility.",
+      "q5": "How can I improve recognition accuracy?",
+      "a5": "Speaking clearly in a quiet environment close to the microphone improves accuracy. Enabling LLM Post-Processing is also effective."
+    },
+    "troubleshoot": {
+      "title": "Troubleshooting",
+      "issue1Title": "Microphone Not Detected",
+      "issue1Step1": "Open System Settings → Privacy & Security → Microphone",
+      "issue1Step2": "Check that the LuminaWhisper toggle is on",
+      "issue1Step3": "Restart LuminaWhisper",
+      "issue2Title": "Hotkey Not Working",
+      "issue2Step1": "Open System Settings → Privacy & Security → Accessibility",
+      "issue2Step2": "Add LuminaWhisper to the allowed list (use the + button if not present)",
+      "issue2Step3": "Restart your Mac",
+      "issue3Title": "App Won't Launch",
+      "issue3Step1": "Verify you are running macOS 14 or later on Apple Silicon",
+      "issue3Step2": "Check that the app is allowed to run under System Settings → Privacy & Security",
+      "issue3Step3": "Delete the app and reinstall",
+      "issue4Title": "Text Not Being Inserted",
+      "issue4Step1": "Make sure a text input field has focus before stopping recording",
+      "issue4Step2": "Check that accessibility permission has been granted",
+      "contactDesc": "If the issue persists, please report it on <link>GitHub Issues</link>."
+    }
   }
 }
