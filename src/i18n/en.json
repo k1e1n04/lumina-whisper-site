@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "guide": "Guide",
+    "download": "Download"
+  },
+  "hero": {
+    "tagline": "Voice to text, instantly.",
+    "subtext": "LuminaWhisper delivers private, fast speech recognition on your Mac.",
+    "download": "Download for Free",
+    "requirements": "macOS 14.0 or later · Apple Silicon"
+  },
+  "features": {
+    "title": "Why LuminaWhisper?",
+    "hotkey": {
+      "title": "One Hotkey",
+      "desc": "Press Option+Space anytime to start voice input. Text is inserted directly into the active window."
+    },
+    "local": {
+      "title": "Fully Local",
+      "desc": "Your audio never leaves the device. No internet required, full privacy."
+    },
+    "silicon": {
+      "title": "Apple Silicon Optimized",
+      "desc": "Blazing fast and power-efficient recognition powered by the Neural Engine."
+    },
+    "llm": {
+      "title": "LLM Post-Processing",
+      "desc": "A local LLM corrects typos and formats your text after recognition."
+    }
+  },
+  "howToUse": {
+    "title": "How to Use",
+    "step1": { "label": "Step 1", "text": "Press Option+Space" },
+    "step2": { "label": "Step 2", "text": "Speak" },
+    "step3": { "label": "Step 3", "text": "Press Option+Space to stop" },
+    "step4": { "label": "Step 4", "text": "Text is automatically inserted" }
+  },
+  "cta": {
+    "title": "Get Started Now",
+    "button": "Download .dmg",
+    "requirements": "macOS 14.0 or later · Apple Silicon · Free"
+  },
+  "footer": {
+    "copyright": "© 2026 LuminaWhisper",
+    "github": "GitHub",
+    "guide": "User Guide"
+  },
+  "guide": {
+    "sidebar": {
+      "gettingStarted": "Getting Started",
+      "install": "Installation",
+      "setup": "Initial Setup",
+      "usageGroup": "Usage",
+      "usage": "Basic Usage",
+      "settings": "Settings",
+      "support": "Support",
+      "faq": "FAQ",
+      "troubleshoot": "Troubleshooting"
+    },
+    "nav": {
+      "prev": "Previous",
+      "next": "Next"
+    },
+    "install": { "title": "Installation" },
+    "setup": { "title": "Initial Setup" },
+    "usage": { "title": "Basic Usage" },
+    "settings": { "title": "Settings" },
+    "faq": { "title": "FAQ" },
+    "troubleshoot": { "title": "Troubleshooting" }
+  }
+}

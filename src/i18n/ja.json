@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "guide": "ガイド",
+    "download": "ダウンロード"
+  },
+  "hero": {
+    "tagline": "声をテキストに、瞬時に。",
+    "subtext": "LuminaWhisper は、Mac 上でプライベートかつ高速な音声認識を実現します。",
+    "download": "無料でダウンロード",
+    "requirements": "macOS 14.0 以降 · Apple Silicon"
+  },
+  "features": {
+    "title": "なぜ LuminaWhisper？",
+    "hotkey": {
+      "title": "ホットキー一発",
+      "desc": "Option+Space でいつでも即座に音声入力を開始。アクティブなウィンドウへ直接テキストを挿入します。"
+    },
+    "local": {
+      "title": "完全ローカル処理",
+      "desc": "音声データはデバイス外に出ません。インターネット接続不要でプライバシーを守ります。"
+    },
+    "silicon": {
+      "title": "Apple Silicon 最適化",
+      "desc": "Neural Engine をフル活用した高速・省電力な音声認識。"
+    },
+    "llm": {
+      "title": "LLM 後処理",
+      "desc": "認識後にローカル LLM が誤字を補正し、読みやすいテキストに整形します。"
+    }
+  },
+  "howToUse": {
+    "title": "使い方",
+    "step1": { "label": "Step 1", "text": "Option+Space を押す" },
+    "step2": { "label": "Step 2", "text": "話す" },
+    "step3": { "label": "Step 3", "text": "Option+Space で停止" },
+    "step4": { "label": "Step 4", "text": "テキストが自動挿入される" }
+  },
+  "cta": {
+    "title": "今すぐ始める",
+    "button": ".dmg をダウンロード",
+    "requirements": "macOS 14.0 以降 · Apple Silicon · 無料"
+  },
+  "footer": {
+    "copyright": "© 2026 LuminaWhisper",
+    "github": "GitHub",
+    "guide": "ユーザーガイド"
+  },
+  "guide": {
+    "sidebar": {
+      "gettingStarted": "はじめに",
+      "install": "インストール",
+      "setup": "初期設定",
+      "usageGroup": "使い方",
+      "usage": "基本的な使い方",
+      "settings": "設定項目",
+      "support": "サポート",
+      "faq": "よくある質問",
+      "troubleshoot": "トラブルシューティング"
+    },
+    "nav": {
+      "prev": "前へ",
+      "next": "次へ"
+    },
+    "install": { "title": "インストール" },
+    "setup": { "title": "初期設定" },
+    "usage": { "title": "基本的な使い方" },
+    "settings": { "title": "設定項目" },
+    "faq": { "title": "よくある質問" },
+    "troubleshoot": { "title": "トラブルシューティング" }
+  }
+}
