@@ -7,34 +7,35 @@ export default function Navbar() {
   const { t, i18n } = useTranslation()
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-gray-100 bg-white/95 backdrop-blur">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-        <Link to="/" className="flex items-center gap-2 text-lg font-bold text-primary no-underline">
-          <img src="/lumina-whisper-site/icon.png" alt="LuminaWhisper" className="h-7 w-7 rounded-lg" />
-          LuminaWhisper
+    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-[#272218] bg-[#0c0b09]/95 backdrop-blur">
+      <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-6">
+        <Link to="/" className="flex items-center gap-2.5 no-underline">
+          <img src="/lumina-whisper-site/icon.png" alt="LuminaWhisper" className="h-6 w-6 rounded" />
+          <span className="text-sm tracking-wide text-[#e8ddd0]">LuminaWhisper</span>
         </Link>
 
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-7">
           <Link
             to="/guide/install"
-            className="text-sm font-medium text-gray-600 no-underline transition-colors hover:text-primary"
+            className="text-[11px] tracking-[0.2em] text-[#3a312a] no-underline transition-colors hover:text-[#6b5f52] uppercase"
           >
             {t('nav.guide')}
           </Link>
 
-          <div className="flex items-center gap-1 text-sm">
+          <div className="flex items-center gap-0 text-[10px] tracking-[0.2em]">
             <button
               onClick={() => i18n.changeLanguage('ja')}
-              className={`rounded px-2 py-1 transition-colors ${
-                i18n.language === 'ja' ? 'bg-primary text-white' : 'text-gray-500 hover:text-primary'
+              className={`px-2 py-1 transition-colors ${
+                i18n.language === 'ja' ? 'text-[#c8955f]' : 'text-[#3a312a] hover:text-[#6b5f52]'
               }`}
             >
               JA
             </button>
+            <span className="text-[#272218]">/</span>
             <button
               onClick={() => i18n.changeLanguage('en')}
-              className={`rounded px-2 py-1 transition-colors ${
-                i18n.language === 'en' ? 'bg-primary text-white' : 'text-gray-500 hover:text-primary'
+              className={`px-2 py-1 transition-colors ${
+                i18n.language === 'en' ? 'text-[#c8955f]' : 'text-[#3a312a] hover:text-[#6b5f52]'
               }`}
             >
               EN
@@ -43,7 +44,7 @@ export default function Navbar() {
 
           <a
             href={DOWNLOAD_URL}
-            className="rounded-lg bg-accent px-4 py-2 text-sm font-medium text-white no-underline transition-colors hover:bg-blue-600"
+            className="border border-[#272218] px-4 py-2 text-[10px] tracking-[0.2em] text-[#6b5f52] no-underline transition-all duration-150 hover:border-[#c8955f] hover:text-[#c8955f] uppercase"
           >
             {t('nav.download')}
           </a>

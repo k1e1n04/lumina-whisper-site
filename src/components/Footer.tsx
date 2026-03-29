@@ -7,19 +7,22 @@ export default function Footer() {
   const { t } = useTranslation()
 
   return (
-    <footer className="border-t border-gray-200 bg-gray-50 py-8">
-      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 text-sm text-gray-500 sm:flex-row">
-        <span>{t('footer.copyright')}</span>
-        <div className="flex gap-6">
+    <footer className="border-t border-[#272218]">
+      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-8 sm:flex-row">
+        <span className="text-[10px] tracking-[0.2em] text-[#3a312a]">{t('footer.copyright')}</span>
+        <div className="flex gap-8">
           <a
             href={GITHUB_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="no-underline transition-colors hover:text-primary"
+            className="text-[10px] tracking-[0.2em] text-[#3a312a] no-underline transition-colors hover:text-[#6b5f52] uppercase"
           >
             {t('footer.github')}
           </a>
-          <Link to="/guide/install" className="no-underline transition-colors hover:text-primary">
+          <Link
+            to="/guide/install"
+            className="text-[10px] tracking-[0.2em] text-[#3a312a] no-underline transition-colors hover:text-[#6b5f52] uppercase"
+          >
             {t('footer.guide')}
           </Link>
         </div>
