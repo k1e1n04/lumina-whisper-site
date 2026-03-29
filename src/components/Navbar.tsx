@@ -10,7 +10,7 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-gray-100 bg-white/95 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <Link to="/" className="flex items-center gap-2 text-lg font-bold text-primary no-underline">
-          <img src="/lumina-whisper-site/icon.png" alt="LuminaWhisper" className="h-7 w-7" />
+          <img src="/lumina-whisper-site/icon.png" alt="LuminaWhisper" className="h-7 w-7 rounded-lg" />
           LuminaWhisper
         </Link>
 
