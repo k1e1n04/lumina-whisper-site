@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
-const DOWNLOAD_URL = 'https://github.com/ishiiken/lumina-whisper/releases/latest/download/LuminaWhisper.dmg'
+const DOWNLOAD_URL = 'https://github.com/k1e1n04/lumina-whisper/releases/latest/download/LuminaWhisper.dmg'
 
 const FEATURES = [
   { key: 'hotkey' },
