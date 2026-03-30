@@ -43,7 +43,6 @@
   },
   "footer": {
     "copyright": "© 2026 LuminaWhisper",
-    "github": "GitHub",
     "guide": "User Guide"
   },
   "release": {
@@ -184,7 +183,7 @@
       "issue4Step1": "Make sure a text input field has focus before stopping recording",
       "issue4Step2": "Check that accessibility permission has been granted",
       "issue4Step3": "Enable 'Clipboard Fallback' in Settings — if insertion fails, you can still paste manually with ⌘V",
-      "contactDesc": "If the issue persists, please report it on <link>GitHub Issues</link>."
+      "contactDesc": "If the issue persists, try uninstalling and reinstalling the app, or reset your settings."
     }
   }
 }

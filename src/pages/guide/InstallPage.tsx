@@ -13,7 +13,7 @@ export default function InstallPage() {
           components={{
             link: (
               <a
-                href="https://github.com/k1e1n04/lumina-whisper/releases/latest"
+                href="https://github.com/k1e1n04/lumina-whisper-site/releases/latest"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-accent hover:underline"

@@ -1,4 +1,4 @@
-import { Trans, useTranslation } from 'react-i18next'
+import { useTranslation } from 'react-i18next'
 
 export default function TroubleshootPage() {
   const { t } = useTranslation()
@@ -56,21 +56,7 @@ export default function TroubleshootPage() {
       </div>
 
       <div className="mt-8 rounded-lg border border-border bg-bg p-4">
-        <p className="text-sm text-text-muted">
-          <Trans
-            i18nKey="guide.troubleshoot.contactDesc"
-            components={{
-              link: (
-                <a
-                  href="https://github.com/ishiiken/lumina-whisper/issues"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-accent hover:underline"
-                />
-              ),
-            }}
-          />
-        </p>
+        <p className="text-sm text-text-muted">{t('guide.troubleshoot.contactDesc')}</p>
       </div>
     </article>
   )
