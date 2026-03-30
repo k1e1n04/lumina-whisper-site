@@ -33,6 +33,7 @@ export default function TroubleshootPage() {
       stepKeys: [
         'guide.troubleshoot.issue4Step1',
         'guide.troubleshoot.issue4Step2',
+        'guide.troubleshoot.issue4Step3',
       ],
     },
   ]

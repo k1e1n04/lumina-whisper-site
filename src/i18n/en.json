@@ -123,6 +123,11 @@
         "name": "LLM Post-Processing",
         "default": "On",
         "desc": "After recognition, a local LLM removes filler words and applies formatting. Custom and app-specific instructions can be configured in the LLM tab."
+      },
+      "clipboardFallback": {
+        "name": "Clipboard Fallback",
+        "default": "Off",
+        "desc": "When enabled, the transcription result is also copied to the clipboard after each recognition. If auto-insertion fails, you can still paste manually with ⌘V."
       }
     },
     "faq": {
@@ -155,6 +160,7 @@
       "issue4Title": "Text Not Being Inserted",
       "issue4Step1": "Make sure a text input field has focus before stopping recording",
       "issue4Step2": "Check that accessibility permission has been granted",
+      "issue4Step3": "Enable 'Clipboard Fallback' in Settings — if insertion fails, you can still paste manually with ⌘V",
       "contactDesc": "If the issue persists, please report it on <link>GitHub Issues</link>."
     }
   }
