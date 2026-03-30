@@ -33,12 +33,15 @@ jobs:
           cd lumina-whisper
           bash scripts/create-dmg.sh --version ${{ github.event.inputs.version }}
 
+      - name: Rename DMG for release
+        run: cp lumina-whisper/build/LuminaWhisper-${{ github.event.inputs.version }}.dmg lumina-whisper/build/LuminaWhisper.dmg
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: v${{ github.event.inputs.version }}
           name: LuminaWhisper v${{ github.event.inputs.version }}
-          files: lumina-whisper/build/LuminaWhisper-${{ github.event.inputs.version }}.dmg
+          files: lumina-whisper/build/LuminaWhisper.dmg
           body: |
             ## LuminaWhisper v${{ github.event.inputs.version }}
 
