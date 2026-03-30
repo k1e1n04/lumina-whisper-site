@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
-const DOWNLOAD_URL = 'https://github.com/ishiiken/lumina-whisper/releases/latest/download/LuminaWhisper.dmg'
+const DOWNLOAD_URL = 'https://github.com/k1e1n04/lumina-whisper-site/releases/latest/download/LuminaWhisper.dmg'
 
 export default function Navbar() {
   const { t, i18n } = useTranslation()
@@ -20,6 +20,13 @@ export default function Navbar() {
             className="text-sm tracking-[0.05em] text-text-dim no-underline transition-colors hover:text-text-muted uppercase"
           >
             {t('nav.guide')}
+          </Link>
+
+          <Link
+            to="/release"
+            className="text-sm tracking-[0.05em] text-text-dim no-underline transition-colors hover:text-text-muted uppercase"
+          >
+            {t('nav.release')}
           </Link>
 
           <div className="flex items-center gap-0 text-xs tracking-[0.05em]">

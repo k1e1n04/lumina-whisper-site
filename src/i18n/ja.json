@@ -1,6 +1,7 @@
 {
   "nav": {
     "guide": "ガイド",
+    "release": "リリースノート",
     "download": "ダウンロード"
   },
   "hero": {
@@ -44,6 +45,28 @@
     "copyright": "© 2026 LuminaWhisper",
     "github": "GitHub",
     "guide": "ユーザーガイド"
+  },
+  "release": {
+    "title": "リリースノート",
+    "subtitle": "Release Notes",
+    "newFeatures": "新機能",
+    "bugFixes": "バグ修正",
+    "v030": {
+      "features": {
+        "whisperkitMigration": "WhisperKit への移行 — Apple Neural Engine をフル活用した高速・高精度な音声認識エンジンに刷新",
+        "streamingInference": "ストリーミング推論パイプライン — チャンクベース処理によりリアルタイムに近い応答速度を実現",
+        "clipboardFallback": "クリップボードフォールバック — テキスト自動挿入に失敗した場合でも結果をクリップボードにコピーするオプションを追加",
+        "quitButton": "設定の General タブに「終了」ボタンを追加"
+      },
+      "fixes": {
+        "removeLoginPrompt": "初回起動時のログイン項目追加プロンプトを削除",
+        "japaneseAccuracy": "日本語出力の復元と文字起こし精度の向上",
+        "cancelStreamingOnRelease": "ホットキー離放時にストリーミングタスクをキャンセルし、無限ブロックを防止",
+        "settingsCrash": "設定ウィンドウを複数回開いた際のクラッシュを修正",
+        "historyRefresh": "履歴の記録漏れとウィンドウ再表示時の更新不備を修正",
+        "eagerModelLoad": "モデル切り替え時に WhisperKit を即時ロードしてエラーを早期検出"
+      }
+    }
   },
   "guide": {
     "sidebar": {

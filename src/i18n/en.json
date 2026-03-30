@@ -1,6 +1,7 @@
 {
   "nav": {
     "guide": "Guide",
+    "release": "Release Notes",
     "download": "Download"
   },
   "hero": {
@@ -44,6 +45,28 @@
     "copyright": "© 2026 LuminaWhisper",
     "github": "GitHub",
     "guide": "User Guide"
+  },
+  "release": {
+    "title": "Release Notes",
+    "subtitle": "Release Notes",
+    "newFeatures": "New Features",
+    "bugFixes": "Bug Fixes",
+    "v030": {
+      "features": {
+        "whisperkitMigration": "Migrated to WhisperKit — new transcription engine powered by Apple Neural Engine for faster, more accurate recognition",
+        "streamingInference": "Streaming inference pipeline — chunk-based processing delivers near-real-time response",
+        "clipboardFallback": "Clipboard fallback option — copies result to clipboard when auto-insertion fails, allowing manual paste with ⌘V",
+        "quitButton": "Added Quit button to the General tab in Settings"
+      },
+      "fixes": {
+        "removeLoginPrompt": "Removed launch-at-login prompt on first launch",
+        "japaneseAccuracy": "Restored Japanese output and improved transcription accuracy",
+        "cancelStreamingOnRelease": "Cancel streaming task on hotkey release to prevent indefinite blocking",
+        "settingsCrash": "Fixed crash when opening the Settings window multiple times",
+        "historyRefresh": "Fixed history not always being recorded and window not refreshing on reopen",
+        "eagerModelLoad": "Eagerly load WhisperKit on model switch to surface errors early"
+      }
+    }
   },
   "guide": {
     "sidebar": {
