@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://k1e1n04.github.io/lumina-whisper-site/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://k1e1n04.github.io/lumina-whisper-site/release/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://k1e1n04.github.io/lumina-whisper-site/guide/install/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://k1e1n04.github.io/lumina-whisper-site/guide/setup/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://k1e1n04.github.io/lumina-whisper-site/guide/usage/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://k1e1n04.github.io/lumina-whisper-site/guide/settings/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://k1e1n04.github.io/lumina-whisper-site/guide/faq/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://k1e1n04.github.io/lumina-whisper-site/guide/troubleshoot/</loc>
+    <priority>0.7</priority>
+  </url>
+</urlset>
