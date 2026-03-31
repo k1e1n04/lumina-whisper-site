@@ -6,9 +6,14 @@
   },
   "hero": {
     "tagline": "声をテキストに、瞬時に。",
-    "subtext": "LuminaWhisper は、Mac 上でプライベートかつ高速な音声認識を実現します。",
+    "subtext": "Lumina Whisper は、Mac で高精度な音声入力を実現するアプリです。OpenAI Whisper をベースに、ローカル環境でも高速かつ高精度な文字起こしが可能です。",
     "download": "無料でダウンロード",
     "requirements": "macOS 13.0 以降 · Apple Silicon"
+  },
+  "pain": {
+    "question": "Mac の音声入力にこんな不満はありませんか？",
+    "items": ["精度が低い", "動作が遅い", "オフラインで使えない"],
+    "answer": "Lumina Whisper はその悩みを解決します。"
   },
   "features": {
     "title": "なぜ LuminaWhisper？",
