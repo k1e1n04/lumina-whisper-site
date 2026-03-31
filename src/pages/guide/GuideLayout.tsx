@@ -36,7 +36,7 @@ export default function GuideLayout() {
   return (
     <div data-testid="guide-layout" className="flex min-h-screen flex-col bg-bg">
       <Navbar />
-      <div className="mx-auto flex w-full max-w-6xl flex-1 gap-12 px-6 pt-16 py-10">
+      <div className="mx-auto flex w-full max-w-6xl flex-1 gap-12 px-6 pt-28 pb-10">
         <aside className="hidden w-48 shrink-0 md:block">
           <nav className="sticky top-24">
             {SIDEBAR_SECTIONS.map(({ groupKey, pages }) => (
