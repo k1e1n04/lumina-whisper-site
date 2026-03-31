@@ -1,4 +1,4 @@
-import { HashRouter, Navigate, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import LandingPage from './pages/LandingPage'
 import ReleasePage from './pages/ReleasePage'
 import GuideLayout from './pages/guide/GuideLayout'
@@ -36,8 +36,8 @@ export default function App({ routerless = false }: AppProps) {
     return <AppRoutes />
   }
   return (
-    <HashRouter>
+    <BrowserRouter basename="/lumina-whisper-site">
       <AppRoutes />
-    </HashRouter>
+    </BrowserRouter>
   )
 }
