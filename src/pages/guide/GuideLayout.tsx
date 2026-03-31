@@ -1,5 +1,6 @@
 import { NavLink, Outlet, useLocation, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import { useState } from 'react'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
 
@@ -70,11 +71,69 @@ export default function GuideLayout() {
         </aside>
 
         <main className="min-w-0 flex-1">
+          <MobileGuideNav />
           <Outlet />
           <GuidePageNav />
         </main>
       </div>
       <Footer />
+    </div>
+  )
+}
+
+function MobileGuideNav() {
+  const { t } = useTranslation()
+  const location = useLocation()
+  const navigate = useNavigate()
+  const [open, setOpen] = useState(false)
+
+  const currentPage = GUIDE_PAGES.find((p) => p.path === location.pathname)
+
+  return (
+    <div className="md:hidden mb-6 border border-border">
+      <button
+        onClick={() => setOpen(!open)}
+        className="w-full flex items-center justify-between px-4 py-3 text-sm text-text"
+      >
+        <span className="font-medium">
+          {currentPage ? t(`guide.sidebar.${currentPage.key}`) : t('guide.nav.menu')}
+        </span>
+        <span
+          className={`text-text-dim transition-transform duration-200 ${open ? 'rotate-180' : ''}`}
+        >
+          ▾
+        </span>
+      </button>
+      {open && (
+        <div className="border-t border-border">
+          {SIDEBAR_SECTIONS.map(({ groupKey, pages }) => (
+            <div key={groupKey} className="py-2">
+              <p className="px-4 py-1 text-xs tracking-[0.1em] text-text-dim uppercase">
+                {t(`guide.sidebar.${groupKey}`)}
+              </p>
+              {pages.map((pageKey) => {
+                const page = GUIDE_PAGES.find((p) => p.key === pageKey)
+                if (!page) return null
+                const isActive = location.pathname === page.path
+                return (
+                  <button
+                    key={pageKey}
+                    onClick={() => {
+                      navigate(page.path)
+                      setOpen(false)
+                    }}
+                    className={`w-full text-left px-4 py-2 text-sm transition-colors ${
+                      isActive ? 'font-medium text-accent' : 'text-text-muted hover:text-text'
+                    }`}
+                  >
+                    {t(`guide.sidebar.${pageKey}`)}
+                  </button>
+                )
+              })}
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   )
 }

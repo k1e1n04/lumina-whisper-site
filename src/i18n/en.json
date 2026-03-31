@@ -81,7 +81,8 @@
     },
     "nav": {
       "prev": "Previous",
-      "next": "Next"
+      "next": "Next",
+      "menu": "Guide Menu"
     },
     "install": {
       "title": "Installation",
