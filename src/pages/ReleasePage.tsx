@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import { Helmet } from 'react-helmet-async'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
@@ -24,6 +25,10 @@ export default function ReleasePage() {
 
   return (
     <div className="min-h-screen bg-bg">
+      <Helmet>
+        <title>リリースノート | Lumina Whisper</title>
+        <meta name="description" content="Lumina Whisper の更新履歴。新機能・バグ修正の詳細を版ごとに記載。" />
+      </Helmet>
       <Navbar />
 
       <main className="mx-auto max-w-3xl px-6 pt-28 pb-24">

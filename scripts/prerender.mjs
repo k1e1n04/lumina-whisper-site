@@ -4,25 +4,38 @@ import { fileURLToPath } from 'node:url'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.resolve(__dirname, '..')
+const BASE_URL = 'https://k1e1n04.github.io/lumina-whisper-site'
 
 const routes = [
-  '/',
-  '/release',
-  '/guide/install',
-  '/guide/setup',
-  '/guide/usage',
-  '/guide/settings',
-  '/guide/faq',
-  '/guide/troubleshoot',
+  { url: '/', priority: '1.0' },
+  { url: '/release', priority: '0.6' },
+  { url: '/guide/install', priority: '0.8' },
+  { url: '/guide/setup', priority: '0.8' },
+  { url: '/guide/usage', priority: '0.8' },
+  { url: '/guide/settings', priority: '0.7' },
+  { url: '/guide/faq', priority: '0.7' },
+  { url: '/guide/troubleshoot', priority: '0.7' },
 ]
 
 const template = fs.readFileSync(path.join(root, 'dist/index.html'), 'utf-8')
 const { render } = await import(path.join(root, 'dist-ssr/entry-server.js'))
 
 console.log('Pre-rendering routes...')
-for (const url of routes) {
-  const appHtml = render(url)
-  const html = template.replace('<!--ssr-outlet-->', appHtml)
+for (const { url } of routes) {
+  const { html: appHtml, helmet } = render(url)
+
+  const helmetTags = [
+    helmet.title.toString(),
+    helmet.meta.toString(),
+    helmet.link.toString(),
+    helmet.script.toString(),
+  ]
+    .filter(Boolean)
+    .join('\n    ')
+
+  const html = template
+    .replace('<!--ssr-outlet-->', appHtml)
+    .replace('<!--helmet-tags-->', helmetTags)
 
   const outFile =
     url === '/'
@@ -33,6 +46,22 @@ for (const url of routes) {
   fs.writeFileSync(outFile, html)
   console.log(`  ✓ ${url}`)
 }
+
+// Generate sitemap.xml
+const sitemapEntries = routes
+  .map(
+    ({ url, priority }) =>
+      `  <url>\n    <loc>${BASE_URL}${url === '/' ? '/' : url + '/'}</loc>\n    <priority>${priority}</priority>\n  </url>`,
+  )
+  .join('\n')
+
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${sitemapEntries}
+</urlset>`
+
+fs.writeFileSync(path.join(root, 'dist/sitemap.xml'), sitemap)
+console.log('  ✓ sitemap.xml')
 
 // Clean up SSR build artifacts
 fs.rmSync(path.join(root, 'dist-ssr'), { recursive: true })

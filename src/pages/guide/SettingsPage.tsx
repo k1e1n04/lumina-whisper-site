@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import { Helmet } from 'react-helmet-async'
 
 const SETTING_KEYS = ['model', 'language', 'hotkey', 'llm', 'clipboardFallback'] as const
 
@@ -6,6 +7,13 @@ export default function SettingsPage() {
   const { t } = useTranslation()
   return (
     <article data-testid="guide-settings" className="max-w-none prose">
+      <Helmet>
+        <title>設定項目 | Lumina Whisper ガイド</title>
+        <meta
+          name="description"
+          content="Lumina Whisper の設定項目一覧。モデル選択・認識言語・ホットキー・LLM後処理の使い方。"
+        />
+      </Helmet>
       <h1 className="mb-6 text-3xl font-bold text-accent">{t('guide.settings.title')}</h1>
       <p className="mb-6 text-text-muted">{t('guide.settings.openDesc')}</p>
 

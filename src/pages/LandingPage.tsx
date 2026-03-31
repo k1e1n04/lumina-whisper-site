@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import { Helmet } from 'react-helmet-async'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
@@ -18,6 +19,56 @@ export default function LandingPage() {
 
   return (
     <div data-testid="landing-page" className="min-h-screen bg-bg">
+      <Helmet>
+        <title>Mac 音声入力アプリ — オフライン・高精度 | Lumina Whisper</title>
+        <meta
+          name="description"
+          content="Lumina Whisper は Mac 専用の音声入力アプリ。完全ローカル処理でプライバシーを守りながら高精度な文字起こしを実現。Apple Silicon 最適化、インターネット不要で高速動作。"
+        />
+        <meta property="og:title" content="Mac 音声入力アプリ — オフライン・高精度 | Lumina Whisper" />
+        <meta
+          property="og:description"
+          content="Lumina Whisper は Mac 専用の音声入力アプリ。完全ローカル処理でプライバシーを守りながら高精度な文字起こしを実現。Apple Silicon 最適化、インターネット不要で高速動作。"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://k1e1n04.github.io/lumina-whisper-site/" />
+        <meta property="og:image" content="https://k1e1n04.github.io/lumina-whisper-site/ogp.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Mac 音声入力アプリ — オフライン・高精度 | Lumina Whisper" />
+        <meta
+          name="twitter:description"
+          content="Lumina Whisper は Mac 専用の音声入力アプリ。完全ローカル処理でプライバシーを守りながら高精度な文字起こしを実現。Apple Silicon 最適化、インターネット不要で高速動作。"
+        />
+        <meta name="twitter:image" content="https://k1e1n04.github.io/lumina-whisper-site/ogp.png" />
+        <link rel="canonical" href="https://k1e1n04.github.io/lumina-whisper-site/" />
+        <link rel="alternate" hrefLang="ja" href="https://k1e1n04.github.io/lumina-whisper-site/" />
+        <link rel="alternate" hrefLang="en" href="https://k1e1n04.github.io/lumina-whisper-site/" />
+        <link rel="alternate" hrefLang="x-default" href="https://k1e1n04.github.io/lumina-whisper-site/" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'SoftwareApplication',
+            name: 'Lumina Whisper',
+            operatingSystem: 'macOS 13.0+',
+            applicationCategory: 'UtilitiesApplication',
+            offers: {
+              '@type': 'Offer',
+              price: '0',
+              priceCurrency: 'JPY',
+            },
+            description:
+              'Mac 専用の音声入力アプリ。完全ローカル処理でプライバシーを守りながら高精度な文字起こしを実現。Apple Silicon 最適化。',
+            url: 'https://k1e1n04.github.io/lumina-whisper-site/',
+            downloadUrl:
+              'https://github.com/k1e1n04/lumina-whisper-site/releases/latest/download/LuminaWhisper.dmg',
+            softwareVersion: '0.3.0',
+            author: {
+              '@type': 'Person',
+              name: 'KenIshii',
+            },
+          })}
+        </script>
+      </Helmet>
       <Navbar />
 
       {/* Hero */}

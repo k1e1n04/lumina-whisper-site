@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import { Helmet } from 'react-helmet-async'
 
 export default function TroubleshootPage() {
   const { t } = useTranslation()
@@ -40,6 +41,13 @@ export default function TroubleshootPage() {
 
   return (
     <article data-testid="guide-troubleshoot" className="max-w-none prose">
+      <Helmet>
+        <title>トラブルシューティング | Lumina Whisper ガイド</title>
+        <meta
+          name="description"
+          content="Lumina Whisper のトラブル対処法。マイク未認識・ホットキー無効・テキスト未挿入の解決手順。"
+        />
+      </Helmet>
       <h1 className="mb-6 text-3xl font-bold text-accent">{t('guide.troubleshoot.title')}</h1>
 
       <div className="space-y-6">

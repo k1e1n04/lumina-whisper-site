@@ -1,9 +1,17 @@
 import { Trans, useTranslation } from 'react-i18next'
+import { Helmet } from 'react-helmet-async'
 
 export default function InstallPage() {
   const { t } = useTranslation()
   return (
     <article data-testid="guide-install" className="max-w-none prose">
+      <Helmet>
+        <title>インストール | Lumina Whisper ガイド</title>
+        <meta
+          name="description"
+          content="macOS 13 以降の Apple Silicon Mac への Lumina Whisper インストール手順。DMGダウンロードからマイク権限設定まで。"
+        />
+      </Helmet>
       <h1 className="mb-6 text-3xl font-bold text-accent">{t('guide.install.title')}</h1>
 
       <h2 className="mt-8 mb-3 text-xl font-semibold text-text">{t('guide.install.section1')}</h2>
