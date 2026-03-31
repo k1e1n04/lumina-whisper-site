@@ -1,6 +1,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { buildHelmetTags, LANDING_JSON_LD } from './seo-data.mjs'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.resolve(__dirname, '..')
@@ -22,16 +23,10 @@ const { render } = await import(path.join(root, 'dist-ssr/entry-server.js'))
 
 console.log('Pre-rendering routes...')
 for (const { url } of routes) {
-  const { html: appHtml, helmet } = render(url)
+  const { html: appHtml } = render(url)
 
-  const helmetTags = [
-    helmet.title.toString(),
-    helmet.meta.toString(),
-    helmet.link.toString(),
-    helmet.script.toString(),
-  ]
-    .filter(Boolean)
-    .join('\n    ')
+  const jsonLd = url === '/' ? LANDING_JSON_LD : null
+  const helmetTags = buildHelmetTags(url, jsonLd)
 
   const html = template
     .replace('<!--ssr-outlet-->', appHtml)
