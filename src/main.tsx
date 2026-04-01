@@ -10,7 +10,7 @@ const container = document.getElementById('root')!
 const app = (
   <StrictMode>
     <HelmetProvider>
-      <BrowserRouter basename="/lumina-whisper-site">
+      <BrowserRouter basename="/">
         <App routerless />
       </BrowserRouter>
     </HelmetProvider>

@@ -36,7 +36,7 @@ export default function App({ routerless = false }: AppProps) {
     return <AppRoutes />
   }
   return (
-    <BrowserRouter basename="/lumina-whisper-site">
+    <BrowserRouter basename="/">
       <AppRoutes />
     </BrowserRouter>
   )

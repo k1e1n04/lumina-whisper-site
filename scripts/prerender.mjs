@@ -5,7 +5,7 @@ import { buildHelmetTags, LANDING_JSON_LD } from './seo-data.mjs'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.resolve(__dirname, '..')
-const BASE_URL = 'https://k1e1n04.github.io/lumina-whisper-site'
+const BASE_URL = 'https://lumina-whisper.com'
 
 const routes = [
   { url: '/', priority: '1.0' },

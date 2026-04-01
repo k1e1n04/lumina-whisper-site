@@ -1,4 +1,4 @@
-const BASE_URL = 'https://k1e1n04.github.io/lumina-whisper-site'
+const BASE_URL = 'https://lumina-whisper.com'
 
 export const SEO_DATA = {
   '/': {
