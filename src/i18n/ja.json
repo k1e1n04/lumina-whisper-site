@@ -19,7 +19,7 @@
     "title": "なぜ LuminaWhisper？",
     "hotkey": {
       "title": "ホットキー一発",
-      "desc": "Option+Space でいつでも即座に音声入力を開始。アクティブなウィンドウへ直接テキストを挿入します。"
+      "desc": "Fn キーでいつでも即座に音声入力を開始。アクティブなウィンドウへ直接テキストを挿入します。"
     },
     "local": {
       "title": "完全ローカル処理",
@@ -37,9 +37,9 @@
   "howToUse": {
     "title": "使い方",
     "step1": { "label": "Step 1", "text": "入力したい場所にカーソルを置く" },
-    "step2": { "label": "Step 2", "text": "Option+Space を押して録音開始" },
+    "step2": { "label": "Step 2", "text": "Fn を押して録音開始" },
     "step3": { "label": "Step 3", "text": "話す" },
-    "step4": { "label": "Step 4", "text": "Option+Space で停止 → テキストが挿入される" }
+    "step4": { "label": "Step 4", "text": "Fn で停止 → テキストが挿入される" }
   },
   "cta": {
     "title": "今すぐ始める",
@@ -55,21 +55,18 @@
     "subtitle": "Release Notes",
     "newFeatures": "新機能",
     "bugFixes": "バグ修正",
-    "v030": {
+    "v010": {
       "features": {
-        "whisperkitMigration": "WhisperKit への移行 — Apple Neural Engine をフル活用した高速・高精度な音声認識エンジンに刷新",
-        "streamingInference": "ストリーミング推論パイプライン — チャンクベース処理によりリアルタイムに近い応答速度を実現",
-        "clipboardFallback": "クリップボードフォールバック — テキスト自動挿入に失敗した場合でも結果をクリップボードにコピーするオプションを追加",
-        "quitButton": "設定の General タブに「終了」ボタンを追加"
+        "hotkeyInput": "Fn ホットキーによるワンキー音声入力 — アクティブなウィンドウへテキストを直接挿入",
+        "whisperkitEngine": "WhisperKit 搭載の音声認識エンジン — Apple Neural Engine をフル活用した高速・高精度な文字起こし",
+        "textInsertion": "テキスト直接挿入とクリップボードフォールバック — 挿入に失敗した場合でも ⌘V で手動貼り付け可能",
+        "modelSelection": "モデル選択（tiny / base / small / medium）と言語設定（auto / ja / en）",
+        "llmPostProcessing": "ローカル LLM による後処理 — フィラー自動除去・カスタム指示・アプリ別指示に対応",
+        "replacements": "テキスト置換ルール — 文字起こし後のテキストに対して任意の置換を自動適用",
+        "dictionary": "単語辞書 — 固有名詞を登録して Whisper の認識精度を向上",
+        "history": "文字起こし履歴 — 過去の入力結果を一覧表示・再利用"
       },
-      "fixes": {
-        "removeLoginPrompt": "初回起動時のログイン項目追加プロンプトを削除",
-        "japaneseAccuracy": "日本語出力の復元と文字起こし精度の向上",
-        "cancelStreamingOnRelease": "ホットキー離放時にストリーミングタスクをキャンセルし、無限ブロックを防止",
-        "settingsCrash": "設定ウィンドウを複数回開いた際のクラッシュを修正",
-        "historyRefresh": "履歴の記録漏れとウィンドウ再表示時の更新不備を修正",
-        "eagerModelLoad": "モデル切り替え時に WhisperKit を即時ロードしてエラーを早期検出"
-      }
+      "fixes": {}
     }
   },
   "guide": {
@@ -110,7 +107,7 @@
       "menubarDesc": "アプリを起動するとメニューバーに LuminaWhisper のアイコンが表示されます。アイコンをクリックして設定画面を開けます。",
       "hotkeyTitle": "ホットキーの確認",
       "hotkeyDescPre": "デフォルトのホットキーは",
-      "hotkeyDescPost": "です。設定画面の General タブから Option+Space または Fn に変更できます。",
+      "hotkeyDescPost": "です。",
       "modelTitle": "モデルのダウンロード",
       "modelDesc": "初回起動時に small モデルの自動ダウンロードが始まります。設定画面の General タブから tiny / base / medium への変更も可能です。ダウンロード中も音声入力は利用できます。"
     },
@@ -119,11 +116,11 @@
       "stepsTitle": "音声入力の手順",
       "step1Label": "テキスト入力フィールドにフォーカスを当てる",
       "step1Desc": "テキストを入力したい場所（テキストエディタ、メール本文など）をクリックします。",
-      "step2Label": "Option+Space を押す",
+      "step2Label": "Fn を押す",
       "step2Desc": "録音が開始されます。メニューバーのアイコンが点滅して録音中を示します。",
       "step3Label": "話す",
       "step3Desc": "はっきりした声で話してください。句読点は自動的に挿入されます。",
-      "step4Label": "再度 Option+Space を押す",
+      "step4Label": "再度 Fn を押す",
       "step4Desc": "録音を停止します。認識されたテキストが自動的にカーソル位置に挿入されます。",
       "tipLabel": "ヒント:",
       "tipDesc": "静かな環境での使用が最も精度が高くなります。外部マイクの使用もお勧めです。"
@@ -144,8 +141,8 @@
       },
       "hotkey": {
         "name": "ホットキー",
-        "default": "Option+Space",
-        "desc": "音声入力の開始・停止に使うキーボードショートカット。Option+Space または Fn から選択できます。"
+        "default": "Fn",
+        "desc": "音声入力の開始・停止に使うキーボードショートカット。"
       },
       "llm": {
         "name": "LLM 後処理",

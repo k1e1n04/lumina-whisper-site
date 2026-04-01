@@ -20,7 +20,7 @@ export default function SetupPage() {
       <h2 className="mt-8 mb-3 text-xl font-semibold text-text">{t('guide.setup.hotkeyTitle')}</h2>
       <p className="mb-4 text-text-muted">
         {t('guide.setup.hotkeyDescPre')}{' '}
-        <kbd className="rounded bg-surface-2 px-2 py-0.5 font-mono text-sm">Option+Space</kbd>
+        <kbd className="rounded bg-surface-2 px-2 py-0.5 font-mono text-sm">Fn</kbd>
         {t('guide.setup.hotkeyDescPost')}
       </p>
 

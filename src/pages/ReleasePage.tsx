@@ -5,18 +5,20 @@ import Footer from '../components/Footer'
 
 const RELEASES = [
   {
-    version: '0.3.0',
-    date: '2026-03-30',
-    key: 'v030',
-    features: ['whisperkitMigration', 'streamingInference', 'clipboardFallback', 'quitButton'],
-    fixes: [
-      'removeLoginPrompt',
-      'japaneseAccuracy',
-      'cancelStreamingOnRelease',
-      'settingsCrash',
-      'historyRefresh',
-      'eagerModelLoad',
+    version: '0.1.0',
+    date: '2026-04-02',
+    key: 'v010',
+    features: [
+      'hotkeyInput',
+      'whisperkitEngine',
+      'textInsertion',
+      'modelSelection',
+      'llmPostProcessing',
+      'replacements',
+      'dictionary',
+      'history',
     ],
+    fixes: [] as string[],
   },
 ] as const
 

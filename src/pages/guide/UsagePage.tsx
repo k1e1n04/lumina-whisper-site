@@ -17,7 +17,7 @@ export default function UsagePage() {
         <title>基本的な使い方 | Lumina Whisper ガイド</title>
         <meta
           name="description"
-          content="Option+Space を押すだけで音声入力を開始。テキスト入力フィールドへの自動挿入まで4ステップで解説。"
+          content="Fn キーを押すだけで音声入力を開始。テキスト入力フィールドへの自動挿入まで4ステップで解説。"
         />
       </Helmet>
       <h1 className="mb-6 text-3xl font-bold text-accent">{t('guide.usage.title')}</h1>

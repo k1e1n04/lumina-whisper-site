@@ -19,7 +19,7 @@
     "title": "Why LuminaWhisper?",
     "hotkey": {
       "title": "One Hotkey",
-      "desc": "Press Option+Space anytime to start voice input. Text is inserted directly into the active window."
+      "desc": "Press Fn anytime to start voice input. Text is inserted directly into the active window."
     },
     "local": {
       "title": "Fully Local",
@@ -37,9 +37,9 @@
   "howToUse": {
     "title": "How to Use",
     "step1": { "label": "Step 1", "text": "Place the cursor where you want to type" },
-    "step2": { "label": "Step 2", "text": "Press Option+Space to start recording" },
+    "step2": { "label": "Step 2", "text": "Press Fn to start recording" },
     "step3": { "label": "Step 3", "text": "Speak" },
-    "step4": { "label": "Step 4", "text": "Press Option+Space to stop → text is inserted" }
+    "step4": { "label": "Step 4", "text": "Press Fn to stop → text is inserted" }
   },
   "cta": {
     "title": "Get Started Now",
@@ -55,21 +55,18 @@
     "subtitle": "Release Notes",
     "newFeatures": "New Features",
     "bugFixes": "Bug Fixes",
-    "v030": {
+    "v010": {
       "features": {
-        "whisperkitMigration": "Migrated to WhisperKit — new transcription engine powered by Apple Neural Engine for faster, more accurate recognition",
-        "streamingInference": "Streaming inference pipeline — chunk-based processing delivers near-real-time response",
-        "clipboardFallback": "Clipboard fallback option — copies result to clipboard when auto-insertion fails, allowing manual paste with ⌘V",
-        "quitButton": "Added Quit button to the General tab in Settings"
+        "hotkeyInput": "One-key voice input with Fn — text inserted directly into the active window",
+        "whisperkitEngine": "WhisperKit-powered transcription engine — fast, accurate recognition using Apple Neural Engine",
+        "textInsertion": "Direct text insertion with clipboard fallback — paste manually with ⌘V if auto-insertion fails",
+        "modelSelection": "Model selection (tiny / base / small / medium) and language setting (auto / ja / en)",
+        "llmPostProcessing": "Local LLM post-processing — automatic filler removal with custom and per-app instructions",
+        "replacements": "Text replacement rules — automatically apply custom substitutions to transcribed text",
+        "dictionary": "Word dictionary — register proper nouns to improve Whisper recognition accuracy",
+        "history": "Transcription history — browse and reuse past results"
       },
-      "fixes": {
-        "removeLoginPrompt": "Removed launch-at-login prompt on first launch",
-        "japaneseAccuracy": "Restored Japanese output and improved transcription accuracy",
-        "cancelStreamingOnRelease": "Cancel streaming task on hotkey release to prevent indefinite blocking",
-        "settingsCrash": "Fixed crash when opening the Settings window multiple times",
-        "historyRefresh": "Fixed history not always being recorded and window not refreshing on reopen",
-        "eagerModelLoad": "Eagerly load WhisperKit on model switch to surface errors early"
-      }
+      "fixes": {}
     }
   },
   "guide": {
@@ -110,7 +107,7 @@
       "menubarDesc": "After launching the app, the LuminaWhisper icon appears in the menu bar. Click it to open Settings.",
       "hotkeyTitle": "Checking the Hotkey",
       "hotkeyDescPre": "The default hotkey is",
-      "hotkeyDescPost": ". You can switch to Option+Space or Fn in the General tab of Settings.",
+      "hotkeyDescPost": ".",
       "modelTitle": "Model Download",
       "modelDesc": "On first launch, the small model downloads automatically. You can switch to tiny, base, or medium in the General tab of Settings. Voice input is available even while a model is downloading."
     },
@@ -119,11 +116,11 @@
       "stepsTitle": "Voice Input Steps",
       "step1Label": "Focus a text input field",
       "step1Desc": "Click where you want to type (a text editor, email body, etc.).",
-      "step2Label": "Press Option+Space",
+      "step2Label": "Press Fn",
       "step2Desc": "Recording starts. The menu bar icon blinks to indicate recording.",
       "step3Label": "Speak",
       "step3Desc": "Speak clearly. Punctuation is inserted automatically.",
-      "step4Label": "Press Option+Space again",
+      "step4Label": "Press Fn again",
       "step4Desc": "Recording stops. The recognized text is automatically inserted at the cursor position.",
       "tipLabel": "Tip:",
       "tipDesc": "Accuracy is highest in quiet environments. Using an external microphone is also recommended."
@@ -144,8 +141,8 @@
       },
       "hotkey": {
         "name": "Hotkey",
-        "default": "Option+Space",
-        "desc": "The keyboard shortcut to start/stop voice input. Choose Option+Space or Fn."
+        "default": "Fn",
+        "desc": "The keyboard shortcut to start/stop voice input."
       },
       "llm": {
         "name": "LLM Post-Processing",
