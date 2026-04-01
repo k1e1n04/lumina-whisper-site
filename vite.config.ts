@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  base: '/lumina-whisper-site/',
+  base: '/',
   plugins: [tailwindcss(), react()],
   test: {
     environment: 'jsdom',
