@@ -10,6 +10,7 @@ const BASE_URL = 'https://lumina-whisper.com'
 const routes = [
   { url: '/', priority: '1.0' },
   { url: '/release', priority: '0.6' },
+  { url: '/privacy', priority: '0.3' },
   { url: '/guide/install', priority: '0.8' },
   { url: '/guide/setup', priority: '0.8' },
   { url: '/guide/usage', priority: '0.8' },

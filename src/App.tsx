@@ -1,6 +1,7 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import LandingPage from './pages/LandingPage'
 import ReleasePage from './pages/ReleasePage'
+import PrivacyPage from './pages/PrivacyPage'
 import GuideLayout from './pages/guide/GuideLayout'
 import InstallPage from './pages/guide/InstallPage'
 import SetupPage from './pages/guide/SetupPage'
@@ -18,6 +19,7 @@ function AppRoutes() {
     <Routes>
       <Route path="/" element={<LandingPage />} />
       <Route path="/release" element={<ReleasePage />} />
+      <Route path="/privacy" element={<PrivacyPage />} />
       <Route path="/guide" element={<Navigate to="/guide/install" replace />} />
       <Route path="/guide" element={<GuideLayout />}>
         <Route path="install" element={<InstallPage />} />

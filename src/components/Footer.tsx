@@ -15,6 +15,12 @@ export default function Footer() {
           >
             {t('footer.guide')}
           </Link>
+          <Link
+            to="/privacy"
+            className="text-xs tracking-[0.05em] text-text-dim no-underline transition-colors hover:text-text-muted uppercase"
+          >
+            Privacy
+          </Link>
         </div>
       </div>
     </footer>
