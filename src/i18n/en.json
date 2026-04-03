@@ -55,6 +55,15 @@
     "subtitle": "Release Notes",
     "newFeatures": "New Features",
     "bugFixes": "Bug Fixes",
+    "v020": {
+      "features": {
+        "onboardingWizard": "First-launch setup wizard — guided flow for granting Accessibility and Microphone permissions and configuring your hotkey",
+        "warmupOverlay": "Model warmup screen — displays progress while the model initializes on first use and safely blocks recording until ready"
+      },
+      "fixes": {
+        "micPermissionOnLaunch": "Microphone permission is now requested at launch — fixes the issue where the permission dialog appeared during the first recording"
+      }
+    },
     "v010": {
       "features": {
         "hotkeyInput": "One-key voice input with Fn — text inserted directly into the active window",
