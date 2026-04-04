@@ -1,12 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
-const PHRASES = [
-  'ログイン機能のバグを修正して',
-  'このコンポーネントにテストを書いて',
-  'APIレスポンスの型定義を追加して',
-]
-
 const TIMINGS = [1000, 2800, 4600]
 const LOOP_DELAY = 4000
 
@@ -14,6 +8,7 @@ const BAR_HEIGHTS = [20, 26, 20, 14, 22, 18, 24, 16, 20, 12, 22, 10]
 
 export default function AppDemoSection() {
   const { t } = useTranslation()
+  const phrases = t('demo.phrases', { returnObjects: true }) as string[]
   const [visiblePhrases, setVisiblePhrases] = useState(0)
   const timeoutsRef = useRef<ReturnType<typeof setTimeout>[]>([])
 
@@ -152,7 +147,7 @@ export default function AppDemoSection() {
                 <div style={{ padding: '16px 16px 88px 16px', minHeight: 120 }}>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
                     <span style={{ color: '#565f89' }}>›</span>
-                    {PHRASES.map((phrase, i) => {
+                    {phrases.map((phrase, i) => {
                       const visible = i < visiblePhrases
                       const isCurrent = i === visiblePhrases - 1
                       return (
@@ -166,9 +161,13 @@ export default function AppDemoSection() {
                             paddingLeft: 16,
                             display: 'flex',
                             alignItems: 'center',
+                            overflow: 'hidden',
+                            maxWidth: '100%',
                           }}
                         >
-                          {phrase}
+                          <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', flexShrink: 1, minWidth: 0 }}>
+                            {phrase}
+                          </span>
                           {isCurrent && (
                             <span
                               style={{

@@ -56,7 +56,12 @@
     "desc": "Le texte est inséré directement à la position du curseur dans n'importe quelle application. Pas de presse-papiers — une seule touche suffit.",
     "step1": "Placez le curseur où vous souhaitez saisir du texte",
     "step2": "Appuyez sur Fn et parlez",
-    "step3": "Appuyez à nouveau sur Fn → le texte est inséré"
+    "step3": "Appuyez à nouveau sur Fn → le texte est inséré",
+    "phrases": [
+      "Corrige le bug de connexion",
+      "Écris des tests pour ce composant",
+      "Ajoute les types TypeScript pour l'API"
+    ]
   },
   "stats": {
     "label": "Why Lumina Whisper",

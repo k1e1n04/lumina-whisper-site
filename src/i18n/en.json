@@ -56,7 +56,12 @@
     "desc": "Text is inserted directly at the cursor position in any app. No clipboard needed — one key press does it all.",
     "step1": "Place the cursor where you want to type",
     "step2": "Press Fn and speak",
-    "step3": "Press Fn again → text is inserted"
+    "step3": "Press Fn again → text is inserted",
+    "phrases": [
+      "Fix the login bug",
+      "Write tests for this component",
+      "Add TypeScript types for the API"
+    ]
   },
   "stats": {
     "label": "Why Lumina Whisper",

@@ -56,7 +56,12 @@
     "desc": "Text wird direkt an der Cursorposition in jede App eingefügt. Kein Zwischenablage nötig — eine Taste genügt.",
     "step1": "Cursor an die gewünschte Stelle setzen",
     "step2": "Fn drücken und sprechen",
-    "step3": "Fn erneut drücken → Text wird eingefügt"
+    "step3": "Fn erneut drücken → Text wird eingefügt",
+    "phrases": [
+      "Behebe den Login-Bug",
+      "Schreib Tests für die Komponente",
+      "Füge Typen für die API hinzu"
+    ]
   },
   "stats": {
     "label": "Why Lumina Whisper",
