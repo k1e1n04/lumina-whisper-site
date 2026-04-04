@@ -1,14 +1,37 @@
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 
 const DOWNLOAD_URL = 'https://github.com/k1e1n04/lumina-whisper-site/releases/latest/download/LuminaWhisper.dmg'
+
+const LANGUAGES = [
+  { code: 'ja', label: '日本語' },
+  { code: 'en', label: 'English' },
+  { code: 'zh', label: '中文' },
+  { code: 'ko', label: '한국어' },
+  { code: 'fr', label: 'Français' },
+  { code: 'de', label: 'Deutsch' },
+] as const
 
 export default function Navbar() {
   const { t, i18n } = useTranslation()
   const [menuOpen, setMenuOpen] = useState(false)
+  const [langOpen, setLangOpen] = useState(false)
+  const langRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (langRef.current && !langRef.current.contains(e.target as Node)) {
+        setLangOpen(false)
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [])
 
   const close = () => setMenuOpen(false)
+
+  const currentLang = LANGUAGES.find((l) => l.code === i18n.language) ?? LANGUAGES[0]
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-white/95 backdrop-blur">
@@ -34,24 +57,37 @@ export default function Navbar() {
             {t('nav.release')}
           </Link>
 
-          <div className="flex items-center gap-0 text-xs tracking-[0.05em]">
+          <div className="relative" ref={langRef}>
             <button
-              onClick={() => i18n.changeLanguage('ja')}
-              className={`px-2 py-1 transition-colors ${
-                i18n.language === 'ja' ? 'text-accent' : 'text-text-dim hover:text-text-muted'
-              }`}
+              onClick={() => setLangOpen(!langOpen)}
+              className="flex items-center gap-1 px-2 py-1 text-xs tracking-[0.05em] text-text-dim transition-colors hover:text-text-muted"
             >
-              JA
+              <span>{currentLang.code.toUpperCase()}</span>
+              <svg
+                className={`h-3 w-3 transition-transform duration-150 ${langOpen ? 'rotate-180' : ''}`}
+                viewBox="0 0 12 12"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+              >
+                <path d="M2 4l4 4 4-4" />
+              </svg>
             </button>
-            <span className="text-border">/</span>
-            <button
-              onClick={() => i18n.changeLanguage('en')}
-              className={`px-2 py-1 transition-colors ${
-                i18n.language === 'en' ? 'text-accent' : 'text-text-dim hover:text-text-muted'
-              }`}
-            >
-              EN
-            </button>
+            {langOpen && (
+              <div className="absolute right-0 top-full mt-1 min-w-[110px] border border-border bg-white shadow-sm">
+                {LANGUAGES.map(({ code, label }) => (
+                  <button
+                    key={code}
+                    onClick={() => { i18n.changeLanguage(code); setLangOpen(false) }}
+                    className={`w-full px-3 py-2 text-left text-xs tracking-[0.03em] transition-colors hover:bg-surface ${
+                      i18n.language === code ? 'text-accent' : 'text-text-muted'
+                    }`}
+                  >
+                    {label}
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
 
           <a
@@ -104,24 +140,18 @@ export default function Navbar() {
           >
             {t('nav.release')}
           </Link>
-          <div className="flex items-center gap-0 text-xs tracking-[0.05em]">
-            <button
-              onClick={() => i18n.changeLanguage('ja')}
-              className={`px-2 py-1 transition-colors ${
-                i18n.language === 'ja' ? 'text-accent' : 'text-text-dim hover:text-text-muted'
-              }`}
-            >
-              JA
-            </button>
-            <span className="text-border">/</span>
-            <button
-              onClick={() => i18n.changeLanguage('en')}
-              className={`px-2 py-1 transition-colors ${
-                i18n.language === 'en' ? 'text-accent' : 'text-text-dim hover:text-text-muted'
-              }`}
-            >
-              EN
-            </button>
+          <div className="flex flex-wrap gap-x-1 gap-y-1">
+            {LANGUAGES.map(({ code, label }) => (
+              <button
+                key={code}
+                onClick={() => { i18n.changeLanguage(code); close() }}
+                className={`px-2 py-1 text-xs tracking-[0.03em] transition-colors ${
+                  i18n.language === code ? 'text-accent' : 'text-text-dim hover:text-text-muted'
+                }`}
+              >
+                {label}
+              </button>
+            ))}
           </div>
           <a
             href={DOWNLOAD_URL}
