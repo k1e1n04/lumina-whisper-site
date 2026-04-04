@@ -52,7 +52,7 @@
   },
   "demo": {
     "label": "How it works",
-    "title": "Voice input, right inside Claude Code",
+    "title": "Voice input, in any app",
     "desc": "Text is inserted directly at the cursor position in any app. No clipboard needed — one key press does it all.",
     "step1": "Place the cursor where you want to type",
     "step2": "Press Fn and speak",

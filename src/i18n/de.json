@@ -52,7 +52,7 @@
   },
   "demo": {
     "label": "How it works",
-    "title": "Sprachbefehle direkt in Claude Code",
+    "title": "Spracheingabe in jeder App",
     "desc": "Text wird direkt an der Cursorposition in jede App eingefügt. Kein Zwischenablage nötig — eine Taste genügt.",
     "step1": "Cursor an die gewünschte Stelle setzen",
     "step2": "Fn drücken und sprechen",

@@ -52,7 +52,7 @@
   },
   "demo": {
     "label": "How it works",
-    "title": "Donnez des instructions vocales à Claude Code",
+    "title": "Dictez dans n'importe quelle application",
     "desc": "Le texte est inséré directement à la position du curseur dans n'importe quelle application. Pas de presse-papiers — une seule touche suffit.",
     "step1": "Placez le curseur où vous souhaitez saisir du texte",
     "step2": "Appuyez sur Fn et parlez",
