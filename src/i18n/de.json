@@ -8,7 +8,7 @@
     "tagline": "Sprache zu Text, sofort.",
     "subtext": "Lumina Whisper ist eine Mac-App für hochpräzise Spracheingabe. Basierend auf OpenAI Whisper bietet sie schnelle und genaue Transkription vollständig lokal.",
     "download": "Kostenlos herunterladen",
-    "requirements": "macOS 13.0 oder neuer · Apple Silicon"
+    "requirements": "macOS 14.0 oder neuer · Apple Silicon"
   },
   "pain": {
     "question": "Diese Probleme bei der Spracheingabe auf dem Mac kennen Sie?",
@@ -48,7 +48,7 @@
   "cta": {
     "title": "Jetzt loslegen",
     "button": ".dmg herunterladen",
-    "requirements": "macOS 13.0 oder neuer · Apple Silicon · Kostenlos"
+    "requirements": "macOS 14.0 oder neuer · Apple Silicon · Kostenlos"
   },
   "footer": {
     "copyright": "© 2026 LuminaWhisper",
@@ -119,7 +119,7 @@
       "micDesc1": "Beim ersten Start erscheint ein Dialog, der Mikrofonzugriff anfragt. Klicken Sie auf OK.",
       "micDesc2": "Um die Berechtigung später zu ändern, gehen Sie zu Systemeinstellungen → Datenschutz & Sicherheit → Mikrofon und aktivieren Sie LuminaWhisper.",
       "requirementsLabel": "Systemvoraussetzungen:",
-      "requirementsValue": "macOS 13.0 (Ventura) oder neuer · Apple Silicon (M1 oder neuer)"
+      "requirementsValue": "macOS 14.0 (Sonoma) oder neuer · Apple Silicon (M1 oder neuer)"
     },
     "setup": {
       "title": "Ersteinrichtung",
@@ -178,7 +178,7 @@
     "faq": {
       "title": "FAQ",
       "q1": "Kann ich es auf macOS 12 (Monterey) oder früher verwenden?",
-      "a1": "Nein. LuminaWhisper erfordert macOS 13 (Ventura) oder neuer auf einem Apple Silicon Mac.",
+      "a1": "Nein. LuminaWhisper erfordert macOS 14 (Sonoma) oder neuer auf einem Apple Silicon Mac.",
       "q2": "Wird Intel Mac unterstützt?",
       "a2": "Derzeit ist es ausschließlich für Apple Silicon (M1 oder neuer). Es gibt keine Pläne für Intel Mac-Unterstützung.",
       "q3": "Wohin werden meine Audiodaten gesendet?",
@@ -199,7 +199,7 @@
       "issue2Step2": "LuminaWhisper zur Erlaubnisliste hinzufügen (+ Schaltfläche verwenden, falls nicht vorhanden)",
       "issue2Step3": "Mac neu starten",
       "issue3Title": "App startet nicht",
-      "issue3Step1": "Prüfen, dass macOS 13 oder neuer auf Apple Silicon verwendet wird",
+      "issue3Step1": "Prüfen, dass macOS 14 oder neuer auf Apple Silicon verwendet wird",
       "issue3Step2": "Prüfen, dass die App unter Systemeinstellungen → Datenschutz & Sicherheit ausgeführt werden darf",
       "issue3Step3": "App löschen und neu installieren",
       "issue4Title": "Text wird nicht eingefügt",

@@ -8,7 +8,7 @@
     "tagline": "声をテキストに、瞬時に。",
     "subtext": "Lumina Whisper は、Mac で高精度な音声入力を実現するアプリです。OpenAI Whisper をベースに、ローカル環境でも高速かつ高精度な文字起こしが可能です。",
     "download": "無料でダウンロード",
-    "requirements": "macOS 13.0 以降 · Apple Silicon"
+    "requirements": "macOS 14.0 以降 · Apple Silicon"
   },
   "pain": {
     "question": "Mac の音声入力にこんな不満はありませんか？",
@@ -48,7 +48,7 @@
   "cta": {
     "title": "今すぐ始める",
     "button": ".dmg をダウンロード",
-    "requirements": "macOS 13.0 以降 · Apple Silicon · 無料"
+    "requirements": "macOS 14.0 以降 · Apple Silicon · 無料"
   },
   "footer": {
     "copyright": "© 2026 LuminaWhisper",
@@ -119,7 +119,7 @@
       "micDesc1": "初回起動時にマイクへのアクセス許可を求めるダイアログが表示されます。「OK」をクリックしてください。",
       "micDesc2": "権限を後から変更する場合は、「システム設定」→「プライバシーとセキュリティ」→「マイク」から LuminaWhisper を有効にします。",
       "requirementsLabel": "必要環境:",
-      "requirementsValue": "macOS 13.0 (Ventura) 以降 · Apple Silicon (M1 以降)"
+      "requirementsValue": "macOS 14.0 (Sonoma) 以降 · Apple Silicon (M1 以降)"
     },
     "setup": {
       "title": "初期設定",
@@ -178,7 +178,7 @@
     "faq": {
       "title": "よくある質問",
       "q1": "macOS 12 (Monterey) 以前で使えますか？",
-      "a1": "いいえ。LuminaWhisper は macOS 13 (Ventura) 以降の Apple Silicon Mac が必要です。",
+      "a1": "いいえ。LuminaWhisper は macOS 14 (Sonoma) 以降の Apple Silicon Mac が必要です。",
       "q2": "Intel Mac には対応していますか？",
       "a2": "現在は Apple Silicon (M1 以降) 専用です。Intel Mac への対応は予定していません。",
       "q3": "音声データはどこに送られますか？",
@@ -199,7 +199,7 @@
       "issue2Step2": "LuminaWhisper を許可リストに追加する（なければ「+」ボタンで追加）",
       "issue2Step3": "Mac を再起動する",
       "issue3Title": "アプリが起動しない",
-      "issue3Step1": "macOS 13 以降・Apple Silicon であるか確認する",
+      "issue3Step1": "macOS 14 以降・Apple Silicon であるか確認する",
       "issue3Step2": "「システム設定」→「プライバシーとセキュリティ」でアプリの実行が許可されているか確認する",
       "issue3Step3": "アプリを削除して再インストールする",
       "issue4Title": "テキストが挿入されない",

@@ -16,7 +16,7 @@ export const SEO_DATA = {
   '/guide/install': {
     title: 'インストール | Lumina Whisper ガイド',
     description:
-      'macOS 13 以降の Apple Silicon Mac への Lumina Whisper インストール手順。DMGダウンロードからマイク権限設定まで。',
+      'macOS 14 以降の Apple Silicon Mac への Lumina Whisper インストール手順。DMGダウンロードからマイク権限設定まで。',
     canonical: `${BASE_URL}/guide/install/`,
   },
   '/guide/setup': {
@@ -91,7 +91,7 @@ export const LANDING_JSON_LD = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
   name: 'Lumina Whisper',
-  operatingSystem: 'macOS 13.0+',
+  operatingSystem: 'macOS 14.0+',
   applicationCategory: 'UtilitiesApplication',
   offers: {
     '@type': 'Offer',

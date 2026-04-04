@@ -9,7 +9,7 @@ export default function InstallPage() {
         <title>インストール | Lumina Whisper ガイド</title>
         <meta
           name="description"
-          content="macOS 13 以降の Apple Silicon Mac への Lumina Whisper インストール手順。DMGダウンロードからマイク権限設定まで。"
+          content="macOS 14 以降の Apple Silicon Mac への Lumina Whisper インストール手順。DMGダウンロードからマイク権限設定まで。"
         />
       </Helmet>
       <h1 className="mb-6 text-3xl font-bold text-accent">{t('guide.install.title')}</h1>

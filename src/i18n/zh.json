@@ -8,7 +8,7 @@
     "tagline": "声音变文字，瞬间完成。",
     "subtext": "Lumina Whisper 是一款专为 Mac 设计的高精度语音输入应用。基于 OpenAI Whisper，完全在本地实现快速、高精度的语音转文字。",
     "download": "免费下载",
-    "requirements": "macOS 13.0 或更高版本 · Apple Silicon"
+    "requirements": "macOS 14.0 或更高版本 · Apple Silicon"
   },
   "pain": {
     "question": "您在 Mac 上使用语音输入时有这些烦恼吗？",
@@ -48,7 +48,7 @@
   "cta": {
     "title": "立即开始",
     "button": "下载 .dmg",
-    "requirements": "macOS 13.0 或更高版本 · Apple Silicon · 免费"
+    "requirements": "macOS 14.0 或更高版本 · Apple Silicon · 免费"
   },
   "footer": {
     "copyright": "© 2026 LuminaWhisper",
@@ -119,7 +119,7 @@
       "micDesc1": "首次启动时会出现请求麦克风访问权限的对话框。请点击「好」。",
       "micDesc2": "如需之后更改权限，请前往「系统设置」→「隐私与安全性」→「麦克风」启用 LuminaWhisper。",
       "requirementsLabel": "系统要求：",
-      "requirementsValue": "macOS 13.0 (Ventura) 或更高版本 · Apple Silicon (M1 或更高)"
+      "requirementsValue": "macOS 14.0 (Sonoma) 或更高版本 · Apple Silicon (M1 或更高)"
     },
     "setup": {
       "title": "初始设置",
@@ -178,7 +178,7 @@
     "faq": {
       "title": "常见问题",
       "q1": "可以在 macOS 12 (Monterey) 或更早版本上使用吗？",
-      "a1": "不可以。LuminaWhisper 需要 macOS 13 (Ventura) 或更高版本的 Apple Silicon Mac。",
+      "a1": "不可以。LuminaWhisper 需要 macOS 14 (Sonoma) 或更高版本的 Apple Silicon Mac。",
       "q2": "支持 Intel Mac 吗？",
       "a2": "目前仅支持 Apple Silicon (M1 或更高)。暂无支持 Intel Mac 的计划。",
       "q3": "音频数据会发送到哪里？",
@@ -199,7 +199,7 @@
       "issue2Step2": "将 LuminaWhisper 添加到允许列表（如不存在请用「+」按钮添加）",
       "issue2Step3": "重启 Mac",
       "issue3Title": "应用无法启动",
-      "issue3Step1": "确认使用的是 macOS 13 或更高版本的 Apple Silicon",
+      "issue3Step1": "确认使用的是 macOS 14 或更高版本的 Apple Silicon",
       "issue3Step2": "确认在「系统设置」→「隐私与安全性」中允许应用运行",
       "issue3Step3": "删除应用后重新安装",
       "issue4Title": "文字未被插入",

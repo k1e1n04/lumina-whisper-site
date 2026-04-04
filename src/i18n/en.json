@@ -8,7 +8,7 @@
     "tagline": "Voice to text, instantly.",
     "subtext": "Lumina Whisper is a Mac app for high-accuracy voice input. Powered by OpenAI Whisper, it delivers fast and precise transcription entirely on-device.",
     "download": "Download for Free",
-    "requirements": "macOS 13.0 or later · Apple Silicon"
+    "requirements": "macOS 14.0 or later · Apple Silicon"
   },
   "pain": {
     "question": "Frustrated with voice input on Mac?",
@@ -48,7 +48,7 @@
   "cta": {
     "title": "Get Started Now",
     "button": "Download .dmg",
-    "requirements": "macOS 13.0 or later · Apple Silicon · Free"
+    "requirements": "macOS 14.0 or later · Apple Silicon · Free"
   },
   "footer": {
     "copyright": "© 2026 LuminaWhisper",
@@ -119,7 +119,7 @@
       "micDesc1": "A dialog requesting microphone access will appear on first launch. Click OK.",
       "micDesc2": "To change the permission later, go to System Settings → Privacy & Security → Microphone and enable LuminaWhisper.",
       "requirementsLabel": "Requirements:",
-      "requirementsValue": "macOS 13.0 (Ventura) or later · Apple Silicon (M1 or later)"
+      "requirementsValue": "macOS 14.0 (Sonoma) or later · Apple Silicon (M1 or later)"
     },
     "setup": {
       "title": "Initial Setup",
@@ -178,7 +178,7 @@
     "faq": {
       "title": "FAQ",
       "q1": "Can I use it on macOS 12 (Monterey) or earlier?",
-      "a1": "No. LuminaWhisper requires macOS 13 (Ventura) or later on an Apple Silicon Mac.",
+      "a1": "No. LuminaWhisper requires macOS 14 (Sonoma) or later on an Apple Silicon Mac.",
       "q2": "Is Intel Mac supported?",
       "a2": "Currently, it is exclusive to Apple Silicon (M1 or later). There are no plans to support Intel Macs.",
       "q3": "Where is my audio data sent?",
@@ -199,7 +199,7 @@
       "issue2Step2": "Add LuminaWhisper to the allowed list (use the + button if not present)",
       "issue2Step3": "Restart your Mac",
       "issue3Title": "App Won't Launch",
-      "issue3Step1": "Verify you are running macOS 13 or later on Apple Silicon",
+      "issue3Step1": "Verify you are running macOS 14 or later on Apple Silicon",
       "issue3Step2": "Check that the app is allowed to run under System Settings → Privacy & Security",
       "issue3Step3": "Delete the app and reinstall",
       "issue4Title": "Text Not Being Inserted",
