@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
-const TABS = ['tab1', 'tab2', 'tab3'] as const
+const TABS = ['tab2', 'tab3', 'tab1'] as const
 
 function CodeEditorMock() {
   return (
@@ -207,7 +207,7 @@ function SlackMock() {
   )
 }
 
-const MOCKS = [CodeEditorMock, NotionMock, SlackMock]
+const MOCKS = [NotionMock, SlackMock, CodeEditorMock]
 
 export default function UseCasesSection() {
   const { t } = useTranslation()
@@ -233,18 +233,18 @@ export default function UseCasesSection() {
         </h2>
 
         {/* Tab bar */}
-        <div className="mb-10 flex border-b border-border">
+        <div className="mb-10 flex gap-2">
           {TABS.map((tab, i) => (
             <button
               key={tab}
               onClick={() => setActiveTab(i)}
               className={[
-                'px-6 py-3 text-xs tracking-[0.08em] transition-colors duration-150',
+                'px-5 py-2 text-xs tracking-[0.08em] transition-all duration-150 rounded-full border',
                 activeTab === i
-                  ? 'border-b-2 border-accent text-accent'
-                  : 'text-text-dim hover:text-text-muted',
+                  ? 'bg-accent border-accent text-white'
+                  : 'bg-transparent border-border text-text-muted hover:border-accent hover:text-accent',
               ].join(' ')}
-              style={{ marginBottom: -1, background: 'none', border: 'none', cursor: 'pointer' }}
+              style={{ cursor: 'pointer' }}
             >
               {t(`useCases.${tab}`)}
             </button>
