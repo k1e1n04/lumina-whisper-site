@@ -6,14 +6,20 @@ import Footer from '../components/Footer'
 const RELEASES = [
   {
     version: '0.2.0',
-    date: '2026-04-03',
+    date: '2026-04-04',
     key: 'v020',
     features: [
       'onboardingWizard',
       'warmupOverlay',
+      'accessibilityLanguageStep',
+      'defaultFnHotkey',
     ],
     fixes: [
       'micPermissionOnLaunch',
+      'silenceDetection',
+      'pasteDelay',
+      'modelInit',
+      'onboardingHitTest',
     ] as string[],
   },
   {

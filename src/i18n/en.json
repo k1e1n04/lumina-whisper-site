@@ -58,10 +58,16 @@
     "v020": {
       "features": {
         "onboardingWizard": "First-launch setup wizard — guided flow for granting Accessibility and Microphone permissions and configuring your hotkey",
-        "warmupOverlay": "Model warmup screen — displays progress while the model initializes on first use and safely blocks recording until ready"
+        "warmupOverlay": "Model warmup screen — displays progress while the model initializes on first use and safely blocks recording until ready",
+        "accessibilityLanguageStep": "Accessibility permission and language selection added to onboarding — complete permission grant and language choice within the setup wizard",
+        "defaultFnHotkey": "Default hotkey unified to Fn — new installations now default to the Fn key"
       },
       "fixes": {
-        "micPermissionOnLaunch": "Microphone permission is now requested at launch — fixes the issue where the permission dialog appeared during the first recording"
+        "micPermissionOnLaunch": "Microphone permission is now requested at launch — fixes the issue where the permission dialog appeared during the first recording",
+        "silenceDetection": "Introduced RMS-based silence detection — prevents hallucination text from being inserted during silent segments",
+        "pasteDelay": "Increased paste delay for text insertion (50ms → 200ms) — fixes occasional missed insertions",
+        "modelInit": "Model settings are now saved after download — fixes transcription engine failing to initialize on first launch",
+        "onboardingHitTest": "Fixed hit testing for language selection options — added contentShape so touch targets are correctly sized"
       }
     },
     "v010": {
