@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next'
 import { Helmet } from 'react-helmet-async'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import AppDemoSection from '../components/AppDemoSection'
 
 const DOWNLOAD_URL = 'https://github.com/k1e1n04/lumina-whisper-site/releases/latest/download/LuminaWhisper.dmg'
 
@@ -99,6 +100,8 @@ export default function LandingPage() {
           aria-hidden
         />
       </section>
+
+      <AppDemoSection />
 
       {/* Pain → Solution */}
       <section className="border-t border-border px-6 py-24">
