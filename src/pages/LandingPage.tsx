@@ -84,30 +84,12 @@ export default function LandingPage() {
             {t('hero.subtext')}
           </p>
 
-          {/* Badges */}
-          <div className="anim-fade-up anim-fade-up-3 mb-10 flex flex-wrap items-center justify-center gap-2">
-            {[
-              { icon: '🔒', text: '外部送信ゼロ' },
-              { icon: '⚡', text: 'Apple Neural Engine' },
-              { icon: '🌍', text: '13言語対応' },
-            ].map(({ icon, text }) => (
-              <span
-                key={text}
-                style={{
-                  background: '#EEF2FF',
-                  border: '1px solid #C7CDEE',
-                  borderRadius: 20,
-                  color: '#2B2D5F',
-                  padding: '4px 14px',
-                  fontSize: 12,
-                  letterSpacing: '0.02em',
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: 6,
-                }}
-              >
-                <span>{icon}</span>
-                <span>{text}</span>
+          {/* Key attributes */}
+          <div className="anim-fade-up anim-fade-up-3 mb-10 flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
+            {['外部送信ゼロ', 'Apple Neural Engine', '13言語対応'].map((text, i) => (
+              <span key={text} className="flex items-center gap-5">
+                {i > 0 && <span className="text-text-dim" aria-hidden>·</span>}
+                <span className="text-xs tracking-[0.08em] text-text-dim">{text}</span>
               </span>
             ))}
           </div>
