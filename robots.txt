@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://k1e1n04.github.io/lumina-whisper-site/sitemap.xml
+Sitemap: https://lumina-whisper.com/sitemap.xml
