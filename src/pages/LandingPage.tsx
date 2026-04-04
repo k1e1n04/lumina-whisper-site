@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import { trackDownloadClick } from '../components/GoogleAnalytics'
 import { Helmet } from 'react-helmet-async'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
@@ -114,6 +115,7 @@ export default function LandingPage() {
           <div className="anim-fade-up anim-fade-up-4">
             <a
               href={DOWNLOAD_URL}
+              onClick={() => trackDownloadClick('hero')}
               className="inline-block border border-accent px-10 py-3.5 text-xs tracking-[0.1em] text-accent no-underline transition-all duration-200 hover:bg-accent hover:text-white uppercase"
             >
               {t('hero.download')}
@@ -249,6 +251,7 @@ export default function LandingPage() {
           </h2>
           <a
             href={DOWNLOAD_URL}
+            onClick={() => trackDownloadClick('cta')}
             className="inline-block border border-accent bg-accent px-12 py-4 text-xs tracking-[0.1em] text-white no-underline transition-all duration-200 hover:bg-transparent hover:text-accent uppercase"
           >
             {t('cta.button')}

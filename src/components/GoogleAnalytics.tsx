@@ -10,6 +10,14 @@ declare global {
   }
 }
 
+export function trackDownloadClick(location: 'navbar' | 'hero' | 'cta') {
+  if (typeof window.gtag !== 'function') return
+  window.gtag('event', 'download_click', {
+    button_location: location,
+    send_to: GA_ID,
+  })
+}
+
 export default function GoogleAnalytics() {
   const location = useLocation()
 
