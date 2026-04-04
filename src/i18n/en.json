@@ -89,7 +89,21 @@
     "tab2Apps": "Notion · Obsidian · Apple Notes",
     "tab3Title": "Draft replies by voice, polished by LLM",
     "tab3Desc": "Speak naturally and the LLM post-processor removes filler words. Clean, natural output without \"um\" or \"uh\".",
-    "tab3Apps": "Slack · Mail · Chat"
+    "tab3Apps": "Slack · Mail · Chat",
+    "mockNotion": {
+      "windowTitle": "Meeting Notes — 2026-04-04",
+      "title": "📋 Weekly Meeting",
+      "attendees": "Attendees: Alice · Bob · Carol",
+      "item1": "Complete the landing page revisions by next week.",
+      "item2": "Also need to review the Analytics setup"
+    },
+    "mockSlack": {
+      "message": "About the meeting — would Monday next week at 2pm work for you?",
+      "typing": "Please let me know if that works"
+    },
+    "mockCode": {
+      "comment": "Pass audio data to Whisper model and run transcription"
+    }
   },
   "footer": {
     "copyright": "© 2026 LuminaWhisper",

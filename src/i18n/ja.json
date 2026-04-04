@@ -89,7 +89,21 @@
     "tab2Apps": "Notion · Obsidian · Apple メモ",
     "tab3Title": "返信文を声で下書き、LLM が整えてくれる",
     "tab3Desc": "話し言葉で入力してもLLM後処理がフィラーを除去。「えっと」「あの」が消えた自然な文章に。",
-    "tab3Apps": "Slack · メール · チャット"
+    "tab3Apps": "Slack · メール · チャット",
+    "mockNotion": {
+      "windowTitle": "議事録 — 2026-04-04",
+      "title": "📋 週次ミーティング",
+      "attendees": "参加者: 山田・田中・鈴木",
+      "item1": "来週までにランディングページの改修を完了させる。",
+      "item2": "Analytics の設定も確認が必要"
+    },
+    "mockSlack": {
+      "message": "ミーティングの件ですが、来週月曜の午後2時はいかがでしょうか。",
+      "typing": "ご確認いただけますと幸いです"
+    },
+    "mockCode": {
+      "comment": "音声データをWhisperモデルに渡して文字起こしを実行"
+    }
   },
   "footer": {
     "copyright": "© 2026 LuminaWhisper",

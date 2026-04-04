@@ -89,7 +89,21 @@
     "tab2Apps": "Notion · Obsidian · Apple 备忘录",
     "tab3Title": "用语音起草回复，LLM 帮你润色",
     "tab3Desc": "口语输入后 LLM 后处理自动去除填充词，输出自然流畅的文字。",
-    "tab3Apps": "Slack · 邮件 · 聊天"
+    "tab3Apps": "Slack · 邮件 · 聊天",
+    "mockNotion": {
+      "windowTitle": "会议记录 — 2026-04-04",
+      "title": "📋 每周例会",
+      "attendees": "参与者: 张三·李四·王五",
+      "item1": "在下周前完成首页改版。",
+      "item2": "还需要确认 Analytics 配置"
+    },
+    "mockSlack": {
+      "message": "关于会议的事，下周一下午2点方便吗？",
+      "typing": "请确认是否合适"
+    },
+    "mockCode": {
+      "comment": "将音频数据传入 Whisper 模型并执行语音识别"
+    }
   },
   "footer": {
     "copyright": "© 2026 LuminaWhisper",

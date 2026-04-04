@@ -89,7 +89,21 @@
     "tab2Apps": "Notion · Obsidian · Apple Notizen",
     "tab3Title": "Antworten per Sprache entwerfen, LLM poliert nach",
     "tab3Desc": "Sprechen Sie natürlich — die LLM-Nachbearbeitung entfernt Füllwörter. Sauberer, natürlicher Text als Ergebnis.",
-    "tab3Apps": "Slack · Mail · Chat"
+    "tab3Apps": "Slack · Mail · Chat",
+    "mockNotion": {
+      "windowTitle": "Protokoll — 2026-04-04",
+      "title": "📋 Wöchentliches Meeting",
+      "attendees": "Teilnehmer: Anna · Max · Lisa",
+      "item1": "Landing-Page-Überarbeitung bis nächste Woche abschließen.",
+      "item2": "Analytics-Einstellungen müssen noch geprüft werden"
+    },
+    "mockSlack": {
+      "message": "Wegen des Meetings — passt Ihnen nächsten Montag um 14 Uhr?",
+      "typing": "Bitte geben Sie Bescheid"
+    },
+    "mockCode": {
+      "comment": "Audiodaten an das Whisper-Modell übergeben und Transkription starten"
+    }
   },
   "footer": {
     "copyright": "© 2026 LuminaWhisper",

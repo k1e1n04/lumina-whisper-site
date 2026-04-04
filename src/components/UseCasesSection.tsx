@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 const TABS = ['tab2', 'tab3', 'tab1'] as const
 
 function CodeEditorMock() {
+  const { t } = useTranslation()
   return (
     <div
       style={{
@@ -34,7 +35,7 @@ function CodeEditorMock() {
         <div><span style={{ color: '#bb9af7' }}>func</span> <span style={{ color: '#7aa2f7' }}>transcribe</span>{'(_ audio: AVAudioBuffer) {'}</div>
         <div style={{ paddingLeft: 20 }}>
           <span style={{ color: '#565f89' }}>{'// '}</span>
-          <span style={{ color: '#9ece6a' }}>音声データをWhisperモデルに渡して文字起こしを実行</span>
+          <span style={{ color: '#9ece6a' }}>{t('useCases.mockCode.comment')}</span>
           <span
             style={{
               display: 'inline-block',
@@ -61,6 +62,7 @@ function CodeEditorMock() {
 }
 
 function NotionMock() {
+  const { t } = useTranslation()
   return (
     <div
       style={{
@@ -85,17 +87,17 @@ function NotionMock() {
         <span style={{ width: 10, height: 10, borderRadius: '50%', background: '#e0e0df', display: 'inline-block' }} />
         <span style={{ width: 10, height: 10, borderRadius: '50%', background: '#e0e0df', display: 'inline-block' }} />
         <span style={{ width: 10, height: 10, borderRadius: '50%', background: '#e0e0df', display: 'inline-block' }} />
-        <span style={{ marginLeft: 8, color: '#9b9b9b', fontSize: 11 }}>議事録 — 2026-04-04</span>
+        <span style={{ marginLeft: 8, color: '#9b9b9b', fontSize: 11 }}>{t('useCases.mockNotion.windowTitle')}</span>
       </div>
       <div style={{ padding: '16px 20px', color: '#1A1C2E', lineHeight: 1.8 }}>
-        <p style={{ fontSize: 16, fontWeight: 600, marginBottom: 10 }}>📋 週次ミーティング</p>
-        <p style={{ fontSize: 13, color: '#6b6b6b', marginBottom: 4 }}>参加者: 山田・田中・鈴木</p>
+        <p style={{ fontSize: 16, fontWeight: 600, marginBottom: 10 }}>{t('useCases.mockNotion.title')}</p>
+        <p style={{ fontSize: 13, color: '#6b6b6b', marginBottom: 4 }}>{t('useCases.mockNotion.attendees')}</p>
         <div style={{ borderLeft: '3px solid #DDE1EF', paddingLeft: 12, marginTop: 8 }}>
           <p style={{ fontSize: 13, color: '#1A1C2E', marginBottom: 4 }}>
-            来週までにランディングページの改修を完了させる。
+            {t('useCases.mockNotion.item1')}
           </p>
           <p style={{ fontSize: 13, color: '#1A1C2E', marginBottom: 0, display: 'flex', alignItems: 'center', gap: 4 }}>
-            Analytics の設定も確認が必要
+            {t('useCases.mockNotion.item2')}
             <span
               style={{
                 display: 'inline-block',
@@ -120,6 +122,7 @@ function NotionMock() {
 }
 
 function SlackMock() {
+  const { t } = useTranslation()
   return (
     <div
       style={{
@@ -166,7 +169,7 @@ function SlackMock() {
           <div>
             <p style={{ color: '#d1d2d3', fontSize: 13, fontWeight: 600, margin: 0 }}>Ken</p>
             <p style={{ color: '#c9cacb', fontSize: 13, margin: '2px 0 0' }}>
-              ミーティングの件ですが、来週月曜の午後2時はいかがでしょうか。
+              {t('useCases.mockSlack.message')}
             </p>
           </div>
         </div>
@@ -182,7 +185,7 @@ function SlackMock() {
           }}
         >
           <span style={{ color: '#7b7e83', fontSize: 13, flex: 1 }}>
-            ご確認いただけますと幸いです
+            {t('useCases.mockSlack.typing')}
             <span
               style={{
                 display: 'inline-block',

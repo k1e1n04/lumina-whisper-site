@@ -89,7 +89,21 @@
     "tab2Apps": "Notion · Obsidian · Notes Apple",
     "tab3Title": "Rédigez des réponses à voix haute, le LLM peaufine",
     "tab3Desc": "Parlez naturellement, le post-traitement LLM supprime les mots de remplissage. Résultat propre et naturel.",
-    "tab3Apps": "Slack · Mail · Chat"
+    "tab3Apps": "Slack · Mail · Chat",
+    "mockNotion": {
+      "windowTitle": "Compte rendu — 2026-04-04",
+      "title": "📋 Réunion hebdomadaire",
+      "attendees": "Participants : Alice · Bruno · Claire",
+      "item1": "Finaliser les révisions de la landing page d'ici la semaine prochaine.",
+      "item2": "Vérifier aussi la configuration Analytics"
+    },
+    "mockSlack": {
+      "message": "Concernant la réunion — lundi prochain à 14h vous convient-il ?",
+      "typing": "Merci de confirmer votre disponibilité"
+    },
+    "mockCode": {
+      "comment": "Passer les données audio au modèle Whisper pour la transcription"
+    }
   },
   "footer": {
     "copyright": "© 2026 LuminaWhisper",
