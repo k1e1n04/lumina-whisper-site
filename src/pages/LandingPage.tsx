@@ -134,6 +134,8 @@ export default function LandingPage() {
         />
       </section>
 
+      <UseCasesSection />
+
       <AppDemoSection />
 
       <StatsBar />
@@ -237,8 +239,6 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-
-      <UseCasesSection />
 
       {/* CTA */}
       <section className="px-6 py-28 text-center">
