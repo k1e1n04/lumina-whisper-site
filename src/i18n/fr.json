@@ -1,0 +1,212 @@
+{
+  "nav": {
+    "guide": "Guide",
+    "release": "Notes de version",
+    "download": "Télécharger"
+  },
+  "hero": {
+    "tagline": "Voix en texte, instantanément.",
+    "subtext": "Lumina Whisper est une application Mac de saisie vocale haute précision. Basée sur OpenAI Whisper, elle offre une transcription rapide et précise entièrement en local.",
+    "download": "Télécharger gratuitement",
+    "requirements": "macOS 13.0 ou version ultérieure · Apple Silicon"
+  },
+  "pain": {
+    "question": "Ces problèmes vous frustrent avec la saisie vocale sur Mac ?",
+    "items": ["Précision insuffisante", "Trop lent", "Nécessite Internet"],
+    "answer": "Lumina Whisper résout tout cela."
+  },
+  "features": {
+    "title": "Pourquoi LuminaWhisper ?",
+    "hotkey": {
+      "title": "Un raccourci unique",
+      "desc": "Appuyez sur Fn pour démarrer la saisie vocale à tout moment. Le texte est inséré directement dans la fenêtre active."
+    },
+    "local": {
+      "title": "100 % local",
+      "desc": "Vos données audio ne quittent jamais l'appareil. Aucune connexion Internet requise, confidentialité totale."
+    },
+    "silicon": {
+      "title": "Optimisé Apple Silicon",
+      "desc": "Reconnaissance ultra-rapide et économe en énergie grâce au Neural Engine."
+    },
+    "llm": {
+      "title": "Post-traitement LLM",
+      "desc": "Supprime automatiquement les mots de remplissage et applique des instructions de mise en forme — entièrement en local."
+    },
+    "multilingual": {
+      "title": "13 langues supportées",
+      "desc": "Supporte 13 langues : japonais, anglais, chinois, coréen, français, allemand, espagnol, portugais, russe, arabe, hindi et italien."
+    }
+  },
+  "howToUse": {
+    "title": "Comment utiliser",
+    "step1": { "label": "Étape 1", "text": "Placez le curseur à l'endroit voulu" },
+    "step2": { "label": "Étape 2", "text": "Appuyez sur Fn pour démarrer l'enregistrement" },
+    "step3": { "label": "Étape 3", "text": "Parlez" },
+    "step4": { "label": "Étape 4", "text": "Appuyez sur Fn pour arrêter → le texte est inséré" }
+  },
+  "cta": {
+    "title": "Commencer maintenant",
+    "button": "Télécharger le .dmg",
+    "requirements": "macOS 13.0 ou version ultérieure · Apple Silicon · Gratuit"
+  },
+  "footer": {
+    "copyright": "© 2026 LuminaWhisper",
+    "guide": "Guide utilisateur"
+  },
+  "release": {
+    "title": "Notes de version",
+    "subtitle": "Release Notes",
+    "newFeatures": "Nouvelles fonctionnalités",
+    "bugFixes": "Corrections de bugs",
+    "v020": {
+      "features": {
+        "onboardingWizard": "Assistant de configuration au premier lancement — guide pour accorder les permissions Accessibilité et Microphone et configurer le raccourci",
+        "warmupOverlay": "Écran de préchauffage du modèle — affiche la progression pendant l'initialisation et bloque l'enregistrement jusqu'à ce qu'il soit prêt",
+        "accessibilityLanguageStep": "Permission d'accessibilité et sélection de langue ajoutées à l'onboarding — accordez les permissions et choisissez la langue depuis l'assistant",
+        "defaultFnHotkey": "Raccourci par défaut unifié sur Fn — les nouvelles installations utilisent désormais la touche Fn par défaut",
+        "multilingualSupport": "Support étendu à 13 langues — ajout du chinois, coréen, français, allemand, espagnol, portugais, russe, arabe, hindi et italien"
+      },
+      "fixes": {
+        "micPermissionOnLaunch": "La permission microphone est maintenant demandée au lancement — corrige l'affichage du dialogue lors du premier enregistrement",
+        "silenceDetection": "Détection du silence par RMS — empêche l'insertion de texte halluciné pendant les segments silencieux",
+        "pasteDelay": "Augmentation du délai de collage (50ms → 200ms) — corrige les insertions manquées occasionnelles",
+        "modelInit": "Les paramètres du modèle sont maintenant sauvegardés après le téléchargement — corrige l'initialisation du moteur de transcription au premier lancement",
+        "onboardingHitTest": "Correction de la zone de clic pour la sélection de langue — ajout de contentShape pour des cibles tactiles correctes"
+      }
+    },
+    "v010": {
+      "features": {
+        "hotkeyInput": "Saisie vocale en un touche avec Fn — texte inséré directement dans la fenêtre active",
+        "whisperkitEngine": "Moteur de transcription WhisperKit — reconnaissance rapide et précise via Apple Neural Engine",
+        "textInsertion": "Insertion directe avec repli sur le presse-papiers — collez manuellement avec ⌘V si l'insertion automatique échoue",
+        "modelSelection": "Sélection du modèle (tiny / base / small / medium) et paramètre de langue (auto / ja / en)",
+        "llmPostProcessing": "Post-traitement LLM local — suppression automatique des mots de remplissage avec instructions personnalisées et par application",
+        "replacements": "Règles de remplacement de texte — appliquer automatiquement des substitutions personnalisées au texte transcrit",
+        "dictionary": "Dictionnaire de mots — enregistrez des noms propres pour améliorer la précision de Whisper",
+        "history": "Historique des transcriptions — consultez et réutilisez les résultats passés"
+      },
+      "fixes": {}
+    }
+  },
+  "guide": {
+    "sidebar": {
+      "gettingStarted": "Démarrage",
+      "install": "Installation",
+      "setup": "Configuration initiale",
+      "usageGroup": "Utilisation",
+      "usage": "Utilisation de base",
+      "settings": "Paramètres",
+      "support": "Support",
+      "faq": "FAQ",
+      "troubleshoot": "Dépannage"
+    },
+    "nav": {
+      "prev": "Précédent",
+      "next": "Suivant",
+      "menu": "Menu du guide"
+    },
+    "install": {
+      "title": "Installation",
+      "section1": "1. Téléchargement",
+      "downloadDesc": "Téléchargez le dernier <code>LuminaWhisper.dmg</code> depuis <link>GitHub Releases</link>.",
+      "section2": "2. Installation",
+      "installStep1Pre": "Ouvrez le fichier",
+      "installStep1Post": "téléchargé.",
+      "installStep2": "Faites glisser l'icône LuminaWhisper dans le dossier Applications.",
+      "installStep3": "Lancez LuminaWhisper depuis le dossier Applications.",
+      "section3": "3. Permission microphone",
+      "micDesc1": "Une boîte de dialogue demandant l'accès au microphone apparaîtra au premier lancement. Cliquez sur OK.",
+      "micDesc2": "Pour modifier la permission ultérieurement, allez dans Réglages Système → Confidentialité et sécurité → Microphone et activez LuminaWhisper.",
+      "requirementsLabel": "Configuration requise :",
+      "requirementsValue": "macOS 13.0 (Ventura) ou version ultérieure · Apple Silicon (M1 ou version ultérieure)"
+    },
+    "setup": {
+      "title": "Configuration initiale",
+      "menubarTitle": "Icône dans la barre des menus",
+      "menubarDesc": "Après le lancement, l'icône LuminaWhisper apparaît dans la barre des menus. Cliquez dessus pour ouvrir les Réglages.",
+      "hotkeyTitle": "Vérification du raccourci",
+      "hotkeyDescPre": "Le raccourci par défaut est",
+      "hotkeyDescPost": ".",
+      "modelTitle": "Téléchargement du modèle",
+      "modelDesc": "Au premier lancement, le modèle small se télécharge automatiquement. Vous pouvez changer pour tiny, base ou medium dans l'onglet General des Réglages. La saisie vocale est disponible même pendant le téléchargement."
+    },
+    "usage": {
+      "title": "Utilisation de base",
+      "stepsTitle": "Étapes de saisie vocale",
+      "step1Label": "Focalisez un champ de saisie",
+      "step1Desc": "Cliquez où vous souhaitez saisir du texte (éditeur, corps d'e-mail, etc.).",
+      "step2Label": "Appuyez sur Fn",
+      "step2Desc": "L'enregistrement démarre. L'icône dans la barre des menus clignote pour indiquer l'enregistrement.",
+      "step3Label": "Parlez",
+      "step3Desc": "Parlez clairement. La ponctuation est insérée automatiquement.",
+      "step4Label": "Appuyez à nouveau sur Fn",
+      "step4Desc": "L'enregistrement s'arrête. Le texte reconnu est automatiquement inséré à la position du curseur.",
+      "tipLabel": "Conseil :",
+      "tipDesc": "La précision est maximale dans un environnement calme. L'utilisation d'un microphone externe est également recommandée."
+    },
+    "settings": {
+      "title": "Paramètres",
+      "openDesc": "Cliquez sur l'icône de la barre des menus → Réglages... pour ouvrir les Réglages.",
+      "defaultLabel": "Par défaut",
+      "model": {
+        "name": "Modèle",
+        "default": "small",
+        "desc": "Le modèle Whisper utilisé pour la transcription. La précision augmente de tiny → base → small → medium, mais le temps de traitement aussi. Les modèles non installés peuvent être téléchargés ici."
+      },
+      "language": {
+        "name": "Langue de reconnaissance",
+        "default": "Auto",
+        "desc": "La langue utilisée pour la reconnaissance vocale. Choisissez parmi auto (détection automatique) ou l'une des 13 langues supportées : japonais, anglais, chinois, coréen, français, allemand, espagnol, portugais, russe, arabe, hindi et italien."
+      },
+      "hotkey": {
+        "name": "Raccourci",
+        "default": "Fn",
+        "desc": "Le raccourci clavier pour démarrer/arrêter la saisie vocale."
+      },
+      "llm": {
+        "name": "Post-traitement LLM",
+        "default": "Activé",
+        "desc": "Après la reconnaissance, un LLM local supprime les mots de remplissage et applique une mise en forme. Des instructions personnalisées et par application peuvent être configurées dans l'onglet LLM."
+      },
+      "clipboardFallback": {
+        "name": "Repli sur le presse-papiers",
+        "default": "Désactivé",
+        "desc": "Quand activé, le résultat de transcription est également copié dans le presse-papiers. Si l'insertion automatique échoue, vous pouvez toujours coller manuellement avec ⌘V."
+      }
+    },
+    "faq": {
+      "title": "FAQ",
+      "q1": "Puis-je l'utiliser sur macOS 12 (Monterey) ou antérieur ?",
+      "a1": "Non. LuminaWhisper nécessite macOS 13 (Ventura) ou version ultérieure sur un Mac Apple Silicon.",
+      "q2": "Les Mac Intel sont-ils supportés ?",
+      "a2": "Actuellement, c'est exclusivement pour Apple Silicon (M1 ou version ultérieure). Pas de plan pour supporter les Mac Intel.",
+      "q3": "Où sont envoyées mes données audio ?",
+      "a3": "Les données audio ne quittent jamais l'appareil. Tout le traitement est effectué localement sur votre Mac.",
+      "q4": "Le raccourci ne répond pas.",
+      "a4": "Vérifiez que LuminaWhisper est autorisé dans Réglages Système → Confidentialité et sécurité → Accessibilité.",
+      "q5": "Comment améliorer la précision de reconnaissance ?",
+      "a5": "Parler clairement dans un environnement calme, proche du microphone, améliore la précision. Sélectionner un modèle plus grand (medium) ou activer le post-traitement LLM est également efficace."
+    },
+    "troubleshoot": {
+      "title": "Dépannage",
+      "issue1Title": "Microphone non détecté",
+      "issue1Step1": "Ouvrir Réglages Système → Confidentialité et sécurité → Microphone",
+      "issue1Step2": "Vérifier que le bouton LuminaWhisper est activé",
+      "issue1Step3": "Redémarrer LuminaWhisper",
+      "issue2Title": "Raccourci non fonctionnel",
+      "issue2Step1": "Ouvrir Réglages Système → Confidentialité et sécurité → Accessibilité",
+      "issue2Step2": "Ajouter LuminaWhisper à la liste autorisée (utilisez le bouton + si absent)",
+      "issue2Step3": "Redémarrer votre Mac",
+      "issue3Title": "L'application ne démarre pas",
+      "issue3Step1": "Vérifier que vous utilisez macOS 13 ou version ultérieure sur Apple Silicon",
+      "issue3Step2": "Vérifier que l'application est autorisée à s'exécuter dans Réglages Système → Confidentialité et sécurité",
+      "issue3Step3": "Supprimer et réinstaller l'application",
+      "issue4Title": "Le texte n'est pas inséré",
+      "issue4Step1": "S'assurer qu'un champ de saisie est focalisé avant d'arrêter l'enregistrement",
+      "issue4Step2": "Vérifier que la permission d'accessibilité a été accordée",
+      "issue4Step3": "Activer « Repli sur le presse-papiers » dans les Réglages — si l'insertion échoue, vous pouvez coller manuellement avec ⌘V",
+      "contactDesc": "Si le problème persiste, essayez de désinstaller et réinstaller l'application, ou réinitialisez vos réglages."
+    }
+  }
+}

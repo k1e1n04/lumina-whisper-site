@@ -13,6 +13,7 @@ const RELEASES = [
       'warmupOverlay',
       'accessibilityLanguageStep',
       'defaultFnHotkey',
+      'multilingualSupport',
     ],
     fixes: [
       'micPermissionOnLaunch',

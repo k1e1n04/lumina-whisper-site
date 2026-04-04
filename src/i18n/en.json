@@ -32,6 +32,10 @@
     "llm": {
       "title": "LLM Post-Processing",
       "desc": "Automatically removes filler words (\"um\", \"uh\") and applies custom formatting instructions — all locally."
+    },
+    "multilingual": {
+      "title": "13 Languages",
+      "desc": "Supports 13 languages including Japanese, English, Chinese, Korean, French, German, Spanish, Portuguese, Russian, Arabic, Hindi, and Italian."
     }
   },
   "howToUse": {
@@ -60,7 +64,8 @@
         "onboardingWizard": "First-launch setup wizard — guided flow for granting Accessibility and Microphone permissions and configuring your hotkey",
         "warmupOverlay": "Model warmup screen — displays progress while the model initializes on first use and safely blocks recording until ready",
         "accessibilityLanguageStep": "Accessibility permission and language selection added to onboarding — complete permission grant and language choice within the setup wizard",
-        "defaultFnHotkey": "Default hotkey unified to Fn — new installations now default to the Fn key"
+        "defaultFnHotkey": "Default hotkey unified to Fn — new installations now default to the Fn key",
+        "multilingualSupport": "Expanded recognition language support to 13 languages — added Chinese, Korean, French, German, Spanish, Portuguese, Russian, Arabic, Hindi, and Italian alongside Japanese and English"
       },
       "fixes": {
         "micPermissionOnLaunch": "Microphone permission is now requested at launch — fixes the issue where the permission dialog appeared during the first recording",
@@ -152,7 +157,7 @@
       "language": {
         "name": "Recognition Language",
         "default": "Auto",
-        "desc": "The language used for speech recognition. Choose from auto (detect), Japanese (ja), or English (en)."
+        "desc": "The language used for speech recognition. Choose from auto (detect) or one of 13 supported languages: Japanese, English, Chinese, Korean, French, German, Spanish, Portuguese, Russian, Arabic, Hindi, and Italian."
       },
       "hotkey": {
         "name": "Hotkey",

@@ -10,6 +10,7 @@ const FEATURES = [
   { key: 'local' },
   { key: 'silicon' },
   { key: 'llm' },
+  { key: 'multilingual' },
 ] as const
 
 const HOW_TO_USE_STEPS = ['step1', 'step2', 'step3', 'step4'] as const

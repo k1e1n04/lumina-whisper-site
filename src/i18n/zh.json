@@ -1,0 +1,212 @@
+{
+  "nav": {
+    "guide": "指南",
+    "release": "发行说明",
+    "download": "下载"
+  },
+  "hero": {
+    "tagline": "声音变文字，瞬间完成。",
+    "subtext": "Lumina Whisper 是一款专为 Mac 设计的高精度语音输入应用。基于 OpenAI Whisper，完全在本地实现快速、高精度的语音转文字。",
+    "download": "免费下载",
+    "requirements": "macOS 13.0 或更高版本 · Apple Silicon"
+  },
+  "pain": {
+    "question": "您在 Mac 上使用语音输入时有这些烦恼吗？",
+    "items": ["精度低", "速度慢", "需要网络连接"],
+    "answer": "Lumina Whisper 帮您解决这些问题。"
+  },
+  "features": {
+    "title": "为什么选择 LuminaWhisper？",
+    "hotkey": {
+      "title": "一键操作",
+      "desc": "随时按 Fn 键开始语音输入。文字直接插入到活跃窗口。"
+    },
+    "local": {
+      "title": "完全本地处理",
+      "desc": "音频数据不会离开设备。无需网络连接，全程保护隐私。"
+    },
+    "silicon": {
+      "title": "Apple Silicon 优化",
+      "desc": "充分利用神经引擎，实现高速、低功耗的语音识别。"
+    },
+    "llm": {
+      "title": "LLM 后处理",
+      "desc": "自动删除填充词，并根据自定义指令进行格式化。完全在本地运行。"
+    },
+    "multilingual": {
+      "title": "支持 13 种语言",
+      "desc": "支持日语、英语、中文、韩语、法语、德语、西班牙语、葡萄牙语、俄语、阿拉伯语、印地语、意大利语等 13 种语言。"
+    }
+  },
+  "howToUse": {
+    "title": "使用方法",
+    "step1": { "label": "步骤 1", "text": "将光标放置在要输入的位置" },
+    "step2": { "label": "步骤 2", "text": "按 Fn 开始录音" },
+    "step3": { "label": "步骤 3", "text": "说话" },
+    "step4": { "label": "步骤 4", "text": "再次按 Fn 停止 → 文字被插入" }
+  },
+  "cta": {
+    "title": "立即开始",
+    "button": "下载 .dmg",
+    "requirements": "macOS 13.0 或更高版本 · Apple Silicon · 免费"
+  },
+  "footer": {
+    "copyright": "© 2026 LuminaWhisper",
+    "guide": "用户指南"
+  },
+  "release": {
+    "title": "发行说明",
+    "subtitle": "Release Notes",
+    "newFeatures": "新功能",
+    "bugFixes": "错误修复",
+    "v020": {
+      "features": {
+        "onboardingWizard": "首次启动设置向导 — 引导完成辅助功能和麦克风权限授予及快捷键配置",
+        "warmupOverlay": "模型预热画面 — 在首次使用前显示模型初始化进度，安全阻止录音直到准备完成",
+        "accessibilityLanguageStep": "新增辅助功能权限和语言选择步骤 — 在设置向导内完成权限授予和识别语言选择",
+        "defaultFnHotkey": "默认快捷键统一为 Fn — 新安装默认使用 Fn 键",
+        "multilingualSupport": "识别语言扩展至 13 种 — 在日语和英语基础上，新增中文、韩语、法语、德语、西班牙语、葡萄牙语、俄语、阿拉伯语、印地语和意大利语"
+      },
+      "fixes": {
+        "micPermissionOnLaunch": "麦克风权限改为启动时预先获取 — 修复首次录音时出现权限对话框的问题",
+        "silenceDetection": "引入基于 RMS 的静音检测 — 修复无声时插入幻觉文字的问题",
+        "pasteDelay": "增加文字插入的粘贴延迟（50ms → 200ms）— 修复偶尔丢失插入的问题",
+        "modelInit": "模型下载后立即保存设置 — 修复首次启动时转录引擎无法初始化的问题",
+        "onboardingHitTest": "修复语言选择选项的点击判定 — 添加 contentShape 使触摸区域正确设置"
+      }
+    },
+    "v010": {
+      "features": {
+        "hotkeyInput": "Fn 键一键语音输入 — 文字直接插入到活跃窗口",
+        "whisperkitEngine": "WhisperKit 驱动的转录引擎 — 利用 Apple 神经引擎实现快速、高精度识别",
+        "textInsertion": "直接插入文字并支持剪贴板回退 — 自动插入失败时可用 ⌘V 手动粘贴",
+        "modelSelection": "模型选择（tiny / base / small / medium）和语言设置（auto / ja / en）",
+        "llmPostProcessing": "本地 LLM 后处理 — 自动删除填充词，支持自定义和应用专用指令",
+        "replacements": "文字替换规则 — 自动对转录文字应用自定义替换",
+        "dictionary": "单词词典 — 注册专有名词以提高 Whisper 识别精度",
+        "history": "转录历史 — 浏览和复用过去的结果"
+      },
+      "fixes": {}
+    }
+  },
+  "guide": {
+    "sidebar": {
+      "gettingStarted": "入门",
+      "install": "安装",
+      "setup": "初始设置",
+      "usageGroup": "使用方法",
+      "usage": "基本用法",
+      "settings": "设置项目",
+      "support": "支持",
+      "faq": "常见问题",
+      "troubleshoot": "故障排除"
+    },
+    "nav": {
+      "prev": "上一页",
+      "next": "下一页",
+      "menu": "指南菜单"
+    },
+    "install": {
+      "title": "安装",
+      "section1": "1. 下载",
+      "downloadDesc": "从 <link>GitHub Releases</link> 下载最新的 <code>LuminaWhisper.dmg</code>。",
+      "section2": "2. 安装",
+      "installStep1Pre": "打开下载的",
+      "installStep1Post": "文件。",
+      "installStep2": "将 LuminaWhisper 图标拖到「应用程序」文件夹。",
+      "installStep3": "从「应用程序」文件夹启动 LuminaWhisper。",
+      "section3": "3. 麦克风权限",
+      "micDesc1": "首次启动时会出现请求麦克风访问权限的对话框。请点击「好」。",
+      "micDesc2": "如需之后更改权限，请前往「系统设置」→「隐私与安全性」→「麦克风」启用 LuminaWhisper。",
+      "requirementsLabel": "系统要求：",
+      "requirementsValue": "macOS 13.0 (Ventura) 或更高版本 · Apple Silicon (M1 或更高)"
+    },
+    "setup": {
+      "title": "初始设置",
+      "menubarTitle": "菜单栏图标",
+      "menubarDesc": "启动应用后，菜单栏会显示 LuminaWhisper 图标。点击图标可打开设置界面。",
+      "hotkeyTitle": "确认快捷键",
+      "hotkeyDescPre": "默认快捷键为",
+      "hotkeyDescPost": "。",
+      "modelTitle": "模型下载",
+      "modelDesc": "首次启动时会自动下载 small 模型。可在设置的 General 标签页切换为 tiny、base 或 medium 模型。下载期间也可使用语音输入。"
+    },
+    "usage": {
+      "title": "基本用法",
+      "stepsTitle": "语音输入步骤",
+      "step1Label": "聚焦到文字输入框",
+      "step1Desc": "点击要输入文字的位置（文字编辑器、邮件正文等）。",
+      "step2Label": "按 Fn 键",
+      "step2Desc": "开始录音。菜单栏图标闪烁表示正在录音。",
+      "step3Label": "说话",
+      "step3Desc": "请清晰地说话。标点符号会自动插入。",
+      "step4Label": "再次按 Fn 键",
+      "step4Desc": "停止录音。识别到的文字会自动插入到光标位置。",
+      "tipLabel": "提示：",
+      "tipDesc": "在安静的环境中使用精度最高。建议使用外接麦克风。"
+    },
+    "settings": {
+      "title": "设置项目",
+      "openDesc": "点击菜单栏图标 → 「设置...」打开设置界面。",
+      "defaultLabel": "默认值",
+      "model": {
+        "name": "模型",
+        "default": "small",
+        "desc": "用于转录的 Whisper 模型。精度从 tiny → base → small → medium 依次提高，但处理时间也会增加。未安装的模型可在此处下载。"
+      },
+      "language": {
+        "name": "识别语言",
+        "default": "自动 (auto)",
+        "desc": "语音识别使用的语言。可从 auto（自动判断）和日语、英语、中文、韩语、法语、德语、西班牙语、葡萄牙语、俄语、阿拉伯语、印地语、意大利语共 13 种语言中选择。"
+      },
+      "hotkey": {
+        "name": "快捷键",
+        "default": "Fn",
+        "desc": "用于开始/停止语音输入的键盘快捷键。"
+      },
+      "llm": {
+        "name": "LLM 后处理",
+        "default": "开",
+        "desc": "识别后通过本地 LLM 删除填充词并进行格式化。可在 LLM 标签页设置自定义和应用专用指令。"
+      },
+      "clipboardFallback": {
+        "name": "剪贴板回退",
+        "default": "关",
+        "desc": "启用后，每次识别结果也会复制到剪贴板。自动插入失败时仍可用 ⌘V 手动粘贴。"
+      }
+    },
+    "faq": {
+      "title": "常见问题",
+      "q1": "可以在 macOS 12 (Monterey) 或更早版本上使用吗？",
+      "a1": "不可以。LuminaWhisper 需要 macOS 13 (Ventura) 或更高版本的 Apple Silicon Mac。",
+      "q2": "支持 Intel Mac 吗？",
+      "a2": "目前仅支持 Apple Silicon (M1 或更高)。暂无支持 Intel Mac 的计划。",
+      "q3": "音频数据会发送到哪里？",
+      "a3": "音频数据不会发送到设备外部。所有处理都在 Mac 上本地完成。",
+      "q4": "快捷键没有反应",
+      "a4": "请确认在「系统设置」→「隐私与安全性」→「辅助功能」中已允许 LuminaWhisper。",
+      "q5": "如何提高识别精度？",
+      "a5": "在安静的环境中靠近麦克风说话可提高精度。在设置 General 标签页选择更大的模型（medium）或开启 LLM 后处理也有效果。"
+    },
+    "troubleshoot": {
+      "title": "故障排除",
+      "issue1Title": "麦克风未被识别",
+      "issue1Step1": "打开「系统设置」→「隐私与安全性」→「麦克风」",
+      "issue1Step2": "确认 LuminaWhisper 的开关已打开",
+      "issue1Step3": "重启 LuminaWhisper",
+      "issue2Title": "快捷键不起作用",
+      "issue2Step1": "打开「系统设置」→「隐私与安全性」→「辅助功能」",
+      "issue2Step2": "将 LuminaWhisper 添加到允许列表（如不存在请用「+」按钮添加）",
+      "issue2Step3": "重启 Mac",
+      "issue3Title": "应用无法启动",
+      "issue3Step1": "确认使用的是 macOS 13 或更高版本的 Apple Silicon",
+      "issue3Step2": "确认在「系统设置」→「隐私与安全性」中允许应用运行",
+      "issue3Step3": "删除应用后重新安装",
+      "issue4Title": "文字未被插入",
+      "issue4Step1": "停止录音前确认文字输入框已聚焦",
+      "issue4Step2": "确认已授予辅助功能权限",
+      "issue4Step3": "在设置中开启「剪贴板回退」，插入失败时仍可用 ⌘V 手动粘贴",
+      "contactDesc": "如问题仍未解决，请尝试卸载后重新安装，或重置设置。"
+    }
+  }
+}

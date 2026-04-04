@@ -1,0 +1,212 @@
+{
+  "nav": {
+    "guide": "가이드",
+    "release": "릴리즈 노트",
+    "download": "다운로드"
+  },
+  "hero": {
+    "tagline": "음성을 텍스트로, 즉시.",
+    "subtext": "Lumina Whisper는 Mac 전용 고정밀 음성 입력 앱입니다. OpenAI Whisper를 기반으로 완전히 로컬 환경에서 빠르고 정확한 받아쓰기를 실현합니다.",
+    "download": "무료 다운로드",
+    "requirements": "macOS 13.0 이상 · Apple Silicon"
+  },
+  "pain": {
+    "question": "Mac에서 음성 입력 사용 시 이런 불편함이 있지 않으신가요?",
+    "items": ["정확도가 낮음", "동작이 느림", "인터넷 연결 필요"],
+    "answer": "Lumina Whisper가 그 문제를 해결합니다."
+  },
+  "features": {
+    "title": "왜 LuminaWhisper인가요?",
+    "hotkey": {
+      "title": "원키 입력",
+      "desc": "언제든지 Fn 키로 음성 입력을 시작. 활성 창에 텍스트를 직접 삽입합니다."
+    },
+    "local": {
+      "title": "완전 로컬 처리",
+      "desc": "음성 데이터가 기기 밖으로 나가지 않습니다. 인터넷 연결 불필요, 완전한 프라이버시 보호."
+    },
+    "silicon": {
+      "title": "Apple Silicon 최적화",
+      "desc": "뉴럴 엔진을 최대한 활용한 고속·저전력 음성 인식."
+    },
+    "llm": {
+      "title": "LLM 후처리",
+      "desc": "필러 단어를 자동으로 제거하고 커스텀 지시로 형식을 정리합니다. 완전 로컬로 동작합니다."
+    },
+    "multilingual": {
+      "title": "13개 언어 지원",
+      "desc": "일본어·영어를 비롯해 중국어·한국어·프랑스어·독일어·스페인어·포르투갈어·러시아어·아랍어·힌디어·이탈리아어 등 13개 언어를 지원합니다."
+    }
+  },
+  "howToUse": {
+    "title": "사용 방법",
+    "step1": { "label": "Step 1", "text": "커서를 입력하고 싶은 위치에 놓기" },
+    "step2": { "label": "Step 2", "text": "Fn을 눌러 녹음 시작" },
+    "step3": { "label": "Step 3", "text": "말하기" },
+    "step4": { "label": "Step 4", "text": "Fn으로 정지 → 텍스트가 삽입됨" }
+  },
+  "cta": {
+    "title": "지금 시작하기",
+    "button": ".dmg 다운로드",
+    "requirements": "macOS 13.0 이상 · Apple Silicon · 무료"
+  },
+  "footer": {
+    "copyright": "© 2026 LuminaWhisper",
+    "guide": "사용자 가이드"
+  },
+  "release": {
+    "title": "릴리즈 노트",
+    "subtitle": "Release Notes",
+    "newFeatures": "새로운 기능",
+    "bugFixes": "버그 수정",
+    "v020": {
+      "features": {
+        "onboardingWizard": "최초 실행 설정 마법사 — 접근성·마이크 권한 부여 및 단축키 설정을 가이드에 따라 완료",
+        "warmupOverlay": "모델 워밍업 화면 — 첫 녹음 전 모델 초기화 진행 상황을 표시하고 준비 완료까지 녹음을 안전하게 차단",
+        "accessibilityLanguageStep": "온보딩에 접근성 권한 및 언어 선택 단계 추가 — 설정 마법사 내에서 권한 부여와 인식 언어 선택 완료",
+        "defaultFnHotkey": "기본 단축키를 Fn으로 통일 — 새 설치 시 기본값이 Fn 키로 설정됨",
+        "multilingualSupport": "인식 언어를 13개로 확장 — 일본어·영어 외 중국어·한국어·프랑스어·독일어·스페인어·포르투갈어·러시아어·아랍어·힌디어·이탈리아어 추가"
+      },
+      "fixes": {
+        "micPermissionOnLaunch": "마이크 권한을 앱 실행 시 사전 취득하도록 변경 — 첫 녹음 시 권한 다이얼로그가 표시되는 문제 수정",
+        "silenceDetection": "RMS 기반 무음 감지 도입 — 무음 시 환각 텍스트가 삽입되는 문제 수정",
+        "pasteDelay": "텍스트 삽입 붙여넣기 지연 증가（50ms → 200ms）— 간헐적 삽입 누락 문제 수정",
+        "modelInit": "모델 다운로드 후 설정을 저장하도록 변경 — 첫 실행 시 전사 엔진이 초기화되지 않는 문제 수정",
+        "onboardingHitTest": "언어 선택 옵션의 탭 판정 수정 — contentShape 추가로 터치 영역을 올바르게 설정"
+      }
+    },
+    "v010": {
+      "features": {
+        "hotkeyInput": "Fn 단축키로 원키 음성 입력 — 활성 창에 텍스트 직접 삽입",
+        "whisperkitEngine": "WhisperKit 기반 전사 엔진 — Apple 뉴럴 엔진을 활용한 고속·고정밀 인식",
+        "textInsertion": "텍스트 직접 삽입 및 클립보드 폴백 — 자동 삽입 실패 시 ⌘V로 수동 붙여넣기 가능",
+        "modelSelection": "모델 선택（tiny / base / small / medium）및 언어 설정（auto / ja / en）",
+        "llmPostProcessing": "로컬 LLM 후처리 — 필러 자동 제거, 커스텀 및 앱별 지시 지원",
+        "replacements": "텍스트 치환 규칙 — 전사 후 텍스트에 커스텀 치환을 자동 적용",
+        "dictionary": "단어 사전 — 고유명사를 등록하여 Whisper 인식 정확도 향상",
+        "history": "전사 이력 — 과거 입력 결과를 목록으로 확인·재사용"
+      },
+      "fixes": {}
+    }
+  },
+  "guide": {
+    "sidebar": {
+      "gettingStarted": "시작하기",
+      "install": "설치",
+      "setup": "초기 설정",
+      "usageGroup": "사용 방법",
+      "usage": "기본 사용법",
+      "settings": "설정 항목",
+      "support": "지원",
+      "faq": "자주 묻는 질문",
+      "troubleshoot": "문제 해결"
+    },
+    "nav": {
+      "prev": "이전",
+      "next": "다음",
+      "menu": "가이드 메뉴"
+    },
+    "install": {
+      "title": "설치",
+      "section1": "1. 다운로드",
+      "downloadDesc": "<link>GitHub Releases</link>에서 최신 <code>LuminaWhisper.dmg</code>를 다운로드합니다.",
+      "section2": "2. 설치",
+      "installStep1Pre": "다운로드한",
+      "installStep1Post": "파일을 엽니다.",
+      "installStep2": "LuminaWhisper 아이콘을 「응용 프로그램」 폴더로 드래그합니다.",
+      "installStep3": "「응용 프로그램」 폴더에서 LuminaWhisper를 실행합니다.",
+      "section3": "3. 마이크 권한 허용",
+      "micDesc1": "최초 실행 시 마이크 접근 권한을 요청하는 다이얼로그가 표시됩니다. 「확인」을 클릭하세요.",
+      "micDesc2": "나중에 권한을 변경하려면 「시스템 설정」→「개인 정보 보호 및 보안」→「마이크」에서 LuminaWhisper를 활성화하세요.",
+      "requirementsLabel": "시스템 요구 사항:",
+      "requirementsValue": "macOS 13.0 (Ventura) 이상 · Apple Silicon (M1 이상)"
+    },
+    "setup": {
+      "title": "초기 설정",
+      "menubarTitle": "메뉴 바 아이콘",
+      "menubarDesc": "앱을 실행하면 메뉴 바에 LuminaWhisper 아이콘이 표시됩니다. 아이콘을 클릭하면 설정 화면을 열 수 있습니다.",
+      "hotkeyTitle": "단축키 확인",
+      "hotkeyDescPre": "기본 단축키는",
+      "hotkeyDescPost": "입니다.",
+      "modelTitle": "모델 다운로드",
+      "modelDesc": "최초 실행 시 small 모델이 자동으로 다운로드됩니다. 설정의 General 탭에서 tiny / base / medium으로 변경할 수 있습니다. 다운로드 중에도 음성 입력을 사용할 수 있습니다."
+    },
+    "usage": {
+      "title": "기본 사용법",
+      "stepsTitle": "음성 입력 절차",
+      "step1Label": "텍스트 입력 필드에 포커스 맞추기",
+      "step1Desc": "텍스트를 입력하고 싶은 위치（텍스트 에디터, 메일 본문 등）를 클릭합니다.",
+      "step2Label": "Fn 누르기",
+      "step2Desc": "녹음이 시작됩니다. 메뉴 바 아이콘이 깜빡여 녹음 중임을 나타냅니다.",
+      "step3Label": "말하기",
+      "step3Desc": "또렷하게 말하세요. 구두점은 자동으로 삽입됩니다.",
+      "step4Label": "다시 Fn 누르기",
+      "step4Desc": "녹음이 중지됩니다. 인식된 텍스트가 커서 위치에 자동으로 삽입됩니다.",
+      "tipLabel": "팁:",
+      "tipDesc": "조용한 환경에서 사용하면 정확도가 가장 높습니다. 외부 마이크 사용도 권장합니다."
+    },
+    "settings": {
+      "title": "설정 항목",
+      "openDesc": "메뉴 바 아이콘 클릭 → 「설정...」으로 설정 화면을 열 수 있습니다.",
+      "defaultLabel": "기본값",
+      "model": {
+        "name": "모델",
+        "default": "small",
+        "desc": "전사에 사용하는 Whisper 모델. tiny → base → small → medium 순으로 정확도가 높아지지만 처리 시간도 길어집니다. 미설치 모델은 여기서 설치할 수 있습니다."
+      },
+      "language": {
+        "name": "인식 언어",
+        "default": "자동 (auto)",
+        "desc": "음성 인식에 사용하는 언어. auto（자동 판정） 및 일본어·영어·중국어·한국어·프랑스어·독일어·스페인어·포르투갈어·러시아어·아랍어·힌디어·이탈리아어 총 13개 언어에서 선택할 수 있습니다."
+      },
+      "hotkey": {
+        "name": "단축키",
+        "default": "Fn",
+        "desc": "음성 입력 시작/정지에 사용하는 키보드 단축키."
+      },
+      "llm": {
+        "name": "LLM 후처리",
+        "default": "켜짐",
+        "desc": "인식 후 로컬 LLM으로 필러 단어를 제거하고 형식을 정리합니다. LLM 탭에서 커스텀 및 앱별 지시를 설정할 수 있습니다."
+      },
+      "clipboardFallback": {
+        "name": "클립보드 폴백",
+        "default": "꺼짐",
+        "desc": "활성화하면 매 인식 결과가 클립보드에도 복사됩니다. 자동 삽입이 실패해도 ⌘V로 수동 붙여넣기할 수 있습니다."
+      }
+    },
+    "faq": {
+      "title": "자주 묻는 질문",
+      "q1": "macOS 12 (Monterey) 이하에서 사용할 수 있나요?",
+      "a1": "아니요. LuminaWhisper는 macOS 13 (Ventura) 이상의 Apple Silicon Mac이 필요합니다.",
+      "q2": "Intel Mac은 지원하나요?",
+      "a2": "현재는 Apple Silicon (M1 이상) 전용입니다. Intel Mac 지원은 계획되어 있지 않습니다.",
+      "q3": "음성 데이터는 어디로 전송되나요?",
+      "a3": "음성 데이터는 기기 외부로 전송되지 않습니다. 모든 처리는 Mac에서 로컬로 이루어집니다.",
+      "q4": "단축키가 반응하지 않습니다",
+      "a4": "「시스템 설정」→「개인 정보 보호 및 보안」→「손쉬운 사용」에서 LuminaWhisper가 허용되어 있는지 확인하세요.",
+      "q5": "인식 정확도를 높이려면 어떻게 하나요?",
+      "a5": "조용한 환경에서 마이크 가까이서 또렷하게 말하면 정확도가 향상됩니다. 설정 General 탭에서 더 큰 모델（medium）을 선택하거나 LLM 후처리를 켜는 것도 효과적입니다."
+    },
+    "troubleshoot": {
+      "title": "문제 해결",
+      "issue1Title": "마이크가 인식되지 않음",
+      "issue1Step1": "「시스템 설정」→「개인 정보 보호 및 보안」→「마이크」 열기",
+      "issue1Step2": "LuminaWhisper 토글이 켜져 있는지 확인",
+      "issue1Step3": "LuminaWhisper 재시작",
+      "issue2Title": "단축키가 작동하지 않음",
+      "issue2Step1": "「시스템 설정」→「개인 정보 보호 및 보안」→「손쉬운 사용」 열기",
+      "issue2Step2": "LuminaWhisper를 허용 목록에 추가（없으면 「+」 버튼으로 추가）",
+      "issue2Step3": "Mac 재시작",
+      "issue3Title": "앱이 실행되지 않음",
+      "issue3Step1": "macOS 13 이상 · Apple Silicon인지 확인",
+      "issue3Step2": "「시스템 설정」→「개인 정보 보호 및 보안」에서 앱 실행이 허용되어 있는지 확인",
+      "issue3Step3": "앱을 삭제하고 재설치",
+      "issue4Title": "텍스트가 삽입되지 않음",
+      "issue4Step1": "녹음 정지 전에 텍스트 입력 필드에 포커스가 있는지 확인",
+      "issue4Step2": "손쉬운 사용 권한이 부여되어 있는지 확인",
+      "issue4Step3": "설정에서 「클립보드 폴백」을 켜면 삽입이 실패해도 ⌘V로 수동 붙여넣기 가능",
+      "contactDesc": "해결되지 않는 경우 앱을 삭제하고 재설치하거나 설정을 초기화해 보세요."
+    }
+  }
+}
