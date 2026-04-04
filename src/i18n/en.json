@@ -7,7 +7,7 @@
   "hero": {
     "tagline": "Voice to text, instantly.",
     "subtext": "Lumina Whisper is a Mac app for high-accuracy voice input. Powered by OpenAI Whisper, it delivers fast and precise transcription entirely on-device.",
-    "download": "Download for Free",
+    "download": "Download",
     "requirements": "macOS 14.0 or later · Apple Silicon"
   },
   "pain": {
@@ -47,8 +47,44 @@
   },
   "cta": {
     "title": "Get Started Now",
-    "button": "Download .dmg",
-    "requirements": "macOS 14.0 or later · Apple Silicon · Free"
+    "button": "Download",
+    "requirements": "macOS 14.0 or later · Apple Silicon"
+  },
+  "demo": {
+    "label": "How it works",
+    "title": "Voice input, right inside Claude Code",
+    "desc": "Text is inserted directly at the cursor position in any app. No clipboard needed — one key press does it all.",
+    "step1": "Place the cursor where you want to type",
+    "step2": "Press Fn and speak",
+    "step3": "Press Fn again → text is inserted"
+  },
+  "stats": {
+    "label": "Why Lumina Whisper",
+    "languages": "Languages",
+    "languagesSub": "JA · EN · ZH · KO · FR · DE & more",
+    "privacy": "Zero Upload",
+    "privacySub": "Fully local processing",
+    "privacySub2": "No internet required",
+    "engine": "Full Power",
+    "engineSub": "Apple Silicon optimized",
+    "models": "Model Choice",
+    "modelsSub": "tiny / base / small / medium"
+  },
+  "useCases": {
+    "label": "Use Cases",
+    "title": "Voice becomes text, in any situation",
+    "tab1": "Coding",
+    "tab2": "Meetings",
+    "tab3": "Email & Slack",
+    "tab1Title": "Dictate code comments and commit messages",
+    "tab1Desc": "Press Fn while your editor is focused and just describe what you're doing. Faster than typing and keeps you in the flow.",
+    "tab1Apps": "VS Code · Xcode · Terminal",
+    "tab2Title": "Transcribe meeting notes in real time",
+    "tab2Desc": "Dictate into your note app while the meeting is happening. Fully local means confidential discussions stay private.",
+    "tab2Apps": "Notion · Obsidian · Apple Notes",
+    "tab3Title": "Draft replies by voice, polished by LLM",
+    "tab3Desc": "Speak naturally and the LLM post-processor removes filler words. Clean, natural output without \"um\" or \"uh\".",
+    "tab3Apps": "Slack · Mail · Chat"
   },
   "footer": {
     "copyright": "© 2026 LuminaWhisper",

@@ -7,7 +7,7 @@
   "hero": {
     "tagline": "声音变文字，瞬间完成。",
     "subtext": "Lumina Whisper 是一款专为 Mac 设计的高精度语音输入应用。基于 OpenAI Whisper，完全在本地实现快速、高精度的语音转文字。",
-    "download": "免费下载",
+    "download": "下载",
     "requirements": "macOS 14.0 或更高版本 · Apple Silicon"
   },
   "pain": {
@@ -47,8 +47,44 @@
   },
   "cta": {
     "title": "立即开始",
-    "button": "下载 .dmg",
-    "requirements": "macOS 14.0 或更高版本 · Apple Silicon · 免费"
+    "button": "下载",
+    "requirements": "macOS 14.0 或更高版本 · Apple Silicon"
+  },
+  "demo": {
+    "label": "How it works",
+    "title": "在 Claude Code 中，也能用语音下指令",
+    "desc": "在任何应用中，文字直接插入光标所在位置。无需剪贴板，一键完成。",
+    "step1": "将光标置于要输入的位置",
+    "step2": "按下 Fn 并说话",
+    "step3": "再次按 Fn → 文字被插入"
+  },
+  "stats": {
+    "label": "Why Lumina Whisper",
+    "languages": "支持语言",
+    "languagesSub": "日英中韩法德等",
+    "privacy": "零上传",
+    "privacySub": "完全本地处理",
+    "privacySub2": "无需网络",
+    "engine": "全力发挥",
+    "engineSub": "Apple Silicon 优化",
+    "models": "可选模型",
+    "modelsSub": "tiny / base / small / medium"
+  },
+  "useCases": {
+    "label": "Use Cases",
+    "title": "随时随地，声音即时转换为文字",
+    "tab1": "编程",
+    "tab2": "会议笔记",
+    "tab3": "邮件 & Slack",
+    "tab1Title": "用语音输入代码注释和提交信息",
+    "tab1Desc": "聚焦编辑器后按下 Fn 说明即可。比打字更快，不打断思路。",
+    "tab1Apps": "VS Code · Xcode · Terminal",
+    "tab2Title": "实时转录会议记录",
+    "tab2Desc": "打开笔记应用，用语音输入会议记录。完全本地处理，机密信息安全无虑。",
+    "tab2Apps": "Notion · Obsidian · Apple 备忘录",
+    "tab3Title": "用语音起草回复，LLM 帮你润色",
+    "tab3Desc": "口语输入后 LLM 后处理自动去除填充词，输出自然流畅的文字。",
+    "tab3Apps": "Slack · 邮件 · 聊天"
   },
   "footer": {
     "copyright": "© 2026 LuminaWhisper",

@@ -7,7 +7,7 @@
   "hero": {
     "tagline": "Sprache zu Text, sofort.",
     "subtext": "Lumina Whisper ist eine Mac-App für hochpräzise Spracheingabe. Basierend auf OpenAI Whisper bietet sie schnelle und genaue Transkription vollständig lokal.",
-    "download": "Kostenlos herunterladen",
+    "download": "Herunterladen",
     "requirements": "macOS 14.0 oder neuer · Apple Silicon"
   },
   "pain": {
@@ -47,8 +47,44 @@
   },
   "cta": {
     "title": "Jetzt loslegen",
-    "button": ".dmg herunterladen",
-    "requirements": "macOS 14.0 oder neuer · Apple Silicon · Kostenlos"
+    "button": "Herunterladen",
+    "requirements": "macOS 14.0 oder neuer · Apple Silicon"
+  },
+  "demo": {
+    "label": "How it works",
+    "title": "Sprachbefehle direkt in Claude Code",
+    "desc": "Text wird direkt an der Cursorposition in jede App eingefügt. Kein Zwischenablage nötig — eine Taste genügt.",
+    "step1": "Cursor an die gewünschte Stelle setzen",
+    "step2": "Fn drücken und sprechen",
+    "step3": "Fn erneut drücken → Text wird eingefügt"
+  },
+  "stats": {
+    "label": "Why Lumina Whisper",
+    "languages": "Sprachen",
+    "languagesSub": "JA · EN · ZH · KO · FR · DE & mehr",
+    "privacy": "Kein Upload",
+    "privacySub": "Vollständig lokal",
+    "privacySub2": "Kein Internet nötig",
+    "engine": "Volle Leistung",
+    "engineSub": "Apple Silicon optimiert",
+    "models": "Modellauswahl",
+    "modelsSub": "tiny / base / small / medium"
+  },
+  "useCases": {
+    "label": "Use Cases",
+    "title": "Sprache wird Text — in jeder Situation",
+    "tab1": "Coding",
+    "tab2": "Meetings",
+    "tab3": "E-Mail & Slack",
+    "tab1Title": "Code-Kommentare und Commit-Nachrichten diktieren",
+    "tab1Desc": "Fn drücken im Editor und einfach erklären. Schneller als Tippen, ohne den Gedankenfluss zu unterbrechen.",
+    "tab1Apps": "VS Code · Xcode · Terminal",
+    "tab2Title": "Meeting-Notizen in Echtzeit transkribieren",
+    "tab2Desc": "Diktieren Sie Protokolle direkt in Ihre Notiz-App. Vollständig lokal — vertrauliche Inhalte bleiben privat.",
+    "tab2Apps": "Notion · Obsidian · Apple Notizen",
+    "tab3Title": "Antworten per Sprache entwerfen, LLM poliert nach",
+    "tab3Desc": "Sprechen Sie natürlich — die LLM-Nachbearbeitung entfernt Füllwörter. Sauberer, natürlicher Text als Ergebnis.",
+    "tab3Apps": "Slack · Mail · Chat"
   },
   "footer": {
     "copyright": "© 2026 LuminaWhisper",

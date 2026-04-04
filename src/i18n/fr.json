@@ -7,7 +7,7 @@
   "hero": {
     "tagline": "Voix en texte, instantanément.",
     "subtext": "Lumina Whisper est une application Mac de saisie vocale haute précision. Basée sur OpenAI Whisper, elle offre une transcription rapide et précise entièrement en local.",
-    "download": "Télécharger gratuitement",
+    "download": "Télécharger",
     "requirements": "macOS 14.0 ou version ultérieure · Apple Silicon"
   },
   "pain": {
@@ -47,8 +47,44 @@
   },
   "cta": {
     "title": "Commencer maintenant",
-    "button": "Télécharger le .dmg",
-    "requirements": "macOS 14.0 ou version ultérieure · Apple Silicon · Gratuit"
+    "button": "Télécharger",
+    "requirements": "macOS 14.0 ou version ultérieure · Apple Silicon"
+  },
+  "demo": {
+    "label": "How it works",
+    "title": "Donnez des instructions vocales à Claude Code",
+    "desc": "Le texte est inséré directement à la position du curseur dans n'importe quelle application. Pas de presse-papiers — une seule touche suffit.",
+    "step1": "Placez le curseur où vous souhaitez saisir du texte",
+    "step2": "Appuyez sur Fn et parlez",
+    "step3": "Appuyez à nouveau sur Fn → le texte est inséré"
+  },
+  "stats": {
+    "label": "Why Lumina Whisper",
+    "languages": "Langues",
+    "languagesSub": "JA · EN · ZH · KO · FR · DE & +",
+    "privacy": "Zéro upload",
+    "privacySub": "Traitement 100 % local",
+    "privacySub2": "Sans internet",
+    "engine": "Pleine puissance",
+    "engineSub": "Optimisé Apple Silicon",
+    "models": "Choix de modèle",
+    "modelsSub": "tiny / base / small / medium"
+  },
+  "useCases": {
+    "label": "Use Cases",
+    "title": "La voix devient texte, dans toutes les situations",
+    "tab1": "Codage",
+    "tab2": "Réunions",
+    "tab3": "E-mail & Slack",
+    "tab1Title": "Dictez commentaires et messages de commit",
+    "tab1Desc": "Appuyez sur Fn depuis votre éditeur et décrivez simplement votre code. Plus rapide que la frappe, sans interrompre le flux.",
+    "tab1Apps": "VS Code · Xcode · Terminal",
+    "tab2Title": "Transcription des notes de réunion en temps réel",
+    "tab2Desc": "Dictez dans votre application de notes pendant la réunion. 100 % local, les informations confidentielles restent privées.",
+    "tab2Apps": "Notion · Obsidian · Notes Apple",
+    "tab3Title": "Rédigez des réponses à voix haute, le LLM peaufine",
+    "tab3Desc": "Parlez naturellement, le post-traitement LLM supprime les mots de remplissage. Résultat propre et naturel.",
+    "tab3Apps": "Slack · Mail · Chat"
   },
   "footer": {
     "copyright": "© 2026 LuminaWhisper",

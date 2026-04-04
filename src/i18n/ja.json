@@ -7,7 +7,7 @@
   "hero": {
     "tagline": "声をテキストに、瞬時に。",
     "subtext": "Lumina Whisper は、Mac で高精度な音声入力を実現するアプリです。OpenAI Whisper をベースに、ローカル環境でも高速かつ高精度な文字起こしが可能です。",
-    "download": "無料でダウンロード",
+    "download": "ダウンロード",
     "requirements": "macOS 14.0 以降 · Apple Silicon"
   },
   "pain": {
@@ -47,8 +47,44 @@
   },
   "cta": {
     "title": "今すぐ始める",
-    "button": ".dmg をダウンロード",
-    "requirements": "macOS 14.0 以降 · Apple Silicon · 無料"
+    "button": "ダウンロード",
+    "requirements": "macOS 14.0 以降 · Apple Silicon"
+  },
+  "demo": {
+    "label": "How it works",
+    "title": "Claude Code にも、声で指示できる",
+    "desc": "どのアプリでも、カーソルがある場所に直接テキストが挿入されます。クリップボードを経由せず、キー一発で完結。",
+    "step1": "入力したい場所にカーソルを置く",
+    "step2": "Fn を押して話す",
+    "step3": "再度 Fn → テキストが挿入される"
+  },
+  "stats": {
+    "label": "Why Lumina Whisper",
+    "languages": "言語対応",
+    "languagesSub": "日英中韓仏独他",
+    "privacy": "外部送信ゼロ",
+    "privacySub": "完全ローカル処理",
+    "privacySub2": "インターネット不要",
+    "engine": "フル活用",
+    "engineSub": "Apple Silicon 最適化",
+    "models": "モデル選択可能",
+    "modelsSub": "tiny / base / small / medium"
+  },
+  "useCases": {
+    "label": "Use Cases",
+    "title": "どんな場面でも、声がそのままテキストになる",
+    "tab1": "コーディング",
+    "tab2": "会議・メモ",
+    "tab3": "メール・Slack",
+    "tab1Title": "コードのコメントやコミットメッセージを声で",
+    "tab1Desc": "エディタにフォーカスしたまま Fn を押して説明を話すだけ。タイピングより速く、思考の流れを止めない。",
+    "tab1Apps": "VS Code · Xcode · Terminal",
+    "tab2Title": "会議中のメモをリアルタイムで書き起こす",
+    "tab2Desc": "ノートアプリを開きながら議事録を音声で入力。完全ローカルなので機密情報も安心。",
+    "tab2Apps": "Notion · Obsidian · Apple メモ",
+    "tab3Title": "返信文を声で下書き、LLM が整えてくれる",
+    "tab3Desc": "話し言葉で入力してもLLM後処理がフィラーを除去。「えっと」「あの」が消えた自然な文章に。",
+    "tab3Apps": "Slack · メール · チャット"
   },
   "footer": {
     "copyright": "© 2026 LuminaWhisper",

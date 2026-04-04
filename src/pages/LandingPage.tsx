@@ -3,6 +3,8 @@ import { Helmet } from 'react-helmet-async'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import AppDemoSection from '../components/AppDemoSection'
+import StatsBar from '../components/StatsBar'
+import UseCasesSection from '../components/UseCasesSection'
 
 const DOWNLOAD_URL = 'https://github.com/k1e1n04/lumina-whisper-site/releases/latest/download/LuminaWhisper.dmg'
 
@@ -77,9 +79,38 @@ export default function LandingPage() {
           >
             {t('hero.tagline')}
           </h1>
-          <p className="anim-fade-up anim-fade-up-3 mx-auto mb-14 max-w-md text-base leading-loose text-text-muted">
+          <p className="anim-fade-up anim-fade-up-3 mx-auto mb-8 max-w-md text-base leading-loose text-text-muted">
             {t('hero.subtext')}
           </p>
+
+          {/* Badges */}
+          <div className="anim-fade-up anim-fade-up-3 mb-10 flex flex-wrap items-center justify-center gap-2">
+            {[
+              { icon: '🔒', text: '外部送信ゼロ' },
+              { icon: '⚡', text: 'Apple Neural Engine' },
+              { icon: '🌍', text: '13言語対応' },
+            ].map(({ icon, text }) => (
+              <span
+                key={text}
+                style={{
+                  background: '#EEF2FF',
+                  border: '1px solid #C7CDEE',
+                  borderRadius: 20,
+                  color: '#2B2D5F',
+                  padding: '4px 14px',
+                  fontSize: 12,
+                  letterSpacing: '0.02em',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: 6,
+                }}
+              >
+                <span>{icon}</span>
+                <span>{text}</span>
+              </span>
+            ))}
+          </div>
+
           <div className="anim-fade-up anim-fade-up-4">
             <a
               href={DOWNLOAD_URL}
@@ -102,6 +133,10 @@ export default function LandingPage() {
       </section>
 
       <AppDemoSection />
+
+      <StatsBar />
+
+      <UseCasesSection />
 
       {/* Pain → Solution */}
       <section className="border-t border-border px-6 py-24">
@@ -221,6 +256,7 @@ export default function LandingPage() {
           <p className="mt-6 text-xs tracking-[0.05em] text-text-dim">
             {t('cta.requirements')}
           </p>
+
         </div>
       </section>
 

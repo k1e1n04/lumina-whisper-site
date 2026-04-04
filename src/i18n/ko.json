@@ -7,7 +7,7 @@
   "hero": {
     "tagline": "음성을 텍스트로, 즉시.",
     "subtext": "Lumina Whisper는 Mac 전용 고정밀 음성 입력 앱입니다. OpenAI Whisper를 기반으로 완전히 로컬 환경에서 빠르고 정확한 받아쓰기를 실현합니다.",
-    "download": "무료 다운로드",
+    "download": "다운로드",
     "requirements": "macOS 14.0 이상 · Apple Silicon"
   },
   "pain": {
@@ -47,8 +47,44 @@
   },
   "cta": {
     "title": "지금 시작하기",
-    "button": ".dmg 다운로드",
-    "requirements": "macOS 14.0 이상 · Apple Silicon · 무료"
+    "button": "다운로드",
+    "requirements": "macOS 14.0 이상 · Apple Silicon"
+  },
+  "demo": {
+    "label": "How it works",
+    "title": "Claude Code에서도 음성으로 지시할 수 있다",
+    "desc": "어떤 앱에서든 커서 위치에 바로 텍스트가 삽입됩니다. 클립보드 없이 키 하나로 완결.",
+    "step1": "입력하고 싶은 위치에 커서를 놓기",
+    "step2": "Fn을 누르고 말하기",
+    "step3": "다시 Fn → 텍스트가 삽입됨"
+  },
+  "stats": {
+    "label": "Why Lumina Whisper",
+    "languages": "지원 언어",
+    "languagesSub": "한·영·일·중·불·독 등",
+    "privacy": "외부 전송 없음",
+    "privacySub": "완전 로컬 처리",
+    "privacySub2": "인터넷 불필요",
+    "engine": "완전 활용",
+    "engineSub": "Apple Silicon 최적화",
+    "models": "모델 선택 가능",
+    "modelsSub": "tiny / base / small / medium"
+  },
+  "useCases": {
+    "label": "Use Cases",
+    "title": "어떤 상황에서도 음성이 바로 텍스트로",
+    "tab1": "코딩",
+    "tab2": "회의·메모",
+    "tab3": "메일·Slack",
+    "tab1Title": "코드 주석과 커밋 메시지를 음성으로",
+    "tab1Desc": "에디터에 포커스한 채로 Fn을 눌러 설명하기만 하면 됩니다. 타이핑보다 빠르고 사고 흐름을 끊지 않습니다.",
+    "tab1Apps": "VS Code · Xcode · Terminal",
+    "tab2Title": "회의 중 메모를 실시간으로 받아쓰기",
+    "tab2Desc": "노트 앱을 열어두고 의사록을 음성으로 입력. 완전 로컬이라 기밀 정보도 안심.",
+    "tab2Apps": "Notion · Obsidian · Apple 메모",
+    "tab3Title": "답장을 음성으로 초안, LLM이 다듬어 줌",
+    "tab3Desc": "구어체로 입력해도 LLM 후처리가 필러를 제거. 자연스러운 문장으로 완성.",
+    "tab3Apps": "Slack · 메일 · 채팅"
   },
   "footer": {
     "copyright": "© 2026 LuminaWhisper",
