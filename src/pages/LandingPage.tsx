@@ -6,6 +6,7 @@ import Footer from '../components/Footer'
 import AppDemoSection from '../components/AppDemoSection'
 import StatsBar from '../components/StatsBar'
 import UseCasesSection from '../components/UseCasesSection'
+import { useInView } from '../hooks/useInView'
 
 const DOWNLOAD_URL = 'https://github.com/k1e1n04/lumina-whisper-site/releases/latest/download/LuminaWhisper.dmg'
 
@@ -21,6 +22,10 @@ const HOW_TO_USE_STEPS = ['step1', 'step2', 'step3', 'step4'] as const
 
 export default function LandingPage() {
   const { t } = useTranslation()
+
+  const { ref: painRef, inView: painInView } = useInView<HTMLDivElement>({ threshold: 0.15 })
+  const { ref: featuresRef, inView: featuresInView } = useInView<HTMLDivElement>({ threshold: 0.05 })
+  const { ref: howToUseRef, inView: howToUseInView } = useInView<HTMLDivElement>({ threshold: 0.1 })
 
   return (
     <div data-testid="landing-page" className="min-h-screen bg-bg">
@@ -86,10 +91,29 @@ export default function LandingPage() {
 
           {/* Key attributes */}
           <div className="anim-fade-up anim-fade-up-3 mb-10 flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
-            {['外部送信ゼロ', 'Apple Neural Engine', '13言語対応'].map((text, i) => (
+            {(['外部送信ゼロ', 'Apple Neural Engine', '13言語対応'] as const).map((text, i) => (
               <span key={text} className="flex items-center gap-5">
                 {i > 0 && <span className="text-text-dim" aria-hidden>·</span>}
-                <span className="text-xs tracking-[0.08em] text-text-dim">{text}</span>
+                <span className="flex items-center gap-1.5 text-xs tracking-[0.08em] text-text-dim">
+                  {i === 0 && (
+                    <svg
+                      className="shield-pulse"
+                      width="11"
+                      height="12"
+                      viewBox="0 0 11 12"
+                      fill="none"
+                      aria-hidden
+                    >
+                      <path
+                        d="M5.5 1L9.5 2.8V6c0 2.4-1.7 4.1-4 4.9C3.2 10.1 1.5 8.4 1.5 6V2.8L5.5 1z"
+                        stroke="currentColor"
+                        strokeWidth="1"
+                        fill="none"
+                      />
+                    </svg>
+                  )}
+                  {text}
+                </span>
               </span>
             ))}
           </div>
@@ -120,27 +144,41 @@ export default function LandingPage() {
 
       {/* Pain → Solution */}
       <section className="border-t border-border px-6 py-24">
-        <div className="mx-auto max-w-3xl">
-          <p className="mb-8 text-sm leading-loose text-text-muted">
+        <div ref={painRef} className="mx-auto max-w-3xl">
+          <p
+            className={`mb-8 text-sm leading-loose text-text-muted reveal ${painInView ? 'in-view' : ''}`}
+          >
             {t('pain.question')}
           </p>
-          <ul className="mb-8 space-y-3">
-            {(t('pain.items', { returnObjects: true }) as string[]).map((item) => (
-              <li key={item} className="flex items-center gap-3 text-sm text-text-muted">
+          <ul className="mb-12 space-y-3">
+            {(t('pain.items', { returnObjects: true }) as string[]).map((item, i) => (
+              <li
+                key={item}
+                className={`flex items-center gap-3 text-sm text-text-muted reveal ${painInView ? 'in-view' : ''}`}
+                style={{ animationDelay: `${0.05 + i * 0.1}s` }}
+              >
                 <span className="h-px w-4 shrink-0 bg-text-dim" />
                 {item}
               </li>
             ))}
           </ul>
-          <p className="text-base font-normal text-text" style={{ fontFamily: 'var(--font-serif)' }}>
-            {t('pain.answer')}
-          </p>
+          <div
+            className={`reveal ${painInView ? 'in-view' : ''} border-l-2 border-accent pl-8`}
+            style={{ animationDelay: '0.35s' }}
+          >
+            <p
+              className="text-2xl font-normal leading-relaxed text-text"
+              style={{ fontFamily: 'var(--font-serif)' }}
+            >
+              {t('pain.answer')}
+            </p>
+          </div>
         </div>
       </section>
 
       {/* Features */}
       <section className="px-6 py-28">
-        <div className="mx-auto max-w-3xl">
+        <div ref={featuresRef} className="mx-auto max-w-3xl">
           <div className="mb-16 flex items-center gap-6">
             <span className="text-xs tracking-[0.1em] text-text-dim uppercase">Features</span>
             <div className="flex-1 border-t border-border" />
@@ -157,7 +195,8 @@ export default function LandingPage() {
             {FEATURES.map(({ key }, index) => (
               <div
                 key={key}
-                className="group flex gap-10 border-t border-border py-9 last:border-b transition-colors duration-150 hover:bg-surface"
+                className={`group flex gap-10 border-t border-border py-9 last:border-b transition-colors duration-150 hover:bg-surface reveal ${featuresInView ? 'in-view' : ''}`}
+                style={{ animationDelay: `${index * 0.08}s` }}
               >
                 <span className="w-6 shrink-0 pt-0.5 text-xs tabular-nums text-text-dim">
                   {String(index + 1).padStart(2, '0')}
@@ -183,7 +222,7 @@ export default function LandingPage() {
 
       {/* How to use */}
       <section className="border-y border-border bg-surface px-6 py-28">
-        <div className="mx-auto max-w-3xl">
+        <div ref={howToUseRef} className="mx-auto max-w-3xl">
           <div className="mb-16 flex items-center gap-6">
             <span className="text-xs tracking-[0.1em] text-text-dim uppercase">How to use</span>
             <div className="flex-1 border-t border-border" />
@@ -198,7 +237,11 @@ export default function LandingPage() {
 
           <div className="grid grid-cols-2 gap-px bg-border lg:grid-cols-4">
             {HOW_TO_USE_STEPS.map((step, index) => (
-              <div key={step} className="bg-surface p-8">
+              <div
+                key={step}
+                className={`bg-surface p-8 reveal ${howToUseInView ? 'in-view' : ''}`}
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
                 <div
                   className="mb-6 text-4xl font-normal text-text-dim"
                   style={{ fontFamily: 'var(--font-serif)' }}

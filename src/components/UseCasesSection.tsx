@@ -256,8 +256,8 @@ export default function UseCasesSection() {
 
         {/* Tab content */}
         <div
-          className="flex flex-col items-start gap-10 lg:flex-row lg:items-start"
-          style={{ opacity: 1, transition: 'opacity 200ms ease' }}
+          key={activeTab}
+          className="tab-reveal flex flex-col items-start gap-10 lg:flex-row lg:items-start"
         >
           {/* Left: text */}
           <div className="flex-1 min-w-0">
