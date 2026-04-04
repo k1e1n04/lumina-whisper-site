@@ -181,7 +181,7 @@ export default function AppDemoSection() {
                   flexShrink: 0,
                 }}
               >
-                <img src="/icon.png" alt="" width={36} height={36} style={{ display: 'block', borderRadius: '50%' }} />
+                <img src="/icon.png" alt="" width={36} height={36} style={{ display: 'block', transform: 'scale(1.05)' }} />
               </div>
 
               {/* Waveform */}
