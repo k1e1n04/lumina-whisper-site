@@ -138,7 +138,44 @@ export default function LandingPage() {
 
       <StatsBar />
 
-      <UseCasesSection />
+      {/* How to use */}
+      <section className="border-y border-border bg-surface px-6 py-28">
+        <div className="mx-auto max-w-3xl">
+          <div className="mb-16 flex items-center gap-6">
+            <span className="text-xs tracking-[0.1em] text-text-dim uppercase">How to use</span>
+            <div className="flex-1 border-t border-border" />
+          </div>
+
+          <h2
+            className="mb-16 text-2xl font-normal text-text"
+            style={{ fontFamily: 'var(--font-serif)' }}
+          >
+            {t('howToUse.title')}
+          </h2>
+
+          <div className="grid grid-cols-2 gap-px bg-border lg:grid-cols-4">
+            {HOW_TO_USE_STEPS.map((step, index) => (
+              <div key={step} className="bg-surface p-8">
+                <div
+                  className="mb-6 text-4xl font-normal text-text-dim"
+                  style={{ fontFamily: 'var(--font-serif)' }}
+                >
+                  {index + 1}
+                </div>
+                <p className="mb-3 text-xs tracking-[0.1em] text-text-dim">
+                  {t(`howToUse.${step}.label`)}
+                </p>
+                <p
+                  className="text-sm leading-relaxed text-text"
+                  style={{ fontFamily: 'var(--font-serif)' }}
+                >
+                  {t(`howToUse.${step}.text`)}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Pain → Solution */}
       <section className="border-t border-border px-6 py-24">
@@ -201,44 +238,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* How to use */}
-      <section className="border-y border-border bg-surface px-6 py-28">
-        <div className="mx-auto max-w-3xl">
-          <div className="mb-16 flex items-center gap-6">
-            <span className="text-xs tracking-[0.1em] text-text-dim uppercase">How to use</span>
-            <div className="flex-1 border-t border-border" />
-          </div>
-
-          <h2
-            className="mb-16 text-2xl font-normal text-text"
-            style={{ fontFamily: 'var(--font-serif)' }}
-          >
-            {t('howToUse.title')}
-          </h2>
-
-          <div className="grid grid-cols-2 gap-px bg-border lg:grid-cols-4">
-            {HOW_TO_USE_STEPS.map((step, index) => (
-              <div key={step} className="bg-surface p-8">
-                <div
-                  className="mb-6 text-4xl font-normal text-text-dim"
-                  style={{ fontFamily: 'var(--font-serif)' }}
-                >
-                  {index + 1}
-                </div>
-                <p className="mb-3 text-xs tracking-[0.1em] text-text-dim">
-                  {t(`howToUse.${step}.label`)}
-                </p>
-                <p
-                  className="text-sm leading-relaxed text-text"
-                  style={{ fontFamily: 'var(--font-serif)' }}
-                >
-                  {t(`howToUse.${step}.text`)}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <UseCasesSection />
 
       {/* CTA */}
       <section className="px-6 py-28 text-center">
