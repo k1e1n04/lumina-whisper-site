@@ -1,4 +1,5 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
+import GoogleAnalytics from './components/GoogleAnalytics'
 import LandingPage from './pages/LandingPage'
 import ReleasePage from './pages/ReleasePage'
 import PrivacyPage from './pages/PrivacyPage'
@@ -16,20 +17,23 @@ interface AppProps {
 
 function AppRoutes() {
   return (
-    <Routes>
-      <Route path="/" element={<LandingPage />} />
-      <Route path="/release" element={<ReleasePage />} />
-      <Route path="/privacy" element={<PrivacyPage />} />
-      <Route path="/guide" element={<Navigate to="/guide/install" replace />} />
-      <Route path="/guide" element={<GuideLayout />}>
-        <Route path="install" element={<InstallPage />} />
-        <Route path="setup" element={<SetupPage />} />
-        <Route path="usage" element={<UsagePage />} />
-        <Route path="settings" element={<SettingsPage />} />
-        <Route path="faq" element={<FaqPage />} />
-        <Route path="troubleshoot" element={<TroubleshootPage />} />
-      </Route>
-    </Routes>
+    <>
+      <GoogleAnalytics />
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/release" element={<ReleasePage />} />
+        <Route path="/privacy" element={<PrivacyPage />} />
+        <Route path="/guide" element={<Navigate to="/guide/install" replace />} />
+        <Route path="/guide" element={<GuideLayout />}>
+          <Route path="install" element={<InstallPage />} />
+          <Route path="setup" element={<SetupPage />} />
+          <Route path="usage" element={<UsagePage />} />
+          <Route path="settings" element={<SettingsPage />} />
+          <Route path="faq" element={<FaqPage />} />
+          <Route path="troubleshoot" element={<TroubleshootPage />} />
+        </Route>
+      </Routes>
+    </>
   )
 }
 
