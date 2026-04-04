@@ -136,6 +136,26 @@ export default function LandingPage() {
 
       <UseCasesSection />
 
+      {/* Pain → Solution */}
+      <section className="border-t border-border px-6 py-24">
+        <div className="mx-auto max-w-3xl">
+          <p className="mb-8 text-sm leading-loose text-text-muted">
+            {t('pain.question')}
+          </p>
+          <ul className="mb-8 space-y-3">
+            {(t('pain.items', { returnObjects: true }) as string[]).map((item) => (
+              <li key={item} className="flex items-center gap-3 text-sm text-text-muted">
+                <span className="h-px w-4 shrink-0 bg-text-dim" />
+                {item}
+              </li>
+            ))}
+          </ul>
+          <p className="text-base font-normal text-text" style={{ fontFamily: 'var(--font-serif)' }}>
+            {t('pain.answer')}
+          </p>
+        </div>
+      </section>
+
       <AppDemoSection />
 
       <StatsBar />
@@ -176,26 +196,6 @@ export default function LandingPage() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Pain → Solution */}
-      <section className="border-t border-border px-6 py-24">
-        <div className="mx-auto max-w-3xl">
-          <p className="mb-8 text-sm leading-loose text-text-muted">
-            {t('pain.question')}
-          </p>
-          <ul className="mb-8 space-y-3">
-            {(t('pain.items', { returnObjects: true }) as string[]).map((item) => (
-              <li key={item} className="flex items-center gap-3 text-sm text-text-muted">
-                <span className="h-px w-4 shrink-0 bg-text-dim" />
-                {item}
-              </li>
-            ))}
-          </ul>
-          <p className="text-base font-normal text-text" style={{ fontFamily: 'var(--font-serif)' }}>
-            {t('pain.answer')}
-          </p>
         </div>
       </section>
 
