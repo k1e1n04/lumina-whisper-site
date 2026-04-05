@@ -96,7 +96,8 @@
     "title": "지금 시작하기",
     "purchase": "구매하기 — ¥980",
     "download": "이미 구매하셨나요?",
-    "requirements": "macOS 14.0 이상 · Apple Silicon"
+    "requirements": "macOS 14.0 이상 · Apple Silicon",
+    "license": "개인 및 상업적 이용 가능 · 일회성 구매 · 구독 없음"
   },
   "demo": {
     "label": "How it works",

@@ -96,7 +96,8 @@
     "title": "立即开始",
     "purchase": "立即购买 — ¥980",
     "download": "已购买？",
-    "requirements": "macOS 14.0 或更高版本 · Apple Silicon"
+    "requirements": "macOS 14.0 或更高版本 · Apple Silicon",
+    "license": "支持个人与商业用途 · 一次性购买 · 无需订阅"
   },
   "demo": {
     "label": "How it works",
