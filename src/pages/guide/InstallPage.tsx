@@ -1,12 +1,31 @@
 import { Trans, useTranslation } from 'react-i18next'
 import PageSeo from '../../components/PageSeo'
 
+const PURCHASE_URL = 'https://buy.polar.sh/polar_cl_XVHFZsZLBBvwWYUgL6Kb9vLzBUM6KsCoGnfA74ZMmXT'
+
 export default function InstallPage() {
   const { t } = useTranslation()
   return (
     <article data-testid="guide-install" className="max-w-none prose">
       <PageSeo page="guideInstall" />
       <h1 className="mb-6 text-3xl font-bold text-accent">{t('guide.install.title')}</h1>
+
+      <h2 className="mt-8 mb-3 text-xl font-semibold text-text">{t('guide.install.sectionPurchase')}</h2>
+      <p className="mb-4 text-text-muted">
+        <Trans
+          i18nKey="guide.install.purchaseDesc"
+          components={{
+            link: (
+              <a
+                href={PURCHASE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent hover:underline"
+              />
+            ),
+          }}
+        />
+      </p>
 
       <h2 className="mt-8 mb-3 text-xl font-semibold text-text">{t('guide.install.section1')}</h2>
       <p className="mb-4 text-text-muted">
@@ -37,13 +56,25 @@ export default function InstallPage() {
         <li>{t('guide.install.installStep3')}</li>
       </ol>
 
+      <h2 className="mt-8 mb-3 text-xl font-semibold text-text">{t('guide.install.section4')}</h2>
+      <p className="mb-2 text-text-muted">{t('guide.install.licenseDesc1')}</p>
+      <p className="text-text-muted">{t('guide.install.licenseDesc2')}</p>
+
+      <h2 className="mt-8 mb-3 text-xl font-semibold text-text">{t('guide.install.sectionInputMonitoring')}</h2>
+      <p className="text-text-muted">{t('guide.install.inputMonitoringDesc')}</p>
+
       <h2 className="mt-8 mb-3 text-xl font-semibold text-text">{t('guide.install.section3')}</h2>
       <p className="mb-2 text-text-muted">{t('guide.install.micDesc1')}</p>
       <p className="text-text-muted">{t('guide.install.micDesc2')}</p>
 
-      <h2 className="mt-8 mb-3 text-xl font-semibold text-text">{t('guide.install.section4')}</h2>
-      <p className="mb-2 text-text-muted">{t('guide.install.licenseDesc1')}</p>
-      <p className="text-text-muted">{t('guide.install.licenseDesc2')}</p>
+      <h2 className="mt-8 mb-3 text-xl font-semibold text-text">{t('guide.install.sectionAccessibility')}</h2>
+      <p className="text-text-muted">{t('guide.install.accessibilityDesc')}</p>
+
+      <h2 className="mt-8 mb-3 text-xl font-semibold text-text">{t('guide.install.sectionModelDownload')}</h2>
+      <p className="text-text-muted">{t('guide.install.modelDownloadDesc')}</p>
+
+      <h2 className="mt-8 mb-3 text-xl font-semibold text-text">{t('guide.install.sectionLanguage')}</h2>
+      <p className="text-text-muted">{t('guide.install.languageDesc')}</p>
 
       <div className="mt-6 rounded-lg border border-border bg-surface p-4">
         <p className="text-sm text-accent">
