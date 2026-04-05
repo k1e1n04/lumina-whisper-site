@@ -173,6 +173,12 @@
     "subtitle": "Release Notes",
     "newFeatures": "新機能",
     "bugFixes": "バグ修正",
+    "v042": {
+      "features": {},
+      "fixes": {
+        "llmOutputNoise": "LLM 後処理の出力品質を改善"
+      }
+    },
     "v041": {
       "features": {},
       "fixes": {

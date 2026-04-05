@@ -173,6 +173,12 @@
     "subtitle": "Release Notes",
     "newFeatures": "Neue Funktionen",
     "bugFixes": "Fehlerbehebungen",
+    "v042": {
+      "features": {},
+      "fixes": {
+        "llmOutputNoise": "Ausgabequalität der LLM-Nachbearbeitung verbessert"
+      }
+    },
     "v041": {
       "features": {},
       "fixes": {

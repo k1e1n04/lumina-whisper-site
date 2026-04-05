@@ -13,7 +13,7 @@ import sys
 from pathlib import Path
 
 SAMPLE_COUNT = 50
-MODEL = "whisper-small"
+MODEL = "whisper-medium"
 LANGUAGE = "ja"
 OUTPUT_FILENAME = "lumina_results.csv"
 
@@ -47,7 +47,7 @@ def transcribe(audio_path: Path, whisperkit_cli: Path) -> str:
         ],
         capture_output=True,
         text=True,
-        timeout=120,
+        timeout=600,
     )
     # whisperkit-cli outputs the transcription to stdout; last non-empty line
     lines = [l.strip() for l in result.stdout.splitlines() if l.strip()]

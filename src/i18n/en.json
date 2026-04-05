@@ -173,6 +173,12 @@
     "subtitle": "Release Notes",
     "newFeatures": "New Features",
     "bugFixes": "Bug Fixes",
+    "v042": {
+      "features": {},
+      "fixes": {
+        "llmOutputNoise": "Improved LLM post-processing output quality"
+      }
+    },
     "v041": {
       "features": {},
       "fixes": {

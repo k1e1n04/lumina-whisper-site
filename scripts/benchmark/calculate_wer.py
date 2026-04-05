@@ -2,9 +2,13 @@
 """Calculate CER between Lumina Whisper and Apple voice input transcriptions.
 
 Usage:
-    python calculate_wer.py
-    # Reads lumina_results.csv and apple_results.csv from the same directory.
+    python calculate_wer.py [lumina_csv] [apple_csv]
+    # Defaults: lumina_results.csv and apple_results.csv in the same directory.
     # Writes public/benchmark-results.json at the project root.
+
+Examples:
+    python calculate_wer.py
+    python calculate_wer.py lumina_results.csv apple_results_custom.csv
 """
 import csv
 import json
@@ -15,8 +19,6 @@ from pathlib import Path
 import jiwer
 
 BENCHMARK_DIR = Path(__file__).parent
-LUMINA_RESULTS = BENCHMARK_DIR / "lumina_results.csv"
-APPLE_RESULTS = BENCHMARK_DIR / "apple_results.csv"
 OUTPUT_JSON = BENCHMARK_DIR.parent.parent / "public" / "benchmark-results.json"
 MODEL_NAME = "whisper-small"
 
@@ -71,15 +73,17 @@ def pick_worst_samples(
 
 
 def main() -> None:
-    for path in (LUMINA_RESULTS, APPLE_RESULTS):
+    lumina_path = BENCHMARK_DIR / (sys.argv[1] if len(sys.argv) > 1 else "lumina_results.csv")
+    apple_path = BENCHMARK_DIR / (sys.argv[2] if len(sys.argv) > 2 else "apple_results.csv")
+
+    for path in (lumina_path, apple_path):
         if not path.exists():
             print(f"Error: {path} not found.", file=sys.stderr)
-            print("Run transcribe_lumina.py first, then fill in apple_results.csv.", file=sys.stderr)
             sys.exit(1)
 
-    references = load_references(LUMINA_RESULTS)
-    lumina = load_csv(LUMINA_RESULTS)
-    apple = load_csv(APPLE_RESULTS)
+    references = load_references(lumina_path)
+    lumina = load_csv(lumina_path)
+    apple = load_csv(apple_path)
 
     common_ids = sorted(set(references) & set(lumina) & set(apple))
     ref_list = [references[sid] for sid in common_ids]

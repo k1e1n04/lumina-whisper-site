@@ -1,33 +1,33 @@
 {
   "lumina": {
-    "cer": 3.2,
+    "cer": 96.2,
     "sampleCount": 50
   },
   "apple": {
-    "cer": 8.7,
+    "cer": 18.2,
     "sampleCount": 50
   },
   "dataset": "JSUT Basic5000",
   "measuredAt": "2026-04-05",
-  "modelName": "openai_whisper-small",
+  "modelName": "whisper-medium",
   "samples": [
     {
-      "id": "BASIC5000_0001",
-      "reference": "あのイーハトーヴォのすきとおった風",
-      "lumina": "あのイーハトーヴォのすきとおった風",
-      "apple": "あのいーはとーヴォのすきとおった風"
+      "id": "BASIC5000_0021",
+      "reference": "疲労やら、飢えやらで、彼は目眩を感じた。",
+      "lumina": "疲労やら、飢えやらで彼は目舞いを感じた。",
+      "apple": "拾いやら上で、彼はめ"
     },
     {
-      "id": "BASIC5000_0002",
-      "reference": "夏でも底冷えのする透明な風",
-      "lumina": "夏でも底冷えのする透明な風",
-      "apple": "夏でも底冷えのする透明な方"
+      "id": "BASIC5000_0012",
+      "reference": "溺れかかっていた乗客は、すべて救助された。",
+      "lumina": "溺れかかっていた乗客は全て救助された。",
+      "apple": "溺れたは全て救助された"
     },
     {
-      "id": "BASIC5000_0003",
-      "reference": "女の子ですしことごとく不服なのです",
-      "lumina": "女の子ですしことごとく不服なのです",
-      "apple": "女の子です事ことごとく不服なのです"
+      "id": "BASIC5000_0048",
+      "reference": "気の弱い男が、美女を得たためしがない。",
+      "lumina": "気の弱い男が美情を得た試しがない",
+      "apple": "弱い男がビジョン得たしがない"
     }
   ]
 }
