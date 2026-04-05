@@ -176,6 +176,9 @@
       "section3": "3. 마이크 권한 허용",
       "micDesc1": "최초 실행 시 마이크 접근 권한을 요청하는 다이얼로그가 표시됩니다. 「확인」을 클릭하세요.",
       "micDesc2": "나중에 권한을 변경하려면 「시스템 설정」→「개인 정보 보호 및 보안」→「마이크」에서 LuminaWhisper를 활성화하세요.",
+      "section4": "4. 라이선스 활성화",
+      "licenseDesc1": "최초 실행 시 온보딩 마법사가 표시됩니다. 첫 번째 단계에서 라이선스 키 입력을 요청합니다.",
+      "licenseDesc2": "Polar.sh에서 구매 후 받은 라이선스 키를 입력하고 「인증하기」 버튼을 클릭하여 활성화하세요.",
       "requirementsLabel": "시스템 요구 사항:",
       "requirementsValue": "macOS 14.0 (Sonoma) 이상 · Apple Silicon (M1 이상)"
     },

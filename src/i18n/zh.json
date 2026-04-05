@@ -176,6 +176,9 @@
       "section3": "3. 麦克风权限",
       "micDesc1": "首次启动时会出现请求麦克风访问权限的对话框。请点击「好」。",
       "micDesc2": "如需之后更改权限，请前往「系统设置」→「隐私与安全性」→「麦克风」启用 LuminaWhisper。",
+      "section4": "4. 许可证激活",
+      "licenseDesc1": "首次启动时会显示引导向导。第一步将提示您输入许可证密钥。",
+      "licenseDesc2": "输入在 Polar.sh 购买后收到的许可证密钥，然后点击「激活」按钮进行激活。",
       "requirementsLabel": "系统要求：",
       "requirementsValue": "macOS 14.0 (Sonoma) 或更高版本 · Apple Silicon (M1 或更高)"
     },

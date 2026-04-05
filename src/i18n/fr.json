@@ -176,6 +176,9 @@
       "section3": "3. Permission microphone",
       "micDesc1": "Une boîte de dialogue demandant l'accès au microphone apparaîtra au premier lancement. Cliquez sur OK.",
       "micDesc2": "Pour modifier la permission ultérieurement, allez dans Réglages Système → Confidentialité et sécurité → Microphone et activez LuminaWhisper.",
+      "section4": "4. Activation de la licence",
+      "licenseDesc1": "Un assistant de configuration apparaîtra au premier lancement. La première étape vous demandera d'entrer votre clé de licence.",
+      "licenseDesc2": "Entrez la clé de licence reçue après votre achat sur Polar.sh et cliquez sur Activer.",
       "requirementsLabel": "Configuration requise :",
       "requirementsValue": "macOS 14.0 (Sonoma) ou version ultérieure · Apple Silicon (M1 ou version ultérieure)"
     },

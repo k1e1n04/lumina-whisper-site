@@ -41,6 +41,10 @@ export default function InstallPage() {
       <p className="mb-2 text-text-muted">{t('guide.install.micDesc1')}</p>
       <p className="text-text-muted">{t('guide.install.micDesc2')}</p>
 
+      <h2 className="mt-8 mb-3 text-xl font-semibold text-text">{t('guide.install.section4')}</h2>
+      <p className="mb-2 text-text-muted">{t('guide.install.licenseDesc1')}</p>
+      <p className="text-text-muted">{t('guide.install.licenseDesc2')}</p>
+
       <div className="mt-6 rounded-lg border border-border bg-surface p-4">
         <p className="text-sm text-accent">
           <strong>{t('guide.install.requirementsLabel')}</strong> {t('guide.install.requirementsValue')}
