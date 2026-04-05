@@ -7,7 +7,8 @@
   "hero": {
     "tagline": "Voice to text, instantly.",
     "subtext": "Lumina Whisper is a Mac app for high-accuracy voice input. Powered by OpenAI Whisper, it delivers fast and precise transcription entirely on-device.",
-    "download": "Download",
+    "purchase": "Buy now — ¥980",
+    "download": "Already purchased?",
     "requirements": "macOS 14.0 or later · Apple Silicon"
   },
   "pain": {
@@ -47,7 +48,8 @@
   },
   "cta": {
     "title": "Get Started Now",
-    "button": "Download",
+    "purchase": "Buy now — ¥980",
+    "download": "Already purchased?",
     "requirements": "macOS 14.0 or later · Apple Silicon"
   },
   "demo": {

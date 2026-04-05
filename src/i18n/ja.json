@@ -7,7 +7,8 @@
   "hero": {
     "tagline": "声をテキストに、瞬時に。",
     "subtext": "Lumina Whisper は、Mac で高精度な音声入力を実現するアプリです。OpenAI Whisper をベースに、ローカル環境でも高速かつ高精度な文字起こしが可能です。",
-    "download": "ダウンロード",
+    "purchase": "購入する — ¥980",
+    "download": "購入済みの方はこちら",
     "requirements": "macOS 14.0 以降 · Apple Silicon"
   },
   "pain": {
@@ -47,7 +48,8 @@
   },
   "cta": {
     "title": "今すぐ始める",
-    "button": "ダウンロード",
+    "purchase": "購入する — ¥980",
+    "download": "購入済みの方はこちら",
     "requirements": "macOS 14.0 以降 · Apple Silicon"
   },
   "demo": {

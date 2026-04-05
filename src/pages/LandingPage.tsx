@@ -9,6 +9,7 @@ import { useInView } from '../hooks/useInView'
 import PageSeo from '../components/PageSeo'
 
 const DOWNLOAD_URL = 'https://github.com/k1e1n04/lumina-whisper-site/releases/latest/download/LuminaWhisper.dmg'
+const PURCHASE_URL = 'https://buy.polar.sh/polar_cl_XVHFZsZLBBvwWYUgL6Kb9vLzBUM6KsCoGnfA74ZMmXT'
 
 const FEATURES = [
   { key: 'hotkey' },
@@ -93,15 +94,23 @@ export default function LandingPage() {
             ))}
           </div>
 
-          <div className="anim-fade-up anim-fade-up-4">
+          <div className="anim-fade-up anim-fade-up-4 flex flex-col items-center gap-4">
+            <a
+              href={PURCHASE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block border border-accent bg-accent px-10 py-3.5 text-xs tracking-[0.1em] text-white no-underline transition-all duration-200 hover:bg-transparent hover:text-accent uppercase"
+            >
+              {t('hero.purchase')}
+            </a>
             <a
               href={DOWNLOAD_URL}
               onClick={() => trackDownloadClick('hero')}
-              className="inline-block border border-accent px-10 py-3.5 text-xs tracking-[0.1em] text-accent no-underline transition-all duration-200 hover:bg-accent hover:text-white uppercase"
+              className="text-xs tracking-[0.05em] text-text-dim no-underline hover:text-text-muted transition-colors duration-200"
             >
               {t('hero.download')}
             </a>
-            <p className="mt-6 text-xs tracking-[0.05em] text-text-dim">
+            <p className="text-xs tracking-[0.05em] text-text-dim">
               {t('hero.requirements')}
             </p>
           </div>
@@ -250,13 +259,23 @@ export default function LandingPage() {
             {t('cta.title')}
           </h2>
           <a
-            href={DOWNLOAD_URL}
-            onClick={() => trackDownloadClick('cta')}
+            href={PURCHASE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block border border-accent bg-accent px-12 py-4 text-xs tracking-[0.1em] text-white no-underline transition-all duration-200 hover:bg-transparent hover:text-accent uppercase"
           >
-            {t('cta.button')}
+            {t('cta.purchase')}
           </a>
-          <p className="mt-6 text-xs tracking-[0.05em] text-text-dim">
+          <p className="mt-4">
+            <a
+              href={DOWNLOAD_URL}
+              onClick={() => trackDownloadClick('cta')}
+              className="text-xs tracking-[0.05em] text-text-dim no-underline hover:text-text-muted transition-colors duration-200"
+            >
+              {t('cta.download')}
+            </a>
+          </p>
+          <p className="mt-4 text-xs tracking-[0.05em] text-text-dim">
             {t('cta.requirements')}
           </p>
 
