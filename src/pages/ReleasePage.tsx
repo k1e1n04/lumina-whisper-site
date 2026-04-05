@@ -5,6 +5,18 @@ import PageSeo from '../components/PageSeo'
 
 const RELEASES = [
   {
+    version: '0.4.0',
+    date: '2026-04-06',
+    key: 'v040',
+    features: [
+      'mlxLlmBackend',
+      'llmModelManagerUi',
+      'onboardingLlmDownloadStep',
+      'newReplacementPresets',
+    ] as string[],
+    fixes: ['llmPromptRefinement', 'onboardingDownloadTaskCancellation', 'agileKatakanaCorrection'],
+  },
+  {
     version: '0.3.2',
     date: '2026-04-06',
     key: 'v032',

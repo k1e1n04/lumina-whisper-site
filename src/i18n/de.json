@@ -173,6 +173,19 @@
     "subtitle": "Release Notes",
     "newFeatures": "Neue Funktionen",
     "bugFixes": "Fehlerbehebungen",
+    "v040": {
+      "features": {
+        "mlxLlmBackend": "Geschwindigkeit und Stabilität der LLM-Nachbearbeitung verbessert",
+        "llmModelManagerUi": "Download und Verwaltung von LLM-Modellen in den Einstellungen hinzugefügt",
+        "onboardingLlmDownloadStep": "Onboarding um einen Vorbereitungs-Schritt für das LLM-Modell erweitert",
+        "newReplacementPresets": "Neue Ersetzungs-Presets hinzugefügt: \"プルリク -> PR\" und \"マージリクエスト -> merge request\""
+      },
+      "fixes": {
+        "llmPromptRefinement": "Qualität der kontextbezogenen Textkorrektur verbessert",
+        "onboardingDownloadTaskCancellation": "Stabilität des Modell-Downloads bei erneutem Onboarding verbessert",
+        "agileKatakanaCorrection": "Problem in der Nachbearbeitung behoben, bei dem \"アジャイル\" falsch verändert werden konnte"
+      }
+    },
     "v032": {
       "features": {},
       "fixes": {
