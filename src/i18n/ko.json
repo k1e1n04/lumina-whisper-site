@@ -2,12 +2,14 @@
   "nav": {
     "guide": "가이드",
     "release": "릴리즈 노트",
-    "download": "다운로드"
+    "purchase": "구매하기 — ¥980",
+    "download": "이미 구매하셨나요?"
   },
   "hero": {
     "tagline": "음성을 텍스트로, 즉시.",
     "subtext": "Lumina Whisper는 Mac 전용 고정밀 음성 입력 앱입니다. OpenAI Whisper를 기반으로 완전히 로컬 환경에서 빠르고 정확한 받아쓰기를 실현합니다.",
-    "download": "다운로드",
+    "purchase": "구매하기 — ¥980",
+    "download": "이미 구매하셨나요?",
     "requirements": "macOS 14.0 이상 · Apple Silicon"
   },
   "pain": {
@@ -47,7 +49,8 @@
   },
   "cta": {
     "title": "지금 시작하기",
-    "button": "다운로드",
+    "purchase": "구매하기 — ¥980",
+    "download": "이미 구매하셨나요?",
     "requirements": "macOS 14.0 이상 · Apple Silicon"
   },
   "demo": {

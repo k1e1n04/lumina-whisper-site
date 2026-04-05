@@ -7,7 +7,8 @@
   "hero": {
     "tagline": "Sprache zu Text, sofort.",
     "subtext": "Lumina Whisper ist eine Mac-App für hochpräzise Spracheingabe. Basierend auf OpenAI Whisper bietet sie schnelle und genaue Transkription vollständig lokal.",
-    "download": "Herunterladen",
+    "purchase": "Jetzt kaufen — ¥980",
+    "download": "Bereits gekauft?",
     "requirements": "macOS 14.0 oder neuer · Apple Silicon"
   },
   "pain": {
@@ -47,7 +48,8 @@
   },
   "cta": {
     "title": "Jetzt loslegen",
-    "button": "Herunterladen",
+    "purchase": "Jetzt kaufen — ¥980",
+    "download": "Bereits gekauft?",
     "requirements": "macOS 14.0 oder neuer · Apple Silicon"
   },
   "demo": {

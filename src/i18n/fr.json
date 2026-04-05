@@ -2,12 +2,14 @@
   "nav": {
     "guide": "Guide",
     "release": "Notes de version",
-    "download": "Télécharger"
+    "purchase": "Acheter — ¥980",
+    "download": "Déjà acheté ?"
   },
   "hero": {
     "tagline": "Voix en texte, instantanément.",
     "subtext": "Lumina Whisper est une application Mac de saisie vocale haute précision. Basée sur OpenAI Whisper, elle offre une transcription rapide et précise entièrement en local.",
-    "download": "Télécharger",
+    "purchase": "Acheter — ¥980",
+    "download": "Déjà acheté ?",
     "requirements": "macOS 14.0 ou version ultérieure · Apple Silicon"
   },
   "pain": {
@@ -47,7 +49,8 @@
   },
   "cta": {
     "title": "Commencer maintenant",
-    "button": "Télécharger",
+    "purchase": "Acheter — ¥980",
+    "download": "Déjà acheté ?",
     "requirements": "macOS 14.0 ou version ultérieure · Apple Silicon"
   },
   "demo": {

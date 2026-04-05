@@ -2,12 +2,14 @@
   "nav": {
     "guide": "指南",
     "release": "发行说明",
-    "download": "下载"
+    "purchase": "立即购买 — ¥980",
+    "download": "已购买？"
   },
   "hero": {
     "tagline": "声音变文字，瞬间完成。",
     "subtext": "Lumina Whisper 是一款专为 Mac 设计的高精度语音输入应用。基于 OpenAI Whisper，完全在本地实现快速、高精度的语音转文字。",
-    "download": "下载",
+    "purchase": "立即购买 — ¥980",
+    "download": "已购买？",
     "requirements": "macOS 14.0 或更高版本 · Apple Silicon"
   },
   "pain": {
@@ -47,7 +49,8 @@
   },
   "cta": {
     "title": "立即开始",
-    "button": "下载",
+    "purchase": "立即购买 — ¥980",
+    "download": "已购买？",
     "requirements": "macOS 14.0 或更高版本 · Apple Silicon"
   },
   "demo": {
