@@ -47,6 +47,51 @@
     "step3": { "label": "步骤 3", "text": "说话" },
     "step4": { "label": "步骤 4", "text": "再次按 Fn 停止 → 文字被插入" }
   },
+  "pricingAdvantage": {
+    "title": "别再月月付费，一次购买更划算",
+    "lead1": "持续订阅语音输入工具时，一年内的总成本会明显累积。",
+    "lead2": "Lumina Whisper 采用一次性 ¥980 买断，使用越久，价格优势越明显。",
+    "lead3": "如果比较总成本而不只看功能列表，Lumina Whisper 在价格上更有优势。",
+    "table": {
+      "service": "服务",
+      "billing": "计费模式",
+      "price": "公开价格（参考）",
+      "note": "备注"
+    },
+    "rows": [
+      {
+        "service": "Lumina Whisper",
+        "billing": "一次性买断",
+        "price": "¥980",
+        "note": "无月度续费"
+      },
+      {
+        "service": "Aqua Voice",
+        "billing": "订阅制",
+        "price": "公开价格需登录后查看",
+        "note": "按月 / 按年方案"
+      },
+      {
+        "service": "Superwhisper",
+        "billing": "订阅 + 终身",
+        "price": "$8/月（年付）",
+        "note": "提供免费档"
+      },
+      {
+        "service": "Wispr Flow",
+        "billing": "订阅制",
+        "price": "$15/月（年付 $12/月）",
+        "note": "按用户计费"
+      },
+      {
+        "service": "VoiceOS",
+        "billing": "订阅制",
+        "price": "$10/月（年付）",
+        "note": "提供免费档"
+      }
+    ],
+    "disclaimer": "※价格基于 2026-04-05 各官网公开信息整理，最新价格请以各服务官方页面为准。"
+  },
   "cta": {
     "title": "立即开始",
     "purchase": "立即购买 — ¥980",

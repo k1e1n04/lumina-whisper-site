@@ -46,6 +46,51 @@
     "step3": { "label": "Step 3", "text": "話す" },
     "step4": { "label": "Step 4", "text": "Fn で停止 → テキストが挿入される" }
   },
+  "pricingAdvantage": {
+    "title": "サブスクを払い続けるより、買い切りで終わらせる",
+    "lead1": "毎月課金の音声入力を使い続けると、1年で支払総額は大きくなります。",
+    "lead2": "Lumina Whisper は ¥980 の買い切り。使うほど、価格差は開きます。",
+    "lead3": "機能比較だけでなく、総コストで選ぶなら Lumina Whisper が有利です。",
+    "table": {
+      "service": "サービス",
+      "billing": "課金モデル",
+      "price": "公開価格（目安）",
+      "note": "補足"
+    },
+    "rows": [
+      {
+        "service": "Lumina Whisper",
+        "billing": "買い切り",
+        "price": "¥980",
+        "note": "追加の月額課金なし"
+      },
+      {
+        "service": "Aqua Voice",
+        "billing": "サブスク",
+        "price": "公開価格はログイン後表示",
+        "note": "月額/年額プラン構成"
+      },
+      {
+        "service": "Superwhisper",
+        "billing": "サブスク + ライフタイム",
+        "price": "$8/月（年額）",
+        "note": "無料プランあり"
+      },
+      {
+        "service": "Wispr Flow",
+        "billing": "サブスク",
+        "price": "$15/月（$12/月・年額）",
+        "note": "ユーザー単位課金"
+      },
+      {
+        "service": "VoiceOS",
+        "billing": "サブスク",
+        "price": "$10/月（年額）",
+        "note": "無料プランあり"
+      }
+    ],
+    "disclaimer": "※価格は 2026-04-05 時点で各公式サイトの公開情報をもとに記載。最新情報は各社ページでご確認ください。"
+  },
   "cta": {
     "title": "今すぐ始める",
     "purchase": "購入する — ¥980",
@@ -127,6 +172,14 @@
     "subtitle": "Release Notes",
     "newFeatures": "新機能",
     "bugFixes": "バグ修正",
+    "v030": {
+      "features": {
+        "sparkleAutoUpdate": "Sparkle ベースの自動アップデートに対応 — アプリ内メニューから更新確認が可能",
+        "directDistributionOnly": "配布方針を Direct 配布（DMG）のみに統一 — Mac App Store 配信を終了",
+        "appcastPipeline": "appcast 更新フローを整備 — 署名付き DMG から `https://lumina-whisper.com/appcast.xml` を更新可能"
+      },
+      "fixes": {}
+    },
     "v020": {
       "features": {
         "onboardingWizard": "初回起動時のセットアップウィザード — アクセシビリティ・マイク権限の付与とホットキー設定をガイドに従って完了できます",

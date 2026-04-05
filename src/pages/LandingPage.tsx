@@ -24,6 +24,9 @@ const HOW_TO_USE_STEPS = ['step1', 'step2', 'step3', 'step4'] as const
 
 export default function LandingPage() {
   const { t } = useTranslation()
+  const pricingRows = t('pricingAdvantage.rows', {
+    returnObjects: true,
+  }) as Array<{ service: string; billing: string; price: string; note: string }>
 
   const { ref: painRef, inView: painInView } = useInView<HTMLDivElement>({ threshold: 0.15 })
   const { ref: featuresRef, inView: featuresInView } = useInView<HTMLDivElement>({ threshold: 0.05 })
@@ -204,6 +207,67 @@ export default function LandingPage() {
       </section>
 
       <UseCasesSection />
+
+      {/* Pricing advantage */}
+      <section className="border-t border-border px-6 py-28">
+        <div className="mx-auto max-w-4xl">
+          <div className="mb-16 flex items-center gap-6">
+            <span className="text-xs tracking-[0.1em] text-text-dim uppercase">Pricing</span>
+            <div className="flex-1 border-t border-border" />
+          </div>
+
+          <h2
+            className="mb-6 text-2xl font-normal text-text"
+            style={{ fontFamily: 'var(--font-serif)' }}
+          >
+            {t('pricingAdvantage.title')}
+          </h2>
+          <p className="mb-3 text-sm leading-loose text-text-muted">
+            {t('pricingAdvantage.lead1')}
+          </p>
+          <p className="mb-3 text-sm leading-loose text-text-muted">
+            {t('pricingAdvantage.lead2')}
+          </p>
+          <p className="mb-10 text-sm leading-loose text-text-muted">
+            {t('pricingAdvantage.lead3')}
+          </p>
+
+          <div className="overflow-x-auto border border-border">
+            <table className="w-full min-w-[720px] border-collapse text-sm">
+              <thead className="bg-surface">
+                <tr>
+                  <th className="border-b border-border px-4 py-3 text-left font-normal text-text">
+                    {t('pricingAdvantage.table.service')}
+                  </th>
+                  <th className="border-b border-border px-4 py-3 text-left font-normal text-text">
+                    {t('pricingAdvantage.table.billing')}
+                  </th>
+                  <th className="border-b border-border px-4 py-3 text-left font-normal text-text">
+                    {t('pricingAdvantage.table.price')}
+                  </th>
+                  <th className="border-b border-border px-4 py-3 text-left font-normal text-text">
+                    {t('pricingAdvantage.table.note')}
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {pricingRows.map((row) => (
+                  <tr key={row.service}>
+                    <td className="border-b border-border px-4 py-3 text-text">{row.service}</td>
+                    <td className="border-b border-border px-4 py-3 text-text-muted">{row.billing}</td>
+                    <td className="border-b border-border px-4 py-3 text-text">{row.price}</td>
+                    <td className="border-b border-border px-4 py-3 text-text-muted">{row.note}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <p className="mt-4 text-xs tracking-[0.03em] text-text-dim">
+            {t('pricingAdvantage.disclaimer')}
+          </p>
+        </div>
+      </section>
 
       {/* How to use */}
       <section className="border-y border-border bg-surface px-6 py-28">

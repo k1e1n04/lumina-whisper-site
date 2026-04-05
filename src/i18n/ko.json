@@ -47,6 +47,51 @@
     "step3": { "label": "Step 3", "text": "말하기" },
     "step4": { "label": "Step 4", "text": "Fn으로 정지 → 텍스트가 삽입됨" }
   },
+  "pricingAdvantage": {
+    "title": "매달 구독료 대신, 한 번 결제로 끝내세요",
+    "lead1": "구독형 음성 입력 서비스를 계속 쓰면 1년 누적 비용이 빠르게 커집니다.",
+    "lead2": "Lumina Whisper는 ¥980 일회성 구매라서 오래 쓸수록 가격 격차가 더 커집니다.",
+    "lead3": "기능표만이 아니라 총비용으로 비교하면 Lumina Whisper가 가격 면에서 유리합니다.",
+    "table": {
+      "service": "서비스",
+      "billing": "과금 방식",
+      "price": "공개 가격(참고)",
+      "note": "비고"
+    },
+    "rows": [
+      {
+        "service": "Lumina Whisper",
+        "billing": "일회성 구매",
+        "price": "¥980",
+        "note": "월 구독료 없음"
+      },
+      {
+        "service": "Aqua Voice",
+        "billing": "구독",
+        "price": "공개 가격은 로그인 후 표시",
+        "note": "월/연간 플랜 구성"
+      },
+      {
+        "service": "Superwhisper",
+        "billing": "구독 + 라이프타임",
+        "price": "$8/월(연간 결제)",
+        "note": "무료 플랜 제공"
+      },
+      {
+        "service": "Wispr Flow",
+        "billing": "구독",
+        "price": "$15/월($12/월 연간)",
+        "note": "사용자 단위 과금"
+      },
+      {
+        "service": "VoiceOS",
+        "billing": "구독",
+        "price": "$10/월(연간 결제)",
+        "note": "무료 플랜 제공"
+      }
+    ],
+    "disclaimer": "※ 가격은 2026-04-05 기준 각 공식 사이트의 공개 정보를 바탕으로 작성했습니다. 최신 가격은 각 서비스 페이지에서 확인하세요."
+  },
   "cta": {
     "title": "지금 시작하기",
     "purchase": "구매하기 — ¥980",

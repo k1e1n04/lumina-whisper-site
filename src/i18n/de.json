@@ -46,6 +46,51 @@
     "step3": { "label": "Schritt 3", "text": "Sprechen" },
     "step4": { "label": "Schritt 4", "text": "Fn drücken zum Stoppen → Text wird eingefügt" }
   },
+  "pricingAdvantage": {
+    "title": "Nicht jeden Monat zahlen: einmal kaufen und fertig",
+    "lead1": "Bei Abo-Diktier-Tools steigt die Gesamtsumme über 12 Monate schnell an.",
+    "lead2": "Lumina Whisper kostet einmalig ¥980. Je länger Sie es nutzen, desto größer wird der Preisvorteil.",
+    "lead3": "Vergleicht man die Gesamtkosten statt nur Feature-Listen, ist Lumina Whisper preislich im Vorteil.",
+    "table": {
+      "service": "Dienst",
+      "billing": "Abrechnungsmodell",
+      "price": "Öffentlicher Preis (Richtwert)",
+      "note": "Hinweis"
+    },
+    "rows": [
+      {
+        "service": "Lumina Whisper",
+        "billing": "Einmalkauf",
+        "price": "¥980",
+        "note": "Keine monatlichen Folgekosten"
+      },
+      {
+        "service": "Aqua Voice",
+        "billing": "Abo",
+        "price": "Öffentlicher Preis nach Login sichtbar",
+        "note": "Monats- / Jahrespläne"
+      },
+      {
+        "service": "Superwhisper",
+        "billing": "Abo + Lifetime",
+        "price": "$8/Monat (jährlich)",
+        "note": "Kostenlose Stufe verfügbar"
+      },
+      {
+        "service": "Wispr Flow",
+        "billing": "Abo",
+        "price": "$15/Monat ($12/Monat jährlich)",
+        "note": "Preis pro Nutzer"
+      },
+      {
+        "service": "VoiceOS",
+        "billing": "Abo",
+        "price": "$10/Monat (jährlich)",
+        "note": "Kostenlose Stufe verfügbar"
+      }
+    ],
+    "disclaimer": "*Preise basieren auf öffentlich verfügbaren Informationen vom 2026-04-05. Bitte prüfen Sie die Anbieterseiten für aktuelle Angaben."
+  },
   "cta": {
     "title": "Jetzt loslegen",
     "purchase": "Jetzt kaufen — ¥980",

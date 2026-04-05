@@ -46,6 +46,51 @@
     "step3": { "label": "Step 3", "text": "Speak" },
     "step4": { "label": "Step 4", "text": "Press Fn to stop → text is inserted" }
   },
+  "pricingAdvantage": {
+    "title": "Stop paying monthly. Buy once and be done.",
+    "lead1": "If you keep paying for subscription dictation tools, total cost compounds fast over a year.",
+    "lead2": "Lumina Whisper is a one-time ¥980 purchase, so the gap grows the longer you use it.",
+    "lead3": "If you compare total cost, not just feature lists, Lumina Whisper wins on price.",
+    "table": {
+      "service": "Service",
+      "billing": "Billing Model",
+      "price": "Public Price (Guide)",
+      "note": "Notes"
+    },
+    "rows": [
+      {
+        "service": "Lumina Whisper",
+        "billing": "One-time purchase",
+        "price": "¥980",
+        "note": "No recurring monthly fee"
+      },
+      {
+        "service": "Aqua Voice",
+        "billing": "Subscription",
+        "price": "Public pricing shown after login",
+        "note": "Monthly / annual plans"
+      },
+      {
+        "service": "Superwhisper",
+        "billing": "Subscription + lifetime",
+        "price": "$8/mo (annual)",
+        "note": "Free tier available"
+      },
+      {
+        "service": "Wispr Flow",
+        "billing": "Subscription",
+        "price": "$15/mo ($12/mo annual)",
+        "note": "Per-user pricing"
+      },
+      {
+        "service": "VoiceOS",
+        "billing": "Subscription",
+        "price": "$10/mo (annual)",
+        "note": "Free tier available"
+      }
+    ],
+    "disclaimer": "*Prices are based on publicly available information as of 2026-04-05. Check each vendor page for the latest details."
+  },
   "cta": {
     "title": "Get Started Now",
     "purchase": "Buy now — ¥980",
@@ -127,6 +172,14 @@
     "subtitle": "Release Notes",
     "newFeatures": "New Features",
     "bugFixes": "Bug Fixes",
+    "v030": {
+      "features": {
+        "sparkleAutoUpdate": "Added Sparkle-based auto update support — updates can be checked from the in-app menu",
+        "directDistributionOnly": "Distribution is now unified to direct DMG only — Mac App Store distribution has been discontinued",
+        "appcastPipeline": "Added appcast update pipeline — signed DMG metadata can now update `https://lumina-whisper.com/appcast.xml`"
+      },
+      "fixes": {}
+    },
     "v020": {
       "features": {
         "onboardingWizard": "First-launch setup wizard — guided flow for granting Accessibility and Microphone permissions and configuring your hotkey",
