@@ -173,6 +173,12 @@
     "subtitle": "Release Notes",
     "newFeatures": "New Features",
     "bugFixes": "Bug Fixes",
+    "v041": {
+      "features": {},
+      "fixes": {
+        "llmConversationalResponse": "Fixed an issue where LLM post-processing added unwanted words to short or greeting-like text"
+      }
+    },
     "v040": {
       "features": {
         "mlxLlmBackend": "Improved speed and stability of LLM post-processing",

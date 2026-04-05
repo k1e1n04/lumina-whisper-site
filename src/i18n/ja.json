@@ -173,6 +173,12 @@
     "subtitle": "Release Notes",
     "newFeatures": "新機能",
     "bugFixes": "バグ修正",
+    "v041": {
+      "features": {},
+      "fixes": {
+        "llmConversationalResponse": "LLM 後処理で短いテキストや挨拶に余計な言葉が付加される問題を修正"
+      }
+    },
     "v040": {
       "features": {
         "mlxLlmBackend": "LLM 後処理の速度と安定性を改善",

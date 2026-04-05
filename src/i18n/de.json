@@ -173,6 +173,12 @@
     "subtitle": "Release Notes",
     "newFeatures": "Neue Funktionen",
     "bugFixes": "Fehlerbehebungen",
+    "v041": {
+      "features": {},
+      "fixes": {
+        "llmConversationalResponse": "Fehler behoben, bei dem die LLM-Nachbearbeitung bei kurzem Text unerwünschte Wörter hinzufügte"
+      }
+    },
     "v040": {
       "features": {
         "mlxLlmBackend": "Geschwindigkeit und Stabilität der LLM-Nachbearbeitung verbessert",

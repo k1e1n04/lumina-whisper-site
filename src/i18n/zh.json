@@ -174,6 +174,12 @@
     "subtitle": "Release Notes",
     "newFeatures": "新功能",
     "bugFixes": "错误修复",
+    "v041": {
+      "features": {},
+      "fixes": {
+        "llmConversationalResponse": "修复了 LLM 后处理对短文本添加多余词语的问题"
+      }
+    },
     "v040": {
       "features": {
         "mlxLlmBackend": "提升了 LLM 后处理的速度与稳定性",
