@@ -83,6 +83,15 @@ const rootRedirectHtml = template.replace(
 )
 fs.writeFileSync(path.join(root, 'dist/index.html'), rootRedirectHtml)
 
+// /release → /<lang>/release redirect
+const releaseRedirectHtml = template.replace(
+  '<!--ssr-outlet-->',
+  `<script>(function(){const supported=${JSON.stringify(SUPPORTED_LANGUAGES)};const fallback='${DEFAULT_LANGUAGE}';const key='preferred_language';const normalize=(v)=>{if(!v)return null;const n=String(v).toLowerCase().split('-')[0];return supported.includes(n)?n:null};const stored=normalize(window.localStorage.getItem(key));const langs=navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language];let target=stored; if(!target){for(const l of langs){const n=normalize(l);if(n){target=n;break}}} window.location.replace('/'+(target||fallback)+'/release/');})();</script>`,
+)
+fs.mkdirSync(path.join(root, 'dist/release'), { recursive: true })
+fs.writeFileSync(path.join(root, 'dist/release/index.html'), releaseRedirectHtml)
+console.log('  ✓ /release (redirect)')
+
 // Clean up SSR build artifacts
 fs.rmSync(path.join(root, 'dist-ssr'), { recursive: true })
 console.log('Done.')
