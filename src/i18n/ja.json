@@ -173,6 +173,12 @@
     "subtitle": "Release Notes",
     "newFeatures": "新機能",
     "bugFixes": "バグ修正",
+    "v031": {
+      "features": {},
+      "fixes": {
+        "partialWordReplacement": "文字起こし・置換の精度を向上"
+      }
+    },
     "v030": {
       "features": {
         "sparkleAutoUpdate": "Sparkle ベースの自動アップデートに対応 — アプリ内メニューから更新確認が可能",

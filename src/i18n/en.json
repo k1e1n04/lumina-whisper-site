@@ -173,6 +173,12 @@
     "subtitle": "Release Notes",
     "newFeatures": "New Features",
     "bugFixes": "Bug Fixes",
+    "v031": {
+      "features": {},
+      "fixes": {
+        "partialWordReplacement": "Improved transcription and replacement accuracy"
+      }
+    },
     "v030": {
       "features": {
         "sparkleAutoUpdate": "Added Sparkle-based auto update support — updates can be checked from the in-app menu",
