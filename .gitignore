@@ -27,3 +27,8 @@ superpowers/
 docs/superpowers/
 
 public/ogp.png
+
+# Benchmark intermediate files
+scripts/benchmark/lumina_results.csv
+scripts/benchmark/__pycache__/
+.superpowers/
