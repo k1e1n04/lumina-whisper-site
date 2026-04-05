@@ -43,6 +43,20 @@ export default function PrivacyPage() {
               className="mb-4 text-base font-normal text-text"
               style={{ fontFamily: 'var(--font-serif)' }}
             >
+              ライセンス認証について
+            </h2>
+            <p>
+              本アプリはライセンスキーの認証のみ、ライセンス管理サービス（Polar.sh）のAPIに対して通信が発生します。
+              この通信にはライセンスキーのみが含まれ、音声データや個人情報は一切含まれません。
+              それ以外の外部通信は行いません。
+            </p>
+          </section>
+
+          <section>
+            <h2
+              className="mb-4 text-base font-normal text-text"
+              style={{ fontFamily: 'var(--font-serif)' }}
+            >
               マイクへのアクセス
             </h2>
             <p>
@@ -91,7 +105,7 @@ export default function PrivacyPage() {
             >
               改定
             </h2>
-            <p>最終更新日：2026年4月2日</p>
+            <p>最終更新日：2026年4月5日</p>
           </section>
         </div>
       </main>
