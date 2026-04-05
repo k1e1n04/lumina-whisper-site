@@ -10,12 +10,12 @@
       <sparkle:version>10</sparkle:version>
       <sparkle:shortVersionString>0.5.0</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-      <pubDate>Sun, 05 Apr 2026 18:03:37 GMT</pubDate>
+      <pubDate>Sun, 05 Apr 2026 18:08:10 GMT</pubDate>
       <enclosure
         url="https://github.com/k1e1n04/lumina-whisper-site/releases/latest/download/LuminaWhisper.dmg"
         type="application/octet-stream"
-        sparkle:edSignature="kJ4fd6kLeckz6OhIPLfjt0JX9IFA73W5v66a4oF2I3fZC1xImGMVoiedaCxfNuVsMy+NTJ6P+cdsD9awaHkxCA=="
-        length="10271195" />
+        sparkle:edSignature="pxPFFgUQPwH+PhPaDSSB3UOP8YVl/jKOewAOEhy8ZSqqx5S1AjybyP8R7ZB5fFpO1FfvepuxHPG7lFUMXq3XAg=="
+        length="10273850" />
       <sparkle:releaseNotesLink>https://lumina-whisper.com/ja/release/</sparkle:releaseNotesLink>
     </item>
   </channel>
