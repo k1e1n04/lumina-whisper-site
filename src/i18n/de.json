@@ -173,6 +173,12 @@
     "subtitle": "Release Notes",
     "newFeatures": "Neue Funktionen",
     "bugFixes": "Fehlerbehebungen",
+    "v050": {
+      "features": {},
+      "fixes": {
+        "llmStability": "Stabilität der LLM-Nachbearbeitung verbessert"
+      }
+    },
     "v043": {
       "features": {},
       "fixes": {

@@ -173,6 +173,12 @@
     "subtitle": "Release Notes",
     "newFeatures": "New Features",
     "bugFixes": "Bug Fixes",
+    "v050": {
+      "features": {},
+      "fixes": {
+        "llmStability": "Improved LLM post-processing stability"
+      }
+    },
     "v043": {
       "features": {},
       "fixes": {

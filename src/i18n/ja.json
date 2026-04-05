@@ -173,6 +173,12 @@
     "subtitle": "Release Notes",
     "newFeatures": "新機能",
     "bugFixes": "バグ修正",
+    "v050": {
+      "features": {},
+      "fixes": {
+        "llmStability": "LLM 後処理の安定性を改善"
+      }
+    },
     "v043": {
       "features": {},
       "fixes": {
