@@ -1,7 +1,8 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation, useNavigate, useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { useState, useRef, useEffect } from 'react'
 import { trackDownloadClick } from './GoogleAnalytics'
+import { DEFAULT_LANGUAGE, normalizeLanguage, replaceLanguageInPath, withLanguagePrefix } from '../i18n/languages'
 
 const DOWNLOAD_URL = 'https://github.com/k1e1n04/lumina-whisper-site/releases/latest/download/LuminaWhisper.dmg'
 
@@ -16,9 +17,13 @@ const LANGUAGES = [
 
 export default function Navbar() {
   const { t, i18n } = useTranslation()
+  const { lang } = useParams()
+  const location = useLocation()
+  const navigate = useNavigate()
   const [menuOpen, setMenuOpen] = useState(false)
   const [langOpen, setLangOpen] = useState(false)
   const langRef = useRef<HTMLDivElement>(null)
+  const currentLanguage = normalizeLanguage(lang) ?? DEFAULT_LANGUAGE
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
@@ -37,7 +42,11 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-white/95 backdrop-blur">
       <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-6">
-        <Link to="/" className="flex items-center gap-2.5 no-underline" onClick={close}>
+        <Link
+          to={withLanguagePrefix(currentLanguage, '/')}
+          className="flex items-center gap-2.5 no-underline"
+          onClick={close}
+        >
           <img src="/icon.png" alt="LuminaWhisper" className="h-6 w-6 rounded" />
           <span className="text-sm tracking-wide text-text">LuminaWhisper</span>
         </Link>
@@ -45,14 +54,14 @@ export default function Navbar() {
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-7">
           <Link
-            to="/guide/install"
+            to={withLanguagePrefix(currentLanguage, '/guide/install')}
             className="text-sm tracking-[0.05em] text-text-dim no-underline transition-colors hover:text-text-muted uppercase"
           >
             {t('nav.guide')}
           </Link>
 
           <Link
-            to="/release"
+            to={withLanguagePrefix(currentLanguage, '/release')}
             className="text-sm tracking-[0.05em] text-text-dim no-underline transition-colors hover:text-text-muted uppercase"
           >
             {t('nav.release')}
@@ -79,7 +88,11 @@ export default function Navbar() {
                 {LANGUAGES.map(({ code, label }) => (
                   <button
                     key={code}
-                    onClick={() => { i18n.changeLanguage(code); setLangOpen(false) }}
+                    onClick={() => {
+                      void i18n.changeLanguage(code)
+                      navigate(`${replaceLanguageInPath(location.pathname, code)}${location.search}${location.hash}`)
+                      setLangOpen(false)
+                    }}
                     className={`w-full px-3 py-2 text-left text-xs tracking-[0.03em] transition-colors hover:bg-surface ${
                       i18n.language === code ? 'text-accent' : 'text-text-muted'
                     }`}
@@ -129,14 +142,14 @@ export default function Navbar() {
       {menuOpen && (
         <div className="md:hidden border-t border-border bg-white/95 px-6 py-5 flex flex-col gap-5">
           <Link
-            to="/guide/install"
+            to={withLanguagePrefix(currentLanguage, '/guide/install')}
             onClick={close}
             className="text-sm tracking-[0.05em] text-text-dim no-underline transition-colors hover:text-text-muted uppercase"
           >
             {t('nav.guide')}
           </Link>
           <Link
-            to="/release"
+            to={withLanguagePrefix(currentLanguage, '/release')}
             onClick={close}
             className="text-sm tracking-[0.05em] text-text-dim no-underline transition-colors hover:text-text-muted uppercase"
           >
@@ -146,7 +159,11 @@ export default function Navbar() {
             {LANGUAGES.map(({ code, label }) => (
               <button
                 key={code}
-                onClick={() => { i18n.changeLanguage(code); close() }}
+                onClick={() => {
+                  void i18n.changeLanguage(code)
+                  navigate(`${replaceLanguageInPath(location.pathname, code)}${location.search}${location.hash}`)
+                  close()
+                }}
                 className={`px-2 py-1 text-xs tracking-[0.03em] transition-colors ${
                   i18n.language === code ? 'text-accent' : 'text-text-dim hover:text-text-muted'
                 }`}

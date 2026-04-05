@@ -1,12 +1,12 @@
 import { useTranslation } from 'react-i18next'
 import { trackDownloadClick } from '../components/GoogleAnalytics'
-import { Helmet } from 'react-helmet-async'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import AppDemoSection from '../components/AppDemoSection'
 import StatsBar from '../components/StatsBar'
 import UseCasesSection from '../components/UseCasesSection'
 import { useInView } from '../hooks/useInView'
+import PageSeo from '../components/PageSeo'
 
 const DOWNLOAD_URL = 'https://github.com/k1e1n04/lumina-whisper-site/releases/latest/download/LuminaWhisper.dmg'
 
@@ -29,32 +29,7 @@ export default function LandingPage() {
 
   return (
     <div data-testid="landing-page" className="min-h-screen bg-bg">
-      <Helmet>
-        <title>Mac 音声入力アプリ — オフライン・高精度 | Lumina Whisper</title>
-        <meta
-          name="description"
-          content="Lumina Whisper は Mac 専用の音声入力アプリ。完全ローカル処理でプライバシーを守りながら高精度な文字起こしを実現。Apple Silicon 最適化、インターネット不要で高速動作。"
-        />
-        <meta property="og:title" content="Mac 音声入力アプリ — オフライン・高精度 | Lumina Whisper" />
-        <meta
-          property="og:description"
-          content="Lumina Whisper は Mac 専用の音声入力アプリ。完全ローカル処理でプライバシーを守りながら高精度な文字起こしを実現。Apple Silicon 最適化、インターネット不要で高速動作。"
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://lumina-whisper.com/" />
-        <meta property="og:image" content="https://lumina-whisper.com/ogp.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Mac 音声入力アプリ — オフライン・高精度 | Lumina Whisper" />
-        <meta
-          name="twitter:description"
-          content="Lumina Whisper は Mac 専用の音声入力アプリ。完全ローカル処理でプライバシーを守りながら高精度な文字起こしを実現。Apple Silicon 最適化、インターネット不要で高速動作。"
-        />
-        <meta name="twitter:image" content="https://lumina-whisper.com/ogp.png" />
-        <link rel="canonical" href="https://lumina-whisper.com/" />
-        <link rel="alternate" hrefLang="ja" href="https://lumina-whisper.com/" />
-        <link rel="alternate" hrefLang="en" href="https://lumina-whisper.com/" />
-        <link rel="alternate" hrefLang="x-default" href="https://lumina-whisper.com/" />
-      </Helmet>
+      <PageSeo page="landing" includeOgImage />
       <Navbar />
 
       {/* Hero */}

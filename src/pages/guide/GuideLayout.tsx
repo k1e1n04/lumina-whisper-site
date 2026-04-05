@@ -1,8 +1,9 @@
-import { NavLink, Outlet, useLocation, useNavigate } from 'react-router-dom'
+import { NavLink, Outlet, useLocation, useNavigate, useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { useState } from 'react'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
+import { DEFAULT_LANGUAGE, normalizeLanguage, withLanguagePrefix } from '../../i18n/languages'
 
 const GUIDE_PAGES = [
   { path: '/guide/install', key: 'install' },
@@ -32,6 +33,8 @@ const SIDEBAR_SECTIONS = [
 
 export default function GuideLayout() {
   const { t } = useTranslation()
+  const { lang } = useParams()
+  const currentLanguage = normalizeLanguage(lang) ?? DEFAULT_LANGUAGE
 
   return (
     <div data-testid="guide-layout" className="flex min-h-screen flex-col bg-bg">
@@ -52,7 +55,7 @@ export default function GuideLayout() {
                   return (
                     <NavLink
                       key={pageKey}
-                      to={page.path}
+                      to={withLanguagePrefix(currentLanguage, page.path)}
                       className={({ isActive }) =>
                         `block py-2 text-sm no-underline transition-colors ${
                           isActive
@@ -85,9 +88,12 @@ function MobileGuideNav() {
   const { t } = useTranslation()
   const location = useLocation()
   const navigate = useNavigate()
+  const { lang } = useParams()
+  const currentLanguage = normalizeLanguage(lang) ?? DEFAULT_LANGUAGE
   const [open, setOpen] = useState(false)
-
-  const currentPage = GUIDE_PAGES.find((p) => p.path === location.pathname)
+  const currentPage = GUIDE_PAGES.find((p) =>
+    location.pathname.endsWith(p.path),
+  )
 
   return (
     <div className="md:hidden mb-6 border border-border">
@@ -114,12 +120,13 @@ function MobileGuideNav() {
               {pages.map((pageKey) => {
                 const page = GUIDE_PAGES.find((p) => p.key === pageKey)
                 if (!page) return null
-                const isActive = location.pathname === page.path
+                const localizedPath = withLanguagePrefix(currentLanguage, page.path)
+                const isActive = location.pathname === localizedPath
                 return (
                   <button
                     key={pageKey}
                     onClick={() => {
-                      navigate(page.path)
+                      navigate(localizedPath)
                       setOpen(false)
                     }}
                     className={`w-full text-left px-4 py-2 text-sm transition-colors ${
@@ -142,7 +149,11 @@ function GuidePageNav() {
   const { t } = useTranslation()
   const navigate = useNavigate()
   const location = useLocation()
-  const currentIndex = GUIDE_PAGES.findIndex((p) => p.path === location.pathname)
+  const { lang } = useParams()
+  const currentLanguage = normalizeLanguage(lang) ?? DEFAULT_LANGUAGE
+  const currentIndex = GUIDE_PAGES.findIndex((p) =>
+    location.pathname.endsWith(p.path),
+  )
   const prev = currentIndex > 0 ? GUIDE_PAGES[currentIndex - 1] : null
   const next = currentIndex < GUIDE_PAGES.length - 1 ? GUIDE_PAGES[currentIndex + 1] : null
 
@@ -150,7 +161,7 @@ function GuidePageNav() {
     <div className="mt-16 flex justify-between border-t border-border pt-6">
       {prev ? (
         <button
-          onClick={() => navigate(prev.path)}
+          onClick={() => navigate(withLanguagePrefix(currentLanguage, prev.path))}
           className="text-sm tracking-[0.05em] text-text-muted transition-colors hover:text-accent"
         >
           ← {t('guide.nav.prev')}: {t(`guide.sidebar.${prev.key}`)}
@@ -160,7 +171,7 @@ function GuidePageNav() {
       )}
       {next ? (
         <button
-          onClick={() => navigate(next.path)}
+          onClick={() => navigate(withLanguagePrefix(currentLanguage, next.path))}
           className="text-sm tracking-[0.05em] text-text-muted transition-colors hover:text-accent"
         >
           {t('guide.nav.next')}: {t(`guide.sidebar.${next.key}`)} →

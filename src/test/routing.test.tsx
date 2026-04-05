@@ -13,17 +13,17 @@ function renderAt(path: string) {
 }
 
 describe('routing', () => {
-  it('/ で LandingPage が表示される', () => {
-    renderAt('/')
+  it('/en で LandingPage が表示される', () => {
+    renderAt('/en')
     expect(screen.getByTestId('landing-page')).toBeInTheDocument()
   })
 
-  it('/guide/install で InstallPage が表示される', () => {
-    renderAt('/guide/install')
+  it('/en/guide/install で InstallPage が表示される', () => {
+    renderAt('/en/guide/install')
     expect(screen.getByTestId('guide-install')).toBeInTheDocument()
   })
 
-  it('/guide/faq で FaqPage が表示される', () => {
+  it('/guide/faq でも /en/guide/faq に正規化される', () => {
     renderAt('/guide/faq')
     expect(screen.getByTestId('guide-faq')).toBeInTheDocument()
   })

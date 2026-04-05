@@ -6,23 +6,17 @@ import zh from './zh.json'
 import ko from './ko.json'
 import fr from './fr.json'
 import de from './de.json'
-
-const STORAGE_KEY = 'preferred_language'
-const SUPPORTED_LANGUAGES = ['ja', 'en', 'zh', 'ko', 'fr', 'de'] as const
-type SupportedLanguage = (typeof SUPPORTED_LANGUAGES)[number]
-
-function normalizeLanguage(value: string | null | undefined): SupportedLanguage | null {
-  if (!value) return null
-  const normalized = value.toLowerCase().split('-')[0]
-  return SUPPORTED_LANGUAGES.includes(normalized as SupportedLanguage)
-    ? (normalized as SupportedLanguage)
-    : null
-}
+import {
+  DEFAULT_LANGUAGE,
+  LANGUAGE_STORAGE_KEY,
+  type SupportedLanguage,
+  normalizeLanguage,
+} from './languages'
 
 function detectInitialLanguage(): SupportedLanguage {
-  if (typeof window === 'undefined') return 'en'
+  if (typeof window === 'undefined') return DEFAULT_LANGUAGE
 
-  const fromStorage = normalizeLanguage(window.localStorage.getItem(STORAGE_KEY))
+  const fromStorage = normalizeLanguage(window.localStorage.getItem(LANGUAGE_STORAGE_KEY))
   if (fromStorage) return fromStorage
 
   const candidates = window.navigator.languages?.length
@@ -34,7 +28,7 @@ function detectInitialLanguage(): SupportedLanguage {
     if (normalized) return normalized
   }
 
-  return 'en'
+  return DEFAULT_LANGUAGE
 }
 
 const initialLanguage = detectInitialLanguage()
@@ -49,7 +43,7 @@ i18n.use(initReactI18next).init({
     de: { translation: de },
   },
   lng: initialLanguage,
-  fallbackLng: 'en',
+  fallbackLng: DEFAULT_LANGUAGE,
   interpolation: { escapeValue: false },
 })
 
@@ -57,10 +51,10 @@ if (typeof window !== 'undefined') {
   i18n.on('languageChanged', (language) => {
     const normalized = normalizeLanguage(language)
     if (!normalized) return
-    window.localStorage.setItem(STORAGE_KEY, normalized)
+    window.localStorage.setItem(LANGUAGE_STORAGE_KEY, normalized)
     document.documentElement.lang = normalized
   })
-  document.documentElement.lang = normalizeLanguage(i18n.language) ?? 'en'
+  document.documentElement.lang = normalizeLanguage(i18n.language) ?? DEFAULT_LANGUAGE
 }
 
 export default i18n

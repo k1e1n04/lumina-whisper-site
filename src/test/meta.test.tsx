@@ -2,7 +2,7 @@
 import { describe, it, expect, beforeEach } from 'vitest'
 import { render, waitFor } from '@testing-library/react'
 import { HelmetProvider } from 'react-helmet-async'
-import { MemoryRouter } from 'react-router-dom'
+import { MemoryRouter, Route, Routes } from 'react-router-dom'
 import '../i18n'
 import LandingPage from '../pages/LandingPage'
 import ReleasePage from '../pages/ReleasePage'
@@ -13,10 +13,21 @@ import SettingsPage from '../pages/guide/SettingsPage'
 import FaqPage from '../pages/guide/FaqPage'
 import TroubleshootPage from '../pages/guide/TroubleshootPage'
 
-function renderWithHelmet(ui: React.ReactElement) {
+function renderWithHelmet(ui: React.ReactElement, route: string) {
   return render(
     <HelmetProvider>
-      <MemoryRouter>{ui}</MemoryRouter>
+      <MemoryRouter initialEntries={[route]}>
+        <Routes>
+          <Route path="/:lang" element={ui} />
+          <Route path="/:lang/release" element={ui} />
+          <Route path="/:lang/guide/install" element={ui} />
+          <Route path="/:lang/guide/setup" element={ui} />
+          <Route path="/:lang/guide/usage" element={ui} />
+          <Route path="/:lang/guide/settings" element={ui} />
+          <Route path="/:lang/guide/faq" element={ui} />
+          <Route path="/:lang/guide/troubleshoot" element={ui} />
+        </Routes>
+      </MemoryRouter>
     </HelmetProvider>,
   )
 }
@@ -27,62 +38,72 @@ describe('page titles', () => {
   })
 
   it('LandingPage', async () => {
-    renderWithHelmet(<LandingPage />)
+    renderWithHelmet(<LandingPage />, '/en')
     await waitFor(() => {
       expect(document.title).toBe(
-        'Mac 音声入力アプリ — オフライン・高精度 | Lumina Whisper',
+        'Mac voice typing app - offline and accurate | Lumina Whisper',
       )
     })
   })
 
   it('ReleasePage', async () => {
-    renderWithHelmet(<ReleasePage />)
+    renderWithHelmet(<ReleasePage />, '/en/release')
     await waitFor(() => {
-      expect(document.title).toBe('リリースノート | Lumina Whisper')
+      expect(document.title).toBe('Release Notes | Lumina Whisper')
     })
   })
 
   it('InstallPage', async () => {
-    renderWithHelmet(<InstallPage />)
+    renderWithHelmet(<InstallPage />, '/en/guide/install')
     await waitFor(() => {
-      expect(document.title).toBe('インストール | Lumina Whisper ガイド')
+      expect(document.title).toBe('Installation | Lumina Whisper Guide')
     })
   })
 
   it('SetupPage', async () => {
-    renderWithHelmet(<SetupPage />)
+    renderWithHelmet(<SetupPage />, '/en/guide/setup')
     await waitFor(() => {
-      expect(document.title).toBe('初期設定 | Lumina Whisper ガイド')
+      expect(document.title).toBe('Initial Setup | Lumina Whisper Guide')
     })
   })
 
   it('UsagePage', async () => {
-    renderWithHelmet(<UsagePage />)
+    renderWithHelmet(<UsagePage />, '/en/guide/usage')
     await waitFor(() => {
-      expect(document.title).toBe('基本的な使い方 | Lumina Whisper ガイド')
+      expect(document.title).toBe('Basic Usage | Lumina Whisper Guide')
     })
   })
 
   it('SettingsPage', async () => {
-    renderWithHelmet(<SettingsPage />)
+    renderWithHelmet(<SettingsPage />, '/en/guide/settings')
     await waitFor(() => {
-      expect(document.title).toBe('設定項目 | Lumina Whisper ガイド')
+      expect(document.title).toBe('Settings | Lumina Whisper Guide')
     })
   })
 
   it('FaqPage', async () => {
-    renderWithHelmet(<FaqPage />)
+    renderWithHelmet(<FaqPage />, '/en/guide/faq')
     await waitFor(() => {
-      expect(document.title).toBe('よくある質問 | Lumina Whisper ガイド')
+      expect(document.title).toBe('FAQ | Lumina Whisper Guide')
     })
   })
 
   it('TroubleshootPage', async () => {
-    renderWithHelmet(<TroubleshootPage />)
+    renderWithHelmet(<TroubleshootPage />, '/en/guide/troubleshoot')
     await waitFor(() => {
       expect(document.title).toBe(
-        'トラブルシューティング | Lumina Whisper ガイド',
+        'Troubleshooting | Lumina Whisper Guide',
       )
+    })
+  })
+
+  it('ja ルートでは canonical と hreflang が ja URLになる', async () => {
+    renderWithHelmet(<ReleasePage />, '/ja/release')
+    await waitFor(() => {
+      const canonical = document.head.querySelector('link[rel="canonical"]')
+      expect(canonical?.getAttribute('href')).toBe('https://lumina-whisper.com/ja/release/')
+      const jaAlt = document.head.querySelector('link[rel="alternate"][hreflang="ja"]')
+      expect(jaAlt?.getAttribute('href')).toBe('https://lumina-whisper.com/ja/release/')
     })
   })
 })

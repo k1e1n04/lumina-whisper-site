@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import { Helmet } from 'react-helmet-async'
+import PageSeo from '../../components/PageSeo'
 
 const FAQ_INDICES = [1, 2, 3, 4, 5] as const
 
@@ -7,13 +7,7 @@ export default function FaqPage() {
   const { t } = useTranslation()
   return (
     <article data-testid="guide-faq" className="max-w-none prose">
-      <Helmet>
-        <title>よくある質問 | Lumina Whisper ガイド</title>
-        <meta
-          name="description"
-          content="Lumina Whisper に関するよくある質問。対応 macOS・Intel Mac・プライバシー・ホットキーの問題について。"
-        />
-      </Helmet>
+      <PageSeo page="guideFaq" />
       <h1 className="mb-6 text-3xl font-bold text-accent">{t('guide.faq.title')}</h1>
 
       <div className="space-y-4">

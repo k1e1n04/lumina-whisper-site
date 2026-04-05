@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import { Helmet } from 'react-helmet-async'
+import PageSeo from '../../components/PageSeo'
 
 export default function UsagePage() {
   const { t } = useTranslation()
@@ -13,13 +13,7 @@ export default function UsagePage() {
 
   return (
     <article data-testid="guide-usage" className="max-w-none prose">
-      <Helmet>
-        <title>基本的な使い方 | Lumina Whisper ガイド</title>
-        <meta
-          name="description"
-          content="Fn キーを押すだけで音声入力を開始。テキスト入力フィールドへの自動挿入まで4ステップで解説。"
-        />
-      </Helmet>
+      <PageSeo page="guideUsage" />
       <h1 className="mb-6 text-3xl font-bold text-accent">{t('guide.usage.title')}</h1>
 
       <h2 className="mt-8 mb-3 text-xl font-semibold text-text">{t('guide.usage.stepsTitle')}</h2>

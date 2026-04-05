@@ -1,8 +1,11 @@
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import { DEFAULT_LANGUAGE, normalizeLanguage, withLanguagePrefix } from '../i18n/languages'
 
 export default function Footer() {
   const { t } = useTranslation()
+  const { lang } = useParams()
+  const currentLanguage = normalizeLanguage(lang) ?? DEFAULT_LANGUAGE
 
   return (
     <footer className="border-t border-border">
@@ -10,13 +13,13 @@ export default function Footer() {
         <span className="text-xs tracking-[0.05em] text-text-dim">{t('footer.copyright')}</span>
         <div className="flex gap-8">
           <Link
-            to="/guide/install"
+            to={withLanguagePrefix(currentLanguage, '/guide/install')}
             className="text-xs tracking-[0.05em] text-text-dim no-underline transition-colors hover:text-text-muted uppercase"
           >
             {t('footer.guide')}
           </Link>
           <Link
-            to="/privacy"
+            to={withLanguagePrefix(currentLanguage, '/privacy')}
             className="text-xs tracking-[0.05em] text-text-dim no-underline transition-colors hover:text-text-muted uppercase"
           >
             Privacy

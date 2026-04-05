@@ -1,15 +1,11 @@
-import { Helmet } from 'react-helmet-async'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import PageSeo from '../components/PageSeo'
 
 export default function PrivacyPage() {
   return (
     <div className="min-h-screen bg-bg">
-      <Helmet>
-        <title>プライバシーポリシー | Lumina Whisper</title>
-        <meta name="description" content="Lumina Whisper のプライバシーポリシー" />
-        <link rel="canonical" href="https://lumina-whisper.com/privacy" />
-      </Helmet>
+      <PageSeo page="privacy" />
       <Navbar />
 
       <main className="mx-auto max-w-3xl px-6 py-28">

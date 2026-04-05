@@ -1,8 +1,24 @@
-const BASE_URL = 'https://lumina-whisper.com'
-const SUPPORTED_LANGUAGES = ['ja', 'en', 'zh', 'ko', 'fr', 'de']
-const DEFAULT_LANGUAGE = 'en'
+import {
+  DEFAULT_LANGUAGE,
+  SUPPORTED_LANGUAGES,
+  type SupportedLanguage,
+  withLanguagePrefix,
+} from '../i18n/languages'
 
-const PAGE_PATHS = {
+export const BASE_URL = 'https://lumina-whisper.com'
+
+export type SeoPageKey =
+  | 'landing'
+  | 'release'
+  | 'privacy'
+  | 'guideInstall'
+  | 'guideSetup'
+  | 'guideUsage'
+  | 'guideSettings'
+  | 'guideFaq'
+  | 'guideTroubleshoot'
+
+export const SEO_PAGE_PATHS: Record<SeoPageKey, string> = {
   landing: '/',
   release: '/release',
   privacy: '/privacy',
@@ -14,7 +30,9 @@ const PAGE_PATHS = {
   guideTroubleshoot: '/guide/troubleshoot',
 }
 
-const SEO_METADATA = {
+type SeoMeta = { title: string; description: string }
+
+const SEO_METADATA: Record<SupportedLanguage, Record<SeoPageKey, SeoMeta>> = {
   en: {
     landing: {
       title: 'Mac voice typing app - offline and accurate | Lumina Whisper',
@@ -271,101 +289,19 @@ const SEO_METADATA = {
   },
 }
 
-function normalizeLanguage(value) {
-  return SUPPORTED_LANGUAGES.includes(value) ? value : DEFAULT_LANGUAGE
+export function getSeoMetadata(language: string, page: SeoPageKey): SeoMeta {
+  const normalized = (SUPPORTED_LANGUAGES.includes(language as SupportedLanguage)
+    ? language
+    : DEFAULT_LANGUAGE) as SupportedLanguage
+  return SEO_METADATA[normalized][page]
 }
 
-function toCanonicalPath(path) {
-  return path.endsWith('/') ? path : `${path}/`
+export function toCanonicalPath(path: string): string {
+  if (path.endsWith('/')) return path
+  return `${path}/`
 }
 
-function withLanguagePrefix(language, path) {
-  const normalized = normalizeLanguage(language)
-  const suffix = path === '/' ? '' : path
-  return `/${normalized}${suffix}`
-}
-
-function resolvePageAndLanguage(url) {
-  const normalizedUrl = url.split('?')[0].split('#')[0]
-  const parts = normalizedUrl.split('/').filter(Boolean)
-  const candidate = parts[0]
-  const language = normalizeLanguage(candidate)
-  const relativePath = `/${parts.slice(1).join('/')}`
-
-  const page = Object.entries(PAGE_PATHS).find(([, path]) => {
-    if (path === '/') return relativePath === '/'
-    return relativePath === path
-  })
-
-  return { language, pageKey: page?.[0] }
-}
-
-function getCanonicalUrl(language, pageKey) {
-  const path = withLanguagePrefix(language, PAGE_PATHS[pageKey])
+export function getCanonicalUrl(language: string, page: SeoPageKey): string {
+  const path = withLanguagePrefix(language, SEO_PAGE_PATHS[page])
   return `${BASE_URL}${toCanonicalPath(path)}`
 }
-
-export function buildHelmetTags(url, jsonLd = null) {
-  const { language, pageKey } = resolvePageAndLanguage(url)
-  if (!pageKey) return ''
-
-  const seo = SEO_METADATA[language][pageKey]
-  const canonical = getCanonicalUrl(language, pageKey)
-  const isLanding = pageKey === 'landing'
-
-  const tags = [
-    `<title>${seo.title}</title>`,
-    `<meta name="description" content="${seo.description}" />`,
-    `<link rel="canonical" href="${canonical}" />`,
-    `<meta property="og:title" content="${seo.title}" />`,
-    `<meta property="og:description" content="${seo.description}" />`,
-    `<meta property="og:type" content="website" />`,
-    `<meta property="og:url" content="${canonical}" />`,
-    `<meta name="twitter:title" content="${seo.title}" />`,
-    `<meta name="twitter:description" content="${seo.description}" />`,
-  ]
-
-  if (isLanding) {
-    tags.push(`<meta property="og:image" content="${BASE_URL}/ogp.png" />`)
-    tags.push('<meta name="twitter:card" content="summary_large_image" />')
-    tags.push(`<meta name="twitter:image" content="${BASE_URL}/ogp.png" />`)
-  }
-
-  for (const code of SUPPORTED_LANGUAGES) {
-    tags.push(`<link rel="alternate" hreflang="${code}" href="${getCanonicalUrl(code, pageKey)}" />`)
-  }
-  tags.push(`<link rel="alternate" hreflang="x-default" href="${getCanonicalUrl(DEFAULT_LANGUAGE, pageKey)}" />`)
-
-  if (jsonLd) {
-    tags.push(`<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>`)
-  }
-
-  return tags.join('\n    ')
-}
-
-export function buildLandingJsonLd(language = DEFAULT_LANGUAGE) {
-  const seo = SEO_METADATA[normalizeLanguage(language)].landing
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'SoftwareApplication',
-    name: 'Lumina Whisper',
-    operatingSystem: 'macOS 14.0+',
-    applicationCategory: 'UtilitiesApplication',
-    offers: {
-      '@type': 'Offer',
-      price: '0',
-      priceCurrency: 'JPY',
-    },
-    description: seo.description,
-    url: getCanonicalUrl(language, 'landing'),
-    downloadUrl:
-      'https://github.com/k1e1n04/lumina-whisper-site/releases/latest/download/LuminaWhisper.dmg',
-    softwareVersion: '0.3.0',
-    author: {
-      '@type': 'Person',
-      name: 'KenIshii',
-    },
-  }
-}
-
-export { BASE_URL, SUPPORTED_LANGUAGES, PAGE_PATHS, DEFAULT_LANGUAGE }
