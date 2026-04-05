@@ -173,6 +173,12 @@
     "subtitle": "Release Notes",
     "newFeatures": "新機能",
     "bugFixes": "バグ修正",
+    "v032": {
+      "features": {},
+      "fixes": {
+        "accuracyImprovements": "文字起こし精度を向上"
+      }
+    },
     "v031": {
       "features": {},
       "fixes": {

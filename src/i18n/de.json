@@ -173,6 +173,12 @@
     "subtitle": "Release Notes",
     "newFeatures": "Neue Funktionen",
     "bugFixes": "Fehlerbehebungen",
+    "v032": {
+      "features": {},
+      "fixes": {
+        "accuracyImprovements": "Verbesserte Transkriptionsgenauigkeit"
+      }
+    },
     "v031": {
       "features": {},
       "fixes": {

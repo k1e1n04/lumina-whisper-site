@@ -360,7 +360,7 @@ export function buildLandingJsonLd(language = DEFAULT_LANGUAGE) {
     url: getCanonicalUrl(language, 'landing'),
     downloadUrl:
       'https://github.com/k1e1n04/lumina-whisper-site/releases/latest/download/LuminaWhisper.dmg',
-    softwareVersion: '0.3.1',
+    softwareVersion: '0.3.2',
     author: {
       '@type': 'Person',
       name: 'KenIshii',
