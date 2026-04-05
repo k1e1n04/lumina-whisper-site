@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import AppDemoSection from '../components/AppDemoSection'
 import StatsBar from '../components/StatsBar'
+import AccuracySection from '../components/AccuracySection'
 import UseCasesSection from '../components/UseCasesSection'
 import { useInView } from '../hooks/useInView'
 import PageSeo from '../components/PageSeo'
@@ -248,6 +249,8 @@ export default function LandingPage() {
       </section>
 
       <StatsBar />
+
+      <AccuracySection />
 
       {/* CTA */}
       <section className="px-6 py-28 text-center">
