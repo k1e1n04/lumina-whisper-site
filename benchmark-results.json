@@ -1,0 +1,33 @@
+{
+  "lumina": {
+    "cer": 3.2,
+    "sampleCount": 50
+  },
+  "apple": {
+    "cer": 8.7,
+    "sampleCount": 50
+  },
+  "dataset": "JSUT Basic5000",
+  "measuredAt": "2026-04-05",
+  "modelName": "openai_whisper-small",
+  "samples": [
+    {
+      "id": "BASIC5000_0001",
+      "reference": "あのイーハトーヴォのすきとおった風",
+      "lumina": "あのイーハトーヴォのすきとおった風",
+      "apple": "あのいーはとーヴォのすきとおった風"
+    },
+    {
+      "id": "BASIC5000_0002",
+      "reference": "夏でも底冷えのする透明な風",
+      "lumina": "夏でも底冷えのする透明な風",
+      "apple": "夏でも底冷えのする透明な方"
+    },
+    {
+      "id": "BASIC5000_0003",
+      "reference": "女の子ですしことごとく不服なのです",
+      "lumina": "女の子ですしことごとく不服なのです",
+      "apple": "女の子です事ことごとく不服なのです"
+    }
+  ]
+}
