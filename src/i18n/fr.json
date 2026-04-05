@@ -78,6 +78,17 @@
     "models": "Choix de modèle",
     "modelsSub": "tiny / base / small / medium"
   },
+  "accuracy": {
+    "label": "Accuracy",
+    "title": "Comparaison de précision avec la saisie vocale Apple",
+    "subtitle": "Taux d'erreur caractère (CER) — plus bas est meilleur",
+    "lumina": "Lumina Whisper",
+    "apple": "Saisie vocale Apple",
+    "samplesLabel": "Exemples de transcription",
+    "correct": "Correct",
+    "incorrect": "Erreurs détectées",
+    "source": "Données : {{dataset}} · {{count}} échantillons · Mesuré le {{date}} · Modèle : {{model}}"
+  },
   "useCases": {
     "label": "Use Cases",
     "title": "La voix devient texte, dans toutes les situations",

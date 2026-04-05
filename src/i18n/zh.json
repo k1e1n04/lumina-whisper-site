@@ -78,6 +78,17 @@
     "models": "可选模型",
     "modelsSub": "tiny / base / small / medium"
   },
+  "accuracy": {
+    "label": "Accuracy",
+    "title": "与 Apple 语音输入的精度对比",
+    "subtitle": "字符错误率（CER）— 越低越准确",
+    "lumina": "Lumina Whisper",
+    "apple": "Apple 语音输入",
+    "samplesLabel": "转录样本对比",
+    "correct": "正确",
+    "incorrect": "有误识别",
+    "source": "数据：{{dataset}} · {{count}} 个样本 · {{date}} 测量 · 模型：{{model}}"
+  },
   "useCases": {
     "label": "Use Cases",
     "title": "随时随地，声音即时转换为文字",

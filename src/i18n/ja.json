@@ -77,6 +77,17 @@
     "models": "モデル選択可能",
     "modelsSub": "tiny / base / small / medium"
   },
+  "accuracy": {
+    "label": "Accuracy",
+    "title": "Apple 音声入力との精度比較",
+    "subtitle": "文字誤り率（CER）— 低いほど正確",
+    "lumina": "Lumina Whisper",
+    "apple": "Apple 音声入力",
+    "samplesLabel": "変換サンプル比較",
+    "correct": "正確",
+    "incorrect": "誤認識あり",
+    "source": "データ: {{dataset}} · {{count}}サンプル · {{date}} 計測 · モデル: {{model}}"
+  },
   "useCases": {
     "label": "Use Cases",
     "title": "どんな場面でも、声がそのままテキストになる",

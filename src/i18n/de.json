@@ -77,6 +77,17 @@
     "models": "Modellauswahl",
     "modelsSub": "tiny / base / small / medium"
   },
+  "accuracy": {
+    "label": "Accuracy",
+    "title": "Genauigkeitsvergleich mit Apple Spracheingabe",
+    "subtitle": "Zeichenfehlerrate (CER) — niedriger ist besser",
+    "lumina": "Lumina Whisper",
+    "apple": "Apple Spracheingabe",
+    "samplesLabel": "Transkriptionsbeispiele",
+    "correct": "Korrekt",
+    "incorrect": "Fehler gefunden",
+    "source": "Daten: {{dataset}} · {{count}} Beispiele · Gemessen am {{date}} · Modell: {{model}}"
+  },
   "useCases": {
     "label": "Use Cases",
     "title": "Sprache wird Text — in jeder Situation",

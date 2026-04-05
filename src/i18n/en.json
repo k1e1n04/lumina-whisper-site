@@ -77,6 +77,17 @@
     "models": "Model Choice",
     "modelsSub": "tiny / base / small / medium"
   },
+  "accuracy": {
+    "label": "Accuracy",
+    "title": "Accuracy vs. Apple Voice Input",
+    "subtitle": "Character Error Rate (CER) — lower is better",
+    "lumina": "Lumina Whisper",
+    "apple": "Apple Voice Input",
+    "samplesLabel": "Transcription Samples",
+    "correct": "Correct",
+    "incorrect": "Errors found",
+    "source": "Data: {{dataset}} · {{count}} samples · Measured {{date}} · Model: {{model}}"
+  },
   "useCases": {
     "label": "Use Cases",
     "title": "Voice becomes text, in any situation",
