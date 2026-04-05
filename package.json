@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "vite",
     "build": "node scripts/generate-ogp.mjs && tsc -b && vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node scripts/prerender.mjs",
+    "appcast:update": "node scripts/update-appcast.mjs",
     "preview": "vite preview",
     "test": "vitest",
     "test:run": "vitest run",
