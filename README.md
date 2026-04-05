@@ -87,7 +87,7 @@ pip3 install -r scripts/benchmark/requirements.txt
 # 2. Lumina Whisper で JSUT 50 サンプルを自動変換
 python3 scripts/benchmark/transcribe_lumina.py \
   ~/datasets/jsut_ver1.1 \
-  /path/to/whisperkit-cli
+  /tmp/WhisperKit/.build/release/whisperkit-cli
 # → scripts/benchmark/lumina_results.csv が生成される
 
 # 3. 同じ 50 サンプルを Mac の「キーボード音声入力」で手動変換し、
