@@ -174,6 +174,12 @@
     "subtitle": "Release Notes",
     "newFeatures": "新功能",
     "bugFixes": "错误修复",
+    "v043": {
+      "features": {},
+      "fixes": {
+        "llmFewShotFormat": "进一步提升了 LLM 后处理的输出精度"
+      }
+    },
     "v042": {
       "features": {},
       "fixes": {

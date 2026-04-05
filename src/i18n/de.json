@@ -173,6 +173,12 @@
     "subtitle": "Release Notes",
     "newFeatures": "Neue Funktionen",
     "bugFixes": "Fehlerbehebungen",
+    "v043": {
+      "features": {},
+      "fixes": {
+        "llmFewShotFormat": "Ausgabegenauigkeit der LLM-Nachbearbeitung weiter verbessert"
+      }
+    },
     "v042": {
       "features": {},
       "fixes": {

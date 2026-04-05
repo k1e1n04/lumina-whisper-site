@@ -173,6 +173,12 @@
     "subtitle": "Release Notes",
     "newFeatures": "New Features",
     "bugFixes": "Bug Fixes",
+    "v043": {
+      "features": {},
+      "fixes": {
+        "llmFewShotFormat": "Further improved LLM post-processing output accuracy"
+      }
+    },
     "v042": {
       "features": {},
       "fixes": {
