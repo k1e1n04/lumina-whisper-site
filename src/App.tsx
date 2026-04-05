@@ -22,6 +22,7 @@ import TroubleshootPage from './pages/guide/TroubleshootPage'
 import i18n from './i18n'
 import {
   DEFAULT_LANGUAGE,
+  detectPreferredLanguage,
   normalizeLanguage,
   replaceLanguageInPath,
 } from './i18n/languages'
@@ -53,10 +54,11 @@ function LanguageLayout() {
 
 function LegacyPathRedirect() {
   const location = useLocation()
+  const targetLanguage = detectPreferredLanguage()
   return (
     <Navigate
       replace
-      to={`/${DEFAULT_LANGUAGE}${location.pathname}${location.search}${location.hash}`}
+      to={`/${targetLanguage}${location.pathname}${location.search}${location.hash}`}
     />
   )
 }

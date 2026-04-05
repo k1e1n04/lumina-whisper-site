@@ -79,7 +79,7 @@ console.log('  ✓ sitemap.xml')
 // Root legacy redirect to default language
 const rootRedirectHtml = template.replace(
   '<!--ssr-outlet-->',
-  `<script>window.location.replace('/${DEFAULT_LANGUAGE}/')</script>`,
+  `<script>(function(){const supported=${JSON.stringify(SUPPORTED_LANGUAGES)};const fallback='${DEFAULT_LANGUAGE}';const key='preferred_language';const normalize=(v)=>{if(!v)return null;const n=String(v).toLowerCase().split('-')[0];return supported.includes(n)?n:null};const stored=normalize(window.localStorage.getItem(key));const langs=navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language];let target=stored; if(!target){for(const l of langs){const n=normalize(l);if(n){target=n;break}}} window.location.replace('/'+(target||fallback)+'/');})();</script>`,
 )
 fs.writeFileSync(path.join(root, 'dist/index.html'), rootRedirectHtml)
 

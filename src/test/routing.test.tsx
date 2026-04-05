@@ -24,7 +24,15 @@ describe('routing', () => {
   })
 
   it('/guide/faq でも /en/guide/faq に正規化される', () => {
+    window.localStorage.removeItem('preferred_language')
     renderAt('/guide/faq')
     expect(screen.getByTestId('guide-faq')).toBeInTheDocument()
+  })
+
+  it('保存言語が ja のときは旧URLから /ja に正規化される', () => {
+    window.localStorage.setItem('preferred_language', 'ja')
+    renderAt('/guide/install')
+    expect(screen.getByTestId('guide-install')).toBeInTheDocument()
+    window.localStorage.removeItem('preferred_language')
   })
 })

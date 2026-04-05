@@ -23,3 +23,21 @@ export function replaceLanguageInPath(pathname: string, language: string): strin
   const suffix = pathname.replace(/^\/[^/]+/, '') || ''
   return `/${normalized}${suffix || '/'}`
 }
+
+export function detectPreferredLanguage(): SupportedLanguage {
+  if (typeof window === 'undefined') return DEFAULT_LANGUAGE
+
+  const fromStorage = normalizeLanguage(window.localStorage.getItem(LANGUAGE_STORAGE_KEY))
+  if (fromStorage) return fromStorage
+
+  const candidates = window.navigator.languages?.length
+    ? window.navigator.languages
+    : [window.navigator.language]
+
+  for (const language of candidates) {
+    const normalized = normalizeLanguage(language)
+    if (normalized) return normalized
+  }
+
+  return DEFAULT_LANGUAGE
+}

@@ -7,31 +7,14 @@ import ko from './ko.json'
 import fr from './fr.json'
 import de from './de.json'
 import {
-  DEFAULT_LANGUAGE,
   LANGUAGE_STORAGE_KEY,
-  type SupportedLanguage,
+  DEFAULT_LANGUAGE,
+  detectPreferredLanguage,
   normalizeLanguage,
+  type SupportedLanguage,
 } from './languages'
 
-function detectInitialLanguage(): SupportedLanguage {
-  if (typeof window === 'undefined') return DEFAULT_LANGUAGE
-
-  const fromStorage = normalizeLanguage(window.localStorage.getItem(LANGUAGE_STORAGE_KEY))
-  if (fromStorage) return fromStorage
-
-  const candidates = window.navigator.languages?.length
-    ? window.navigator.languages
-    : [window.navigator.language]
-
-  for (const language of candidates) {
-    const normalized = normalizeLanguage(language)
-    if (normalized) return normalized
-  }
-
-  return DEFAULT_LANGUAGE
-}
-
-const initialLanguage = detectInitialLanguage()
+const initialLanguage: SupportedLanguage = detectPreferredLanguage()
 
 i18n.use(initReactI18next).init({
   resources: {
