@@ -173,6 +173,14 @@
     "subtitle": "Release Notes",
     "newFeatures": "새로운 기능",
     "bugFixes": "버그 수정",
+    "v030": {
+      "features": {
+        "sparkleAutoUpdate": "Sparkle 기반 자동 업데이트 지원 추가 — 앱 내 메뉴에서 업데이트 확인 가능",
+        "directDistributionOnly": "배포 방식을 Direct DMG 단일 방식으로 통일",
+        "appcastPipeline": "appcast 업데이트 파이프라인 추가 — 서명된 DMG 메타데이터를 `https://lumina-whisper.com/appcast.xml`에 반영 가능"
+      },
+      "fixes": {}
+    },
     "v020": {
       "features": {
         "onboardingWizard": "최초 실행 설정 마법사 — 접근성·마이크 권한 부여 및 단축키 설정을 가이드에 따라 완료",

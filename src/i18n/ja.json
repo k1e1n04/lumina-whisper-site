@@ -175,7 +175,7 @@
     "v030": {
       "features": {
         "sparkleAutoUpdate": "Sparkle ベースの自動アップデートに対応 — アプリ内メニューから更新確認が可能",
-        "directDistributionOnly": "配布方針を Direct 配布（DMG）のみに統一 — Mac App Store 配信を終了",
+        "directDistributionOnly": "配布方針を Direct 配布（DMG）のみに統一",
         "appcastPipeline": "appcast 更新フローを整備 — 署名付き DMG から `https://lumina-whisper.com/appcast.xml` を更新可能"
       },
       "fixes": {}

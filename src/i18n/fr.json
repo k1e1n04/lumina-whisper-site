@@ -173,6 +173,14 @@
     "subtitle": "Release Notes",
     "newFeatures": "Nouvelles fonctionnalités",
     "bugFixes": "Corrections de bugs",
+    "v030": {
+      "features": {
+        "sparkleAutoUpdate": "Ajout de la mise à jour automatique basée sur Sparkle — vérification des mises à jour depuis le menu de l'app",
+        "directDistributionOnly": "Distribution unifiée en DMG direct uniquement",
+        "appcastPipeline": "Ajout du pipeline de mise à jour appcast — publication des métadonnées DMG signées vers `https://lumina-whisper.com/appcast.xml`"
+      },
+      "fixes": {}
+    },
     "v020": {
       "features": {
         "onboardingWizard": "Assistant de configuration au premier lancement — guide pour accorder les permissions Accessibilité et Microphone et configurer le raccourci",

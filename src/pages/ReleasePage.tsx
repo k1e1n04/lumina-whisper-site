@@ -5,6 +5,13 @@ import PageSeo from '../components/PageSeo'
 
 const RELEASES = [
   {
+    version: '0.3.0',
+    date: '2026-04-05',
+    key: 'v030',
+    features: ['sparkleAutoUpdate', 'directDistributionOnly', 'appcastPipeline'],
+    fixes: [] as string[],
+  },
+  {
     version: '0.2.0',
     date: '2026-04-04',
     key: 'v020',

@@ -173,6 +173,14 @@
     "subtitle": "Release Notes",
     "newFeatures": "新功能",
     "bugFixes": "错误修复",
+    "v030": {
+      "features": {
+        "sparkleAutoUpdate": "新增基于 Sparkle 的自动更新支持 — 可在应用内菜单检查更新",
+        "directDistributionOnly": "发布方式统一为 Direct DMG 分发",
+        "appcastPipeline": "新增 appcast 更新流程 — 可将签名 DMG 元数据发布到 `https://lumina-whisper.com/appcast.xml`"
+      },
+      "fixes": {}
+    },
     "v020": {
       "features": {
         "onboardingWizard": "首次启动设置向导 — 引导完成辅助功能和麦克风权限授予及快捷键配置",

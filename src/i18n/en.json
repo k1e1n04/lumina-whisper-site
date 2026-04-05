@@ -175,7 +175,7 @@
     "v030": {
       "features": {
         "sparkleAutoUpdate": "Added Sparkle-based auto update support — updates can be checked from the in-app menu",
-        "directDistributionOnly": "Distribution is now unified to direct DMG only — Mac App Store distribution has been discontinued",
+        "directDistributionOnly": "Distribution is now unified to direct DMG only",
         "appcastPipeline": "Added appcast update pipeline — signed DMG metadata can now update `https://lumina-whisper.com/appcast.xml`"
       },
       "fixes": {}
