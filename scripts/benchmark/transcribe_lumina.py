@@ -61,7 +61,7 @@ def main() -> None:
 
     jsut_dir = Path(sys.argv[1]).expanduser()
     whisperkit_cli = Path(sys.argv[2]).expanduser()
-    audio_dir = jsut_dir / "basic5000" / "wav24kHz16bit"
+    audio_dir = jsut_dir / "basic5000" / "wav"
     output_path = Path(__file__).parent / OUTPUT_FILENAME
 
     if not whisperkit_cli.exists():
