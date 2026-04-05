@@ -71,7 +71,7 @@ export default function LandingPage() {
 
           {/* Key attributes */}
           <div className="anim-fade-up anim-fade-up-3 mb-10 flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
-            {(['外部送信ゼロ', 'Apple Neural Engine', '13言語対応'] as const).map((text, i) => (
+            {(['外部送信ゼロ', 'Apple Neural Engine', '13言語対応', '商用利用可'] as const).map((text, i) => (
               <span key={text} className="flex items-center gap-5">
                 {i > 0 && <span className="text-text-dim" aria-hidden>·</span>}
                 <span className="flex items-center gap-1.5 text-xs tracking-[0.08em] text-text-dim">
@@ -344,6 +344,9 @@ export default function LandingPage() {
           </p>
           <p className="mt-4 text-xs tracking-[0.05em] text-text-dim">
             {t('cta.requirements')}
+          </p>
+          <p className="mt-2 text-xs tracking-[0.05em] text-text-dim">
+            {t('cta.license')}
           </p>
 
         </div>

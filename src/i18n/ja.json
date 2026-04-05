@@ -95,7 +95,8 @@
     "title": "今すぐ始める",
     "purchase": "購入する — ¥980",
     "download": "購入済みの方はこちら",
-    "requirements": "macOS 14.0 以降 · Apple Silicon"
+    "requirements": "macOS 14.0 以降 · Apple Silicon",
+    "license": "個人・商用利用可 · 買い切り · 追加課金なし"
   },
   "demo": {
     "label": "How it works",
