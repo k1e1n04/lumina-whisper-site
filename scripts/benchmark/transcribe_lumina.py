@@ -13,7 +13,7 @@ import sys
 from pathlib import Path
 
 SAMPLE_COUNT = 50
-MODEL = "openai_whisper-small"
+MODEL = "whisper-small"
 LANGUAGE = "ja"
 OUTPUT_FILENAME = "lumina_results.csv"
 
@@ -29,7 +29,7 @@ def load_transcript(jsut_dir: Path) -> list[tuple[str, str]]:
             line = line.strip()
             if not line:
                 continue
-            parts = line.split("\t", 1)
+            parts = line.split(":", 1)
             if len(parts) == 2:
                 rows.append((parts[0], parts[1]))
     return rows[:SAMPLE_COUNT]

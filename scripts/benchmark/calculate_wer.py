@@ -18,7 +18,7 @@ BENCHMARK_DIR = Path(__file__).parent
 LUMINA_RESULTS = BENCHMARK_DIR / "lumina_results.csv"
 APPLE_RESULTS = BENCHMARK_DIR / "apple_results.csv"
 OUTPUT_JSON = BENCHMARK_DIR.parent.parent / "public" / "benchmark-results.json"
-MODEL_NAME = "openai_whisper-small"
+MODEL_NAME = "whisper-small"
 
 
 def load_csv(path: Path) -> dict[str, str]:
