@@ -1,39 +1,219 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://lumina-whisper.com/</loc>
+    <loc>https://lumina-whisper.com/ja/</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://lumina-whisper.com/release/</loc>
+    <loc>https://lumina-whisper.com/ja/release/</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://lumina-whisper.com/privacy/</loc>
+    <loc>https://lumina-whisper.com/ja/privacy/</loc>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://lumina-whisper.com/guide/install/</loc>
+    <loc>https://lumina-whisper.com/ja/guide/install/</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lumina-whisper.com/guide/setup/</loc>
+    <loc>https://lumina-whisper.com/ja/guide/setup/</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lumina-whisper.com/guide/usage/</loc>
+    <loc>https://lumina-whisper.com/ja/guide/usage/</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lumina-whisper.com/guide/settings/</loc>
+    <loc>https://lumina-whisper.com/ja/guide/settings/</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://lumina-whisper.com/guide/faq/</loc>
+    <loc>https://lumina-whisper.com/ja/guide/faq/</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://lumina-whisper.com/guide/troubleshoot/</loc>
+    <loc>https://lumina-whisper.com/ja/guide/troubleshoot/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/en/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/en/release/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/en/privacy/</loc>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/en/guide/install/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/en/guide/setup/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/en/guide/usage/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/en/guide/settings/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/en/guide/faq/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/en/guide/troubleshoot/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/zh/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/zh/release/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/zh/privacy/</loc>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/zh/guide/install/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/zh/guide/setup/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/zh/guide/usage/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/zh/guide/settings/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/zh/guide/faq/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/zh/guide/troubleshoot/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/ko/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/ko/release/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/ko/privacy/</loc>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/ko/guide/install/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/ko/guide/setup/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/ko/guide/usage/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/ko/guide/settings/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/ko/guide/faq/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/ko/guide/troubleshoot/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/fr/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/fr/release/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/fr/privacy/</loc>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/fr/guide/install/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/fr/guide/setup/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/fr/guide/usage/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/fr/guide/settings/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/fr/guide/faq/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/fr/guide/troubleshoot/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/de/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/de/release/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/de/privacy/</loc>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/de/guide/install/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/de/guide/setup/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/de/guide/usage/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/de/guide/settings/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/de/guide/faq/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lumina-whisper.com/de/guide/troubleshoot/</loc>
     <priority>0.7</priority>
   </url>
 </urlset>
