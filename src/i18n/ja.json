@@ -177,7 +177,9 @@
     "install": {
       "title": "インストール",
       "sectionPurchase": "1. 購入",
-      "purchaseDesc": "<link>Polar.sh の購入ページ</link> からライセンスを購入してください。購入後、メールでライセンスキーが届きます。",
+      "purchaseDescPre": "",
+      "purchaseLinkText": "Polar.sh の購入ページ",
+      "purchaseDescPost": " からライセンスを購入してください。購入後、メールでライセンスキーが届きます。",
       "section1": "2. ダウンロード",
       "downloadDesc": "<link>GitHub Releases</link> から最新の <code>LuminaWhisper.dmg</code> をダウンロードします。",
       "section2": "3. インストール",

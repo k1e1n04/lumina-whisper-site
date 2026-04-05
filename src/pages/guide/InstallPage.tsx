@@ -12,19 +12,16 @@ export default function InstallPage() {
 
       <h2 className="mt-8 mb-3 text-xl font-semibold text-text">{t('guide.install.sectionPurchase')}</h2>
       <p className="mb-4 text-text-muted">
-        <Trans
-          i18nKey="guide.install.purchaseDesc"
-          components={{
-            link: (
-              <a
-                href={PURCHASE_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-accent hover:underline"
-              />
-            ),
-          }}
-        />
+        {t('guide.install.purchaseDescPre')}
+        <a
+          href={PURCHASE_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-accent hover:underline"
+        >
+          {t('guide.install.purchaseLinkText')}
+        </a>
+        {t('guide.install.purchaseDescPost')}
       </p>
 
       <h2 className="mt-8 mb-3 text-xl font-semibold text-text">{t('guide.install.section1')}</h2>

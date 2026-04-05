@@ -177,7 +177,9 @@
     "install": {
       "title": "Installation",
       "sectionPurchase": "1. Kauf",
-      "purchaseDesc": "Kaufen Sie eine Lizenz auf <link>Polar.sh</link>. Nach dem Kauf erhalten Sie den Lizenzschlüssel per E-Mail.",
+      "purchaseDescPre": "Kaufen Sie eine Lizenz auf ",
+      "purchaseLinkText": "Polar.sh",
+      "purchaseDescPost": ". Nach dem Kauf erhalten Sie den Lizenzschlüssel per E-Mail.",
       "section1": "2. Download",
       "downloadDesc": "Laden Sie die neueste <code>LuminaWhisper.dmg</code> von <link>GitHub Releases</link> herunter.",
       "section2": "3. Installation",
