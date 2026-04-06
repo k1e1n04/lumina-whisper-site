@@ -174,6 +174,16 @@
     "subtitle": "Release Notes",
     "newFeatures": "新功能",
     "bugFixes": "错误修复",
+    "v051": {
+      "features": {
+        "foundationModelsBackend": "为 LLM 后处理新增 Foundation Models 后端（macOS 26+）",
+        "llmBackendChoice": "改进首次引导，支持选择 LLM 后端",
+        "builtInTechDictionary": "新增技术术语内置词典"
+      },
+      "fixes": {
+        "longRecordingStability": "提升长时间录音时的稳定性"
+      }
+    },
     "v050": {
       "features": {},
       "fixes": {

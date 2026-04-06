@@ -173,6 +173,16 @@
     "subtitle": "Release Notes",
     "newFeatures": "新機能",
     "bugFixes": "バグ修正",
+    "v051": {
+      "features": {
+        "foundationModelsBackend": "LLM 後処理に Foundation Models バックエンドを追加（macOS 26 以降）",
+        "llmBackendChoice": "オンボーディングで LLM バックエンドを選択できるように改善",
+        "builtInTechDictionary": "技術用語の内蔵辞書を追加"
+      },
+      "fixes": {
+        "longRecordingStability": "長時間録音時の安定性を改善"
+      }
+    },
     "v050": {
       "features": {},
       "fixes": {

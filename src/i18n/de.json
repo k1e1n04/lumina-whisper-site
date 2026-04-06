@@ -173,6 +173,16 @@
     "subtitle": "Release Notes",
     "newFeatures": "Neue Funktionen",
     "bugFixes": "Fehlerbehebungen",
+    "v051": {
+      "features": {
+        "foundationModelsBackend": "Foundation-Models-Backend für die LLM-Nachbearbeitung hinzugefügt (macOS 26+)",
+        "llmBackendChoice": "Onboarding verbessert, damit das LLM-Backend ausgewählt werden kann",
+        "builtInTechDictionary": "Integriertes Wörterbuch für technische Begriffe hinzugefügt"
+      },
+      "fixes": {
+        "longRecordingStability": "Stabilität bei langen Aufnahmesitzungen verbessert"
+      }
+    },
     "v050": {
       "features": {},
       "fixes": {

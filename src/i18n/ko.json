@@ -174,6 +174,16 @@
     "subtitle": "Release Notes",
     "newFeatures": "새로운 기능",
     "bugFixes": "버그 수정",
+    "v051": {
+      "features": {
+        "foundationModelsBackend": "LLM 후처리에 Foundation Models 백엔드 추가 (macOS 26+)",
+        "llmBackendChoice": "온보딩에서 LLM 백엔드를 선택할 수 있도록 개선",
+        "builtInTechDictionary": "기술 용어용 내장 사전 추가"
+      },
+      "fixes": {
+        "longRecordingStability": "장시간 녹음 시 안정성 개선"
+      }
+    },
     "v050": {
       "features": {},
       "fixes": {
