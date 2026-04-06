@@ -189,6 +189,12 @@
     "subtitle": "Release Notes",
     "newFeatures": "Neue Funktionen",
     "bugFixes": "Fehlerbehebungen",
+    "v055": {
+      "features": {},
+      "fixes": {
+        "llmOutputFallbackGuards": "Fallback-Schutz hinzugefügt: Bei leerer, konversationeller oder übermäßig langer LLM-Ausgabe wird der Originaltext beibehalten"
+      }
+    },
     "v054": {
       "features": {},
       "fixes": {

@@ -190,6 +190,12 @@
     "subtitle": "Release Notes",
     "newFeatures": "새로운 기능",
     "bugFixes": "버그 수정",
+    "v055": {
+      "features": {},
+      "fixes": {
+        "llmOutputFallbackGuards": "LLM 출력이 비어 있거나 대화형/과도 확장일 때 원문으로 되돌리는 안전장치 추가"
+      }
+    },
     "v054": {
       "features": {},
       "fixes": {

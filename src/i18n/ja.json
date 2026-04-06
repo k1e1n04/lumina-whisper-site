@@ -189,6 +189,12 @@
     "subtitle": "Release Notes",
     "newFeatures": "新機能",
     "bugFixes": "バグ修正",
+    "v055": {
+      "features": {},
+      "fixes": {
+        "llmOutputFallbackGuards": "LLM 出力の空応答・会話化・過剰長文化を検知して原文へフォールバックする安全弁を追加"
+      }
+    },
     "v054": {
       "features": {},
       "fixes": {

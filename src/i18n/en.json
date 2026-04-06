@@ -189,6 +189,12 @@
     "subtitle": "Release Notes",
     "newFeatures": "New Features",
     "bugFixes": "Bug Fixes",
+    "v055": {
+      "features": {},
+      "fixes": {
+        "llmOutputFallbackGuards": "Added fallback guards to keep original text when LLM output is empty, conversational, or excessively expanded"
+      }
+    },
     "v054": {
       "features": {},
       "fixes": {

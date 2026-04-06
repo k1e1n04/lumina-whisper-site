@@ -190,6 +190,12 @@
     "subtitle": "Release Notes",
     "newFeatures": "新功能",
     "bugFixes": "错误修复",
+    "v055": {
+      "features": {},
+      "fixes": {
+        "llmOutputFallbackGuards": "新增回退保护：当 LLM 输出为空、对话化或过度扩写时保留原文"
+      }
+    },
     "v054": {
       "features": {},
       "fixes": {

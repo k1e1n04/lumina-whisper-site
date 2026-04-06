@@ -190,6 +190,12 @@
     "subtitle": "Release Notes",
     "newFeatures": "Nouvelles fonctionnalités",
     "bugFixes": "Corrections de bugs",
+    "v055": {
+      "features": {},
+      "fixes": {
+        "llmOutputFallbackGuards": "Ajout de garde-fous de repli pour conserver le texte d’origine si la sortie LLM est vide, conversationnelle ou excessivement longue"
+      }
+    },
     "v054": {
       "features": {},
       "fixes": {
