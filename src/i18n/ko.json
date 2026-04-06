@@ -190,6 +190,12 @@
     "subtitle": "Release Notes",
     "newFeatures": "새로운 기능",
     "bugFixes": "버그 수정",
+    "v054": {
+      "features": {},
+      "fixes": {
+        "skipEmptyTranscriptionLlm": "무음(빈 전사)에서는 LLM 후처리를 건너뛰어 원치 않는 긴 문장 삽입 문제를 수정"
+      }
+    },
     "v053": {
       "features": {},
       "fixes": {

@@ -189,6 +189,12 @@
     "subtitle": "Release Notes",
     "newFeatures": "Neue Funktionen",
     "bugFixes": "Fehlerbehebungen",
+    "v054": {
+      "features": {},
+      "fixes": {
+        "skipEmptyTranscriptionLlm": "LLM-Nachbearbeitung bei leerer Transkription wird übersprungen, um unbeabsichtigte lange Einfügungen zu verhindern"
+      }
+    },
     "v053": {
       "features": {},
       "fixes": {

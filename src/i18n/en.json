@@ -189,6 +189,12 @@
     "subtitle": "Release Notes",
     "newFeatures": "New Features",
     "bugFixes": "Bug Fixes",
+    "v054": {
+      "features": {},
+      "fixes": {
+        "skipEmptyTranscriptionLlm": "Skip LLM post-processing for empty transcriptions to prevent unintended long text insertion"
+      }
+    },
     "v053": {
       "features": {},
       "fixes": {

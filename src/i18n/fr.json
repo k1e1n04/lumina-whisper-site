@@ -190,6 +190,12 @@
     "subtitle": "Release Notes",
     "newFeatures": "Nouvelles fonctionnalités",
     "bugFixes": "Corrections de bugs",
+    "v054": {
+      "features": {},
+      "fixes": {
+        "skipEmptyTranscriptionLlm": "Le post-traitement LLM est ignore pour les transcriptions vides afin d’eviter l’insertion de longs textes non voulus"
+      }
+    },
     "v053": {
       "features": {},
       "fixes": {

@@ -190,6 +190,12 @@
     "subtitle": "Release Notes",
     "newFeatures": "新功能",
     "bugFixes": "错误修复",
+    "v054": {
+      "features": {},
+      "fixes": {
+        "skipEmptyTranscriptionLlm": "对空转写结果跳过 LLM 后处理，修复误插入长文本的问题"
+      }
+    },
     "v053": {
       "features": {},
       "fixes": {
