@@ -252,7 +252,7 @@
         "whisperkitEngine": "WhisperKit-powered transcription engine — fast, accurate recognition using Apple Neural Engine",
         "textInsertion": "Direct text insertion with clipboard fallback — paste manually with ⌘V if auto-insertion fails",
         "modelSelection": "Model selection (tiny / base / small / medium) and language setting (auto / ja / en)",
-        "llmPostProcessing": "Local LLM post-processing — automatic filler removal with custom and per-app instructions",
+        "llmPostProcessing": "LLM post-processing — filler removal with Apple Intelligence (macOS 26+) or lightweight local model, plus custom and per-app instructions",
         "replacements": "Text replacement rules — automatically apply custom substitutions to transcribed text",
         "dictionary": "Word dictionary — register proper nouns to improve Whisper recognition accuracy",
         "history": "Transcription history — browse and reuse past results"
@@ -353,7 +353,7 @@
       "llm": {
         "name": "LLM Post-Processing",
         "default": "On",
-        "desc": "After recognition, a local LLM removes filler words and applies formatting. Custom and app-specific instructions can be configured in the LLM tab."
+        "desc": "After recognition, filler words are removed and text is formatted. The Apple Intelligence backend is available on macOS 26+, and you can fall back to a lightweight local model or disable it. Custom and app-specific instructions can be configured in the LLM tab."
       },
       "clipboardFallback": {
         "name": "Clipboard Fallback",

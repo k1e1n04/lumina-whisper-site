@@ -252,7 +252,7 @@
         "whisperkitEngine": "WhisperKit-Transkriptionsmotor — schnelle, präzise Erkennung über Apple Neural Engine",
         "textInsertion": "Direkteinfügung mit Zwischenablage-Fallback — manuell mit ⌘V einfügen, wenn automatisches Einfügen fehlschlägt",
         "modelSelection": "Modellauswahl (tiny / base / small / medium) und Spracheinstellung (auto / ja / en)",
-        "llmPostProcessing": "Lokale LLM-Nachbearbeitung — automatische Füllwortentfernung mit benutzerdefinierten und App-spezifischen Anweisungen",
+        "llmPostProcessing": "LLM-Nachbearbeitung — Füllwörter entfernen mit Apple Intelligence (macOS 26+) oder einem leichten lokalen Modell, plus benutzerdefinierte und App-spezifische Anweisungen",
         "replacements": "Textersetzungsregeln — automatisch benutzerdefinierte Ersetzungen auf transkribierten Text anwenden",
         "dictionary": "Wörterbuch — Eigennamen registrieren für bessere Whisper-Erkennungsgenauigkeit",
         "history": "Transkriptionsverlauf — vergangene Ergebnisse ansehen und wiederverwenden"
@@ -353,7 +353,7 @@
       "llm": {
         "name": "LLM-Nachbearbeitung",
         "default": "Ein",
-        "desc": "Nach der Erkennung entfernt ein lokales LLM Füllwörter und wendet Formatierung an. Benutzerdefinierte und App-spezifische Anweisungen können im LLM-Tab konfiguriert werden."
+        "desc": "Nach der Erkennung werden Füllwörter entfernt und der Text formatiert. Das Apple-Intelligence-Backend ist auf macOS 26+ verfügbar; andernfalls können Sie auf ein leichtes lokales Modell ausweichen oder die Funktion deaktivieren. Benutzerdefinierte und App-spezifische Anweisungen können im LLM-Tab konfiguriert werden."
       },
       "clipboardFallback": {
         "name": "Zwischenablage-Fallback",

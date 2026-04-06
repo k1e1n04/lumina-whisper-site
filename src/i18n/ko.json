@@ -253,7 +253,7 @@
         "whisperkitEngine": "WhisperKit 기반 전사 엔진 — Apple 뉴럴 엔진을 활용한 고속·고정밀 인식",
         "textInsertion": "텍스트 직접 삽입 및 클립보드 폴백 — 자동 삽입 실패 시 ⌘V로 수동 붙여넣기 가능",
         "modelSelection": "모델 선택（tiny / base / small / medium）및 언어 설정（auto / ja / en）",
-        "llmPostProcessing": "로컬 LLM 후처리 — 필러 자동 제거, 커스텀 및 앱별 지시 지원",
+        "llmPostProcessing": "LLM 후처리 — Apple Intelligence(macOS 26+) 또는 경량 로컬 모델로 필러 제거, 커스텀 및 앱별 지시 지원",
         "replacements": "텍스트 치환 규칙 — 전사 후 텍스트에 커스텀 치환을 자동 적용",
         "dictionary": "단어 사전 — 고유명사를 등록하여 Whisper 인식 정확도 향상",
         "history": "전사 이력 — 과거 입력 결과를 목록으로 확인·재사용"
@@ -354,7 +354,7 @@
       "llm": {
         "name": "LLM 후처리",
         "default": "켜짐",
-        "desc": "인식 후 로컬 LLM으로 필러 단어를 제거하고 형식을 정리합니다. LLM 탭에서 커스텀 및 앱별 지시를 설정할 수 있습니다."
+        "desc": "인식 후 필러 단어를 제거하고 문장을 정리합니다. Apple Intelligence 백엔드는 macOS 26 이상에서만 사용할 수 있으며, 사용할 수 없는 경우 경량 로컬 모델로 폴백하거나 비활성화할 수 있습니다. LLM 탭에서 커스텀 및 앱별 지시를 설정할 수 있습니다."
       },
       "clipboardFallback": {
         "name": "클립보드 폴백",

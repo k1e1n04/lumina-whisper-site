@@ -253,7 +253,7 @@
         "whisperkitEngine": "Moteur de transcription WhisperKit — reconnaissance rapide et précise via Apple Neural Engine",
         "textInsertion": "Insertion directe avec repli sur le presse-papiers — collez manuellement avec ⌘V si l'insertion automatique échoue",
         "modelSelection": "Sélection du modèle (tiny / base / small / medium) et paramètre de langue (auto / ja / en)",
-        "llmPostProcessing": "Post-traitement LLM local — suppression automatique des mots de remplissage avec instructions personnalisées et par application",
+        "llmPostProcessing": "Post-traitement LLM — suppression des mots de remplissage via Apple Intelligence (macOS 26+) ou un modèle local léger, avec instructions personnalisées et par application",
         "replacements": "Règles de remplacement de texte — appliquer automatiquement des substitutions personnalisées au texte transcrit",
         "dictionary": "Dictionnaire de mots — enregistrez des noms propres pour améliorer la précision de Whisper",
         "history": "Historique des transcriptions — consultez et réutilisez les résultats passés"
@@ -354,7 +354,7 @@
       "llm": {
         "name": "Post-traitement LLM",
         "default": "Activé",
-        "desc": "Après la reconnaissance, un LLM local supprime les mots de remplissage et applique une mise en forme. Des instructions personnalisées et par application peuvent être configurées dans l'onglet LLM."
+        "desc": "Après la reconnaissance, les mots de remplissage sont supprimés et le texte est mis en forme. Le backend Apple Intelligence est disponible sur macOS 26+ ; sinon, vous pouvez utiliser un modèle local léger ou désactiver la fonction. Des instructions personnalisées et par application peuvent être configurées dans l'onglet LLM."
       },
       "clipboardFallback": {
         "name": "Repli sur le presse-papiers",

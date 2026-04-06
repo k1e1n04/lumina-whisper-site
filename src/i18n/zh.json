@@ -253,7 +253,7 @@
         "whisperkitEngine": "WhisperKit 驱动的转录引擎 — 利用 Apple 神经引擎实现快速、高精度识别",
         "textInsertion": "直接插入文字并支持剪贴板回退 — 自动插入失败时可用 ⌘V 手动粘贴",
         "modelSelection": "模型选择（tiny / base / small / medium）和语言设置（auto / ja / en）",
-        "llmPostProcessing": "本地 LLM 后处理 — 自动删除填充词，支持自定义和应用专用指令",
+        "llmPostProcessing": "LLM 后处理 — 支持 Apple Intelligence（macOS 26+）或轻量本地模型，自动删除填充词并支持自定义与应用专用指令",
         "replacements": "文字替换规则 — 自动对转录文字应用自定义替换",
         "dictionary": "单词词典 — 注册专有名词以提高 Whisper 识别精度",
         "history": "转录历史 — 浏览和复用过去的结果"
@@ -354,7 +354,7 @@
       "llm": {
         "name": "LLM 后处理",
         "default": "开",
-        "desc": "识别后通过本地 LLM 删除填充词并进行格式化。可在 LLM 标签页设置自定义和应用专用指令。"
+        "desc": "识别后会删除填充词并进行格式化。Apple Intelligence 后端仅在 macOS 26 及以上可用；不可用时可改用轻量本地模型或关闭该功能。可在 LLM 标签页设置自定义和应用专用指令。"
       },
       "clipboardFallback": {
         "name": "剪贴板回退",

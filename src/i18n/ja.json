@@ -252,7 +252,7 @@
         "whisperkitEngine": "WhisperKit 搭載の音声認識エンジン — Apple Neural Engine をフル活用した高速・高精度な文字起こし",
         "textInsertion": "テキスト直接挿入とクリップボードフォールバック — 挿入に失敗した場合でも ⌘V で手動貼り付け可能",
         "modelSelection": "モデル選択（tiny / base / small / medium）と言語設定（auto / ja / en）",
-        "llmPostProcessing": "ローカル LLM による後処理 — フィラー自動除去・カスタム指示・アプリ別指示に対応",
+        "llmPostProcessing": "LLM 後処理 — Apple Intelligence（macOS 26+）または軽量モデルでフィラー除去・カスタム指示・アプリ別指示に対応",
         "replacements": "テキスト置換ルール — 文字起こし後のテキストに対して任意の置換を自動適用",
         "dictionary": "単語辞書 — 固有名詞を登録して Whisper の認識精度を向上",
         "history": "文字起こし履歴 — 過去の入力結果を一覧表示・再利用"
@@ -353,7 +353,7 @@
       "llm": {
         "name": "LLM 後処理",
         "default": "オン",
-        "desc": "音声認識後にローカル LLM でフィラー（「えっと」「あの」など）を除去・整形する機能。LLM タブでカスタム指示やアプリ別指示も設定できます。"
+        "desc": "音声認識後にフィラー（「えっと」「あの」など）を除去・整形する機能。Apple Intelligence バックエンドは macOS 26 以降で利用でき、利用不可時は軽量モデルまたは無効を選択できます。LLM タブでカスタム指示やアプリ別指示も設定できます。"
       },
       "clipboardFallback": {
         "name": "クリップボードへフォールバック",
