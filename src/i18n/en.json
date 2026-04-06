@@ -173,6 +173,12 @@
     "subtitle": "Release Notes",
     "newFeatures": "New Features",
     "bugFixes": "Bug Fixes",
+    "v052": {
+      "features": {},
+      "fixes": {
+        "noConversationalReplies": "Fixed an issue where short utterances were rewritten as conversational replies"
+      }
+    },
     "v051": {
       "features": {
         "foundationModelsBackend": "Added Foundation Models backend for LLM post-processing (macOS 26+)",

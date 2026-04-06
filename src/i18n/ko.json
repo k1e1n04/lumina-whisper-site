@@ -174,6 +174,12 @@
     "subtitle": "Release Notes",
     "newFeatures": "새로운 기능",
     "bugFixes": "버그 수정",
+    "v052": {
+      "features": {},
+      "fixes": {
+        "noConversationalReplies": "짧은 발화가 대화형 응답으로 바뀌는 문제를 수정"
+      }
+    },
     "v051": {
       "features": {
         "foundationModelsBackend": "LLM 후처리에 Foundation Models 백엔드 추가 (macOS 26+)",

@@ -5,6 +5,13 @@ import PageSeo from '../components/PageSeo'
 
 const RELEASES = [
   {
+    version: '0.5.2',
+    date: '2026-04-06',
+    key: 'v052',
+    features: [] as string[],
+    fixes: ['noConversationalReplies'],
+  },
+  {
     version: '0.5.1',
     date: '2026-04-06',
     key: 'v051',
