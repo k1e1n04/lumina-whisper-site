@@ -14,7 +14,11 @@
   },
   "pain": {
     "question": "您在 Mac 上使用语音输入时有这些烦恼吗？",
-    "items": ["精度低", "速度慢", "需要网络连接"],
+    "items": [
+      "精度低",
+      "速度慢",
+      "需要网络连接"
+    ],
     "answer": "Lumina Whisper 帮您解决这些问题。"
   },
   "features": {
@@ -42,10 +46,22 @@
   },
   "howToUse": {
     "title": "使用方法",
-    "step1": { "label": "步骤 1", "text": "将光标放置在要输入的位置" },
-    "step2": { "label": "步骤 2", "text": "按 Fn 开始录音" },
-    "step3": { "label": "步骤 3", "text": "说话" },
-    "step4": { "label": "步骤 4", "text": "再次按 Fn 停止 → 文字被插入" }
+    "step1": {
+      "label": "步骤 1",
+      "text": "将光标放置在要输入的位置"
+    },
+    "step2": {
+      "label": "步骤 2",
+      "text": "按 Fn 开始录音"
+    },
+    "step3": {
+      "label": "步骤 3",
+      "text": "说话"
+    },
+    "step4": {
+      "label": "步骤 4",
+      "text": "再次按 Fn 停止 → 文字被插入"
+    }
   },
   "pricingAdvantage": {
     "title": "别再月月付费，一次购买更划算",
@@ -174,6 +190,12 @@
     "subtitle": "Release Notes",
     "newFeatures": "新功能",
     "bugFixes": "错误修复",
+    "v053": {
+      "features": {},
+      "fixes": {
+        "llmEditorRoleEnforcement": "将 LLM 后处理固定为仅编辑模式，防止生成对话式回复"
+      }
+    },
     "v052": {
       "features": {},
       "fixes": {

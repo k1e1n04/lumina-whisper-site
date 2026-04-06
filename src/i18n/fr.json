@@ -14,7 +14,11 @@
   },
   "pain": {
     "question": "Ces problèmes vous frustrent avec la saisie vocale sur Mac ?",
-    "items": ["Précision insuffisante", "Trop lent", "Nécessite Internet"],
+    "items": [
+      "Précision insuffisante",
+      "Trop lent",
+      "Nécessite Internet"
+    ],
     "answer": "Lumina Whisper résout tout cela."
   },
   "features": {
@@ -42,10 +46,22 @@
   },
   "howToUse": {
     "title": "Comment utiliser",
-    "step1": { "label": "Étape 1", "text": "Placez le curseur à l'endroit voulu" },
-    "step2": { "label": "Étape 2", "text": "Appuyez sur Fn pour démarrer l'enregistrement" },
-    "step3": { "label": "Étape 3", "text": "Parlez" },
-    "step4": { "label": "Étape 4", "text": "Appuyez sur Fn pour arrêter → le texte est inséré" }
+    "step1": {
+      "label": "Étape 1",
+      "text": "Placez le curseur à l'endroit voulu"
+    },
+    "step2": {
+      "label": "Étape 2",
+      "text": "Appuyez sur Fn pour démarrer l'enregistrement"
+    },
+    "step3": {
+      "label": "Étape 3",
+      "text": "Parlez"
+    },
+    "step4": {
+      "label": "Étape 4",
+      "text": "Appuyez sur Fn pour arrêter → le texte est inséré"
+    }
   },
   "pricingAdvantage": {
     "title": "Arrêtez l'abonnement mensuel: payez une fois, c'est fini",
@@ -174,6 +190,12 @@
     "subtitle": "Release Notes",
     "newFeatures": "Nouvelles fonctionnalités",
     "bugFixes": "Corrections de bugs",
+    "v053": {
+      "features": {},
+      "fixes": {
+        "llmEditorRoleEnforcement": "Comportement edition uniquement renforce dans le post-traitement LLM pour eviter les reponses conversationnelles"
+      }
+    },
     "v052": {
       "features": {},
       "fixes": {

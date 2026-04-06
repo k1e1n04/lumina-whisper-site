@@ -13,7 +13,11 @@
   },
   "pain": {
     "question": "Diese Probleme bei der Spracheingabe auf dem Mac kennen Sie?",
-    "items": ["Zu ungenau", "Zu langsam", "Benötigt Internet"],
+    "items": [
+      "Zu ungenau",
+      "Zu langsam",
+      "Benötigt Internet"
+    ],
     "answer": "Lumina Whisper löst all das."
   },
   "features": {
@@ -41,10 +45,22 @@
   },
   "howToUse": {
     "title": "So verwenden Sie es",
-    "step1": { "label": "Schritt 1", "text": "Cursor an der gewünschten Stelle platzieren" },
-    "step2": { "label": "Schritt 2", "text": "Fn drücken, um die Aufnahme zu starten" },
-    "step3": { "label": "Schritt 3", "text": "Sprechen" },
-    "step4": { "label": "Schritt 4", "text": "Fn drücken zum Stoppen → Text wird eingefügt" }
+    "step1": {
+      "label": "Schritt 1",
+      "text": "Cursor an der gewünschten Stelle platzieren"
+    },
+    "step2": {
+      "label": "Schritt 2",
+      "text": "Fn drücken, um die Aufnahme zu starten"
+    },
+    "step3": {
+      "label": "Schritt 3",
+      "text": "Sprechen"
+    },
+    "step4": {
+      "label": "Schritt 4",
+      "text": "Fn drücken zum Stoppen → Text wird eingefügt"
+    }
   },
   "pricingAdvantage": {
     "title": "Nicht jeden Monat zahlen: einmal kaufen und fertig",
@@ -173,6 +189,12 @@
     "subtitle": "Release Notes",
     "newFeatures": "Neue Funktionen",
     "bugFixes": "Fehlerbehebungen",
+    "v053": {
+      "features": {},
+      "fixes": {
+        "llmEditorRoleEnforcement": "Editor-only-Verhalten in der LLM-Nachbearbeitung erzwungen, um Gesprächsantworten zu verhindern"
+      }
+    },
     "v052": {
       "features": {},
       "fixes": {

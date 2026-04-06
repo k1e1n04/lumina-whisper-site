@@ -14,7 +14,11 @@
   },
   "pain": {
     "question": "Mac에서 음성 입력 사용 시 이런 불편함이 있지 않으신가요?",
-    "items": ["정확도가 낮음", "동작이 느림", "인터넷 연결 필요"],
+    "items": [
+      "정확도가 낮음",
+      "동작이 느림",
+      "인터넷 연결 필요"
+    ],
     "answer": "Lumina Whisper가 그 문제를 해결합니다."
   },
   "features": {
@@ -42,10 +46,22 @@
   },
   "howToUse": {
     "title": "사용 방법",
-    "step1": { "label": "Step 1", "text": "커서를 입력하고 싶은 위치에 놓기" },
-    "step2": { "label": "Step 2", "text": "Fn을 눌러 녹음 시작" },
-    "step3": { "label": "Step 3", "text": "말하기" },
-    "step4": { "label": "Step 4", "text": "Fn으로 정지 → 텍스트가 삽입됨" }
+    "step1": {
+      "label": "Step 1",
+      "text": "커서를 입력하고 싶은 위치에 놓기"
+    },
+    "step2": {
+      "label": "Step 2",
+      "text": "Fn을 눌러 녹음 시작"
+    },
+    "step3": {
+      "label": "Step 3",
+      "text": "말하기"
+    },
+    "step4": {
+      "label": "Step 4",
+      "text": "Fn으로 정지 → 텍스트가 삽입됨"
+    }
   },
   "pricingAdvantage": {
     "title": "매달 구독료 대신, 한 번 결제로 끝내세요",
@@ -174,6 +190,12 @@
     "subtitle": "Release Notes",
     "newFeatures": "새로운 기능",
     "bugFixes": "버그 수정",
+    "v053": {
+      "features": {},
+      "fixes": {
+        "llmEditorRoleEnforcement": "LLM 후처리를 편집 전용으로 강제해 대화형 응답 생성을 방지"
+      }
+    },
     "v052": {
       "features": {},
       "fixes": {
