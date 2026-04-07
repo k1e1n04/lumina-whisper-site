@@ -275,6 +275,12 @@
       },
       "fixes": {}
     },
+    "v061": {
+      "features": {},
+      "fixes": {
+        "finetunedModel": "Replaced the bundled LLM model with an actually fine-tuned version. Improves kanji conversion and technical term correction accuracy"
+      }
+    },
     "v060": {
       "features": {
         "finetunedModel": "Bundled a fine-tuned LLM model optimized for voice input. Improves kanji conversion and technical term correction accuracy in Japanese"
