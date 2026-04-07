@@ -6,16 +6,16 @@
     <description>Lumina Whisper updates</description>
     <language>ja</language>
     <item>
-      <title>Version 0.6.0</title>
-      <sparkle:version>11</sparkle:version>
-      <sparkle:shortVersionString>0.6.0</sparkle:shortVersionString>
+      <title>Version 0.6.1</title>
+      <sparkle:version>12</sparkle:version>
+      <sparkle:shortVersionString>0.6.1</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-      <pubDate>Tue, 07 Apr 2026 03:45:55 GMT</pubDate>
+      <pubDate>Tue, 07 Apr 2026 11:41:59 GMT</pubDate>
       <enclosure
         url="https://github.com/k1e1n04/lumina-whisper-site/releases/latest/download/LuminaWhisper.dmg"
         type="application/octet-stream"
-        sparkle:edSignature="EqapXLS2gMIFQCV7DPTJ0mfbDtrDOeNDUhJ/lbY8CQAVIhUC1MjFixi19hVtPkwxXbQ+YlbTlLS2NbgqsnhtBg=="
-        length="1941398779" />
+        sparkle:edSignature="KUqfPbNb3s5cDZM8QcAduSnsOyL5cHJPrZItHHqk/DLiBbaY3CKDoXNcT6eOCdrSrv9lf0FSl5QLt+SaHeocBw=="
+        length="1928175159" />
       <sparkle:releaseNotesLink>https://lumina-whisper.com/ja/release/</sparkle:releaseNotesLink>
     </item>
   </channel>
