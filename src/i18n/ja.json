@@ -13,7 +13,11 @@
   },
   "pain": {
     "question": "Mac の音声入力にこんな不満はありませんか？",
-    "items": ["精度が低い", "動作が遅い", "オフラインで使えない"],
+    "items": [
+      "精度が低い",
+      "動作が遅い",
+      "オフラインで使えない"
+    ],
     "answer": "Lumina Whisper はその悩みを解決します。"
   },
   "features": {
@@ -41,10 +45,22 @@
   },
   "howToUse": {
     "title": "使い方",
-    "step1": { "label": "Step 1", "text": "入力したい場所にカーソルを置く" },
-    "step2": { "label": "Step 2", "text": "Fn を押して録音開始" },
-    "step3": { "label": "Step 3", "text": "話す" },
-    "step4": { "label": "Step 4", "text": "Fn で停止 → テキストが挿入される" }
+    "step1": {
+      "label": "Step 1",
+      "text": "入力したい場所にカーソルを置く"
+    },
+    "step2": {
+      "label": "Step 2",
+      "text": "Fn を押して録音開始"
+    },
+    "step3": {
+      "label": "Step 3",
+      "text": "話す"
+    },
+    "step4": {
+      "label": "Step 4",
+      "text": "Fn で停止 → テキストが挿入される"
+    }
   },
   "pricingAdvantage": {
     "title": "サブスクを払い続けるより、買い切りで終わらせる",
@@ -256,6 +272,12 @@
         "replacements": "テキスト置換ルール — 文字起こし後のテキストに対して任意の置換を自動適用",
         "dictionary": "単語辞書 — 固有名詞を登録して Whisper の認識精度を向上",
         "history": "文字起こし履歴 — 過去の入力結果を一覧表示・再利用"
+      },
+      "fixes": {}
+    },
+    "v060": {
+      "features": {
+        "finetunedModel": "音声入力に特化したファインチューニング済み LLM モデルをバンドル。日本語の漢字変換・技術用語補正の精度を向上"
       },
       "fixes": {}
     }

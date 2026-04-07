@@ -13,7 +13,11 @@
   },
   "pain": {
     "question": "Frustrated with voice input on Mac?",
-    "items": ["Low accuracy", "Too slow", "Requires internet"],
+    "items": [
+      "Low accuracy",
+      "Too slow",
+      "Requires internet"
+    ],
     "answer": "Lumina Whisper solves all of that."
   },
   "features": {
@@ -41,10 +45,22 @@
   },
   "howToUse": {
     "title": "How to Use",
-    "step1": { "label": "Step 1", "text": "Place the cursor where you want to type" },
-    "step2": { "label": "Step 2", "text": "Press Fn to start recording" },
-    "step3": { "label": "Step 3", "text": "Speak" },
-    "step4": { "label": "Step 4", "text": "Press Fn to stop → text is inserted" }
+    "step1": {
+      "label": "Step 1",
+      "text": "Place the cursor where you want to type"
+    },
+    "step2": {
+      "label": "Step 2",
+      "text": "Press Fn to start recording"
+    },
+    "step3": {
+      "label": "Step 3",
+      "text": "Speak"
+    },
+    "step4": {
+      "label": "Step 4",
+      "text": "Press Fn to stop → text is inserted"
+    }
   },
   "pricingAdvantage": {
     "title": "Stop paying monthly. Buy once and be done.",
@@ -256,6 +272,12 @@
         "replacements": "Text replacement rules — automatically apply custom substitutions to transcribed text",
         "dictionary": "Word dictionary — register proper nouns to improve Whisper recognition accuracy",
         "history": "Transcription history — browse and reuse past results"
+      },
+      "fixes": {}
+    },
+    "v060": {
+      "features": {
+        "finetunedModel": "Bundled a fine-tuned LLM model optimized for voice input. Improves kanji conversion and technical term correction accuracy in Japanese"
       },
       "fixes": {}
     }
